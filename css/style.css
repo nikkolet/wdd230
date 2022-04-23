@@ -16,6 +16,7 @@ i {
 header {
     background-color: lightblue;
     color: white;
+    border-radius: 5px;
 }
 
 header img {
