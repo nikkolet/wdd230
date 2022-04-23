@@ -93,6 +93,10 @@
         margin-left: 2em;
     }
     
+    ul li p {
+        font-weight: bold;
+    }
+    
     #date {
         color: yellow;
     }
