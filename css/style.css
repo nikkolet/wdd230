@@ -16,7 +16,8 @@
             color: grey;
         }
         
-        header {
+        header,
+        footer {
             background-color: lightblue;
             color: white;
             border-radius: 5px;
@@ -49,4 +50,8 @@
         
         ul li {
             margin-left: 2em;
+        }
+        
+        #currentdate {
+            color: yellow;
         }
