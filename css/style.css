@@ -21,16 +21,12 @@
             color: white;
             border-radius: 5px;
             margin-top: 1em;
-            z-index: 0;
         }
         
         header img {
             box-shadow: 2px 2px 10px black;
             margin: 1em -1em -4em 1em;
             position: absolute;
-            left: 0px;
-            top: 0px;
-            z-index: -1;
         }
         
         h1,
