@@ -1,4 +1,4 @@
-        /*
+    /*
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +14,10 @@
         
         p i {
             color: grey;
+        }
+        
+        header {
+            height: 22.8em;
         }
         
         header,
@@ -63,3 +67,6 @@
         #currentdate {
             color: yellow;
         }
+        
+        color: yellow;
+    }
