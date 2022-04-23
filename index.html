@@ -60,9 +60,12 @@
         <script>
             //toLocateDateString
             const options = {
-                weekday
+                weekday: 'long',
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
             }
-            const todaysdate = new Date();
+            document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
         </script>
     </footer>
 </body>
