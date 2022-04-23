@@ -26,6 +26,10 @@ p i {
     color: grey;
 }
 
+header {
+    height: 22.8em;
+}
+
 header,
 footer {
     background-color: lightblue;
@@ -73,4 +77,8 @@ ul li {
 
 #currentdate {
     color: yellow;
+}
+
+color: yellow;
+
 }
