@@ -5,11 +5,16 @@
 }
 
 html {
-    width: 75%;
-    align-items: center;
+    background-color: lightblue;
 }
 
-p i {
+body {
+    height: auto;
+    width: 75%;
+    background-color: white;
+}
+
+h p i {
     color: grey;
 }
 
@@ -25,6 +30,8 @@ header img {
 
 h1,
 h2 {
+    display: block;
+    text-align: center;
     text-shadow: 2px 2px 10px grey;
 }
 
