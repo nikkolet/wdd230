@@ -1,98 +1,101 @@
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-stretch: normal;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/ptsans/v16/jizaRExUiTo99u79P0U.ttf) format('truetype');
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-h1,
-h2 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-p {
-    font-family: 'PT Sans', sans-serif;
-}
-
-body {
-    height: auto;
-    width: 50%;
-    background-color: white;
-    margin: auto;
-}
-
-p i {
-    color: grey;
-}
-
-header {
-    height: 22.8em;
-}
-
-header,
-footer {
-    background-color: lightblue;
-    color: white;
-    border-radius: 5px;
-    margin-top: 1em;
-    margin-bottom: 2em;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    height: auto;
-    box-shadow: 2px 2px 10px black;
-}
-
-header img {
-    box-shadow: 2px 2px 10px black;
-    margin: 1em auto 1em -8em;
-    margin-left: -10px;
-}
-
-h1,
-h2,
-footer p {
-    display: block;
-    text-shadow: 2px 2px 10px black;
-}
-
-h1 {
-    text-align: center;
-    width: 50%;
-    float: right;
-    margin: auto;
-    margin-top: 5em;
-    margin-right: 2em;
-}
-
-h2 {
-    text-align: left;
-}
-
-ul {
-    display: grid;
-}
-
-ul li {
-    margin-left: 2em;
-}
-
-#date {
-    color: yellow;
-}
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: normal;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ptsans/v16/jizaRExUiTo99u79P0U.ttf) format('truetype');
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    h1,
+    h2 {
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    p {
+        font-family: 'PT Sans', sans-serif;
+    }
+    
+    body {
+        height: auto;
+        width: 50%;
+        background-color: white;
+        margin: auto;
+    }
+    
+    p i {
+        color: grey;
+    }
+    
+    header {
+        height: 22.8em;
+    }
+    
+    header,
+    footer {
+        background-color: lightblue;
+        color: white;
+        border-radius: 5px;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        height: auto;
+        box-shadow: 2px 2px 10px black;
+    }
+    
+    header img {
+        box-shadow: 2px 2px 10px black;
+        margin: 1em auto 1em -8em;
+        margin-left: -10px;
+    }
+    
+    h1,
+    h2 {
+        display: block;
+        text-shadow: 5px 1px 4px black;
+    }
+    
+    footer p {
+        text-shadow: 5px 1px 4px black;
+    }
+    
+    h1 {
+        text-align: center;
+        width: 50%;
+        float: right;
+        margin: auto;
+        margin-top: 5em;
+        margin-right: 2em;
+    }
+    
+    h2 {
+        text-align: left;
+    }
+    
+    ul {
+        display: grid;
+    }
+    
+    ul li {
+        margin-left: 2em;
+    }
+    
+    #date {
+        color: yellow;
+    }
