@@ -66,13 +66,10 @@
     }
     
     h1,
-    h2 {
-        display: block;
-        text-shadow: 5px 1px 4px black;
-    }
-    
+    h2,
     footer p {
-        text-shadow: 5px 1px 4px black;
+        display: block;
+        text-shadow: 5px 1px 2px black;
     }
     
     h1 {
