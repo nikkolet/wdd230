@@ -35,7 +35,8 @@
             }
             
             h1,
-            h2 {
+            h2,
+            footer p {
                 display: block;
                 text-shadow: 2px 2px 10px grey;
             }
