@@ -21,6 +21,7 @@
             color: white;
             border-radius: 5px;
             margin-top: 1em;
+            z-index: 0;
         }
         
         header img {
