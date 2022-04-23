@@ -15,7 +15,7 @@ p {
     font-family: 'PT Sans', sans-serif;
 }
 
-p body {
+body {
     height: auto;
     width: 50%;
     background-color: white;
