@@ -1,72 +1,70 @@
-    /*
+/*
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }*/
-        
-        body {
-            height: auto;
-            width: 50%;
-            background-color: white;
-            margin: auto;
-        }
-        
-        p i {
-            color: grey;
-        }
-        
-        header {
-            height: 22.8em;
-        }
-        
-        header,
-        footer {
-            background-color: lightblue;
-            color: white;
-            border-radius: 5px;
-            margin-top: 1em;
-            margin-bottom: 2em;
-            text-align: center;
-            padding-top: 1em;
-            padding-bottom: 1em;
-        }
-        
-        header img {
-            box-shadow: 2px 2px 10px black;
-            margin: 1em auto 1em -8em;
-            float: left;
-        }
-        
-        h1,
-        h2,
-        footer p {
-            display: block;
-            text-shadow: 2px 2px 10px grey;
-        }
-        
-        h1 {
-            text-align: center;
-            width: 50%;
-            float: right;
-            margin: auto;
-        }
-        
-        h2 {
-            text-align: left;
-        }
-        
-        ul {
-            display: grid;
-        }
-        
-        ul li {
-            margin-left: 2em;
-        }
-        
-        #currentdate {
-            color: yellow;
-        }
-        
-        color: yellow;
-    }
+
+body {
+    height: auto;
+    width: 50%;
+    background-color: white;
+    margin: auto;
+}
+
+p i {
+    color: grey;
+}
+
+header,
+footer {
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    height: auto;
+}
+
+header img {
+    box-shadow: 2px 2px 10px black;
+    margin: 1em auto 1em -8em;
+    float: left;
+}
+
+h1,
+h2,
+footer p {
+    display: block;
+    text-shadow: 2px 2px 10px grey;
+}
+
+h1 {
+    text-align: center;
+    width: 50%;
+    float: right;
+    margin: auto;
+}
+
+h2 {
+    text-align: left;
+}
+
+ul {
+    display: grid;
+}
+
+ul li {
+    margin-left: 2em;
+}
+
+#currentdate {
+    color: yellow;
+}
+
+color: yellow;
+
+}
