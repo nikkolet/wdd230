@@ -62,6 +62,7 @@ footer {
 header img {
     box-shadow: 2px 2px 10px black;
     margin: 1em auto 1em -8em;
+    margin-left: -10px;
 }
 
 h1,
