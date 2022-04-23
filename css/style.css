@@ -15,8 +15,7 @@ p i {
     color: grey;
 }
 
-header,
-footer {
+header {
     background-color: lightblue;
     color: white;
     border-radius: 5px;
