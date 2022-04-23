@@ -76,7 +76,8 @@ h1 {
     width: 50%;
     float: right;
     margin: auto;
-    line-height: 2em;
+    margin-top: 5em;
+    margin-right: 2em;
 }
 
 h2 {
