@@ -47,7 +47,7 @@
     
     header,
     footer {
-        background-color: lightblue;
+        background-color: blue;
         color: white;
         border-radius: 5px;
         margin-top: 1em;
@@ -66,10 +66,14 @@
     }
     
     h1,
-    h2,
     footer p {
         display: block;
-        text-shadow: 4px 5px 3px blue;
+        text-shadow: 3px 1px 5px black;
+    }
+    
+    h2 {
+        display: block;
+        text-shadow: 3px 1px 5px black;
     }
     
     h1 {
