@@ -57,16 +57,7 @@
     <footer>
         <p>&copy; 2022 .:|:. Nikkolet S. Ashby .:|:. Utah</p>
         <p>Last Updated: <span id="currentdate"></span></p>
-        <script>
-            //toLocateDateString
-            const options = {
-                weekday: 'long',
-                day: 'numeric',
-                month: 'long',
-                year: 'numeric'
-            }
-            document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
-        </script>
+        <script src="js/currentdate.js"></script>
     </footer>
 </body>
 
