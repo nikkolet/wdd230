@@ -24,6 +24,8 @@
                 margin-top: 1em;
                 margin-bottom: 1em;
                 text-align: center;
+                padding-top: 1em;
+                padding-bottom: 1em;
             }
             
             header img {
@@ -38,12 +40,10 @@
             }
             
             h1 {
-                font-size: 60px;
                 text-align: center;
                 width: 50%;
                 float: right;
                 margin: auto;
-                padding: 1em;
             }
             
             h2 {
