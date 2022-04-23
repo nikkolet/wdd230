@@ -28,6 +28,7 @@ p i {
 
 header {
     height: 22.8em;
+    padding-bottom: -1em;
 }
 
 header,
