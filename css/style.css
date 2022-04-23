@@ -69,7 +69,7 @@
     h2,
     footer p {
         display: block;
-        text-shadow: 5px 1px 2px black;
+        text-shadow: 4px 5px 3px blue;
     }
     
     h1 {
