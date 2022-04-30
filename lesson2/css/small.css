@@ -108,8 +108,17 @@ nav {
     margin: 1em;
 }
 
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 auto;
+    list-style-type: none;
+}
+
 nav a {
-    float: left;
     color: var(--Accent1);
     text-align: center;
     padding: 0.5em;
@@ -120,6 +129,7 @@ nav button {
     background-color: var(--Primary_color);
     padding: 0.5em;
     margin: 0.5em;
+    float: center;
 }
 
 nav button a {
