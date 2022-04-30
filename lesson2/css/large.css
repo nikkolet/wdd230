@@ -95,6 +95,11 @@ main div img {
     width: 190px;
     float: left;
     padding: 1em;
+    border-radius: 5px;
+}
+
+.grid p {
+    padding: 0.5em;
 }
 
 nav {
