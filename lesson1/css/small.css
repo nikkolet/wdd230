@@ -1,6 +1,6 @@
 :root {
     --Primary_color: #061C8C;
-    --Secondary_color: #48ACF0;
+    --Secondary_color: #32A287;
     --Accent1: #FEF9FF;
     --Accent2: #F4E04D;
 }
@@ -27,7 +27,7 @@ p {
 body {
     height: auto;
     width: 50%;
-    background-color: white;
+    background-color: var(--Accent1);
     margin: auto;
     padding: 1em;
 }
