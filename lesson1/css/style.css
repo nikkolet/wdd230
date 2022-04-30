@@ -67,11 +67,17 @@
         h2 {
             display: block;
             text-shadow: 3px 1px 5px black;
+            font-size: 2.5rem;
+            margin: 0.51rem;
         }
         
         footer p {
             display: block;
             text-shadow: 2px 3px 4px black;
+        }
+        
+        footer {
+            margin: 1em;
         }
         
         h1 {
