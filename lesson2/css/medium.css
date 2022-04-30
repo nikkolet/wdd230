@@ -1,0 +1,37 @@
+@media only screen and (min-width: 35em) {
+     :root {
+        --Primary_color: #284AF6;
+        --Secondary_color: #92DDCC;
+        --Accent1: #FEF9FF;
+        --Accent2: #dddfef;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    header,
+    footer {
+        border-radius: 10px;
+    }
+    header img {
+        width: 200px;
+        height: auto;
+        float: center;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    main div {
+        margin: 0 auto;
+        border: 1px solid var(--Secondary_color);
+        padding: 0 1rem;
+        background-color: var(--Secondary_color);
+        font-size: 0.8rem;
+        border-radius: 5px;
+        width: 50px;
+    }
+}
