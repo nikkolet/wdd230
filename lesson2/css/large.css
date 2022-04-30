@@ -1,127 +1,37 @@
-:root {
-    --Primary_color: #284AF6;
-    --Secondary_color: #92DDCC;
-    --Accent1: #FEF9FF;
-    --Accent2: #dddfef;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    background-color: var(--Accent2);
-}
-
-h1,
-h2 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-p {
-    font-family: 'PT Sans', sans-serif;
-}
-
-body {
-    height: auto;
-    width: 75%;
-    background-color: var(--Accent1);
-    margin: auto;
-    padding: 1em;
-}
-
-header,
-footer {
-    display: grid;
-    background-color: var(--Primary_color);
-    color: var(--Accent1);
-    border-radius: 5px;
-    text-align: center;
-    height: auto;
-    padding: 1em;
-    margin: 1em;
-}
-
-h1,
-h2 {
-    display: block;
-    font-size: 2.5rem;
-    margin: 0.51rem;
-}
-
-footer p {
-    display: block;
-}
-
-h2 {
-    text-align: left;
-    font-size: 24px;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
-}
-
-main div {
-    margin: 0 auto;
-    border: 1px solid var(--Secondary_color);
-    padding: 0 1rem;
-    background-color: var(--Secondary_color);
-    font-size: 0.8rem;
-    border-radius: 5px;
-    width: 50px;
-}
-
-
-/*main div:nth-child(2) {
-margin: 0.5rem;
-}*/
-
-main div img {
-    box-shadow: 0 0 30px var(--Secondary_color)
-}
-
-.grid {
-    width: 225px;
-    height: auto;
-    text-align: center;
-}
-
-.grid img {
-    width: 190px;
-    float: left;
-    padding: 1em;
-    border-radius: 5px;
-}
-
-.grid p {
-    padding: 0.5em;
-}
-
-nav {
-    overflow: hidden;
-    background-color: var(--Accent2);
-    margin: 1em;
-}
-
-nav a {
-    float: left;
-    color: var(--Accent1);
-    text-align: center;
-    padding: 0.5em;
-    text-decoration: none;
-}
-
-nav button {
-    background-color: var(--Primary_color);
-    padding: 0.5em;
-    margin: 0.5em;
-}
-
-nav button a {
-    color: var(--Accent1);
+@media screen and (min-width: 64em) {
+     :root {
+        --Primary_color: #284AF6;
+        --Secondary_color: #92DDCC;
+        --Accent1: #FEF9FF;
+        --Accent2: #dddfef;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    header,
+    footer {
+        border-radius: 10px;
+    }
+    header img {
+        width: 200px;
+        height: auto;
+        float: center;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    main div {
+        margin: 0 auto;
+        border: 1px solid var(--Secondary_color);
+        padding: 0 1rem;
+        background-color: var(--Secondary_color);
+        font-size: 0.8rem;
+        border-radius: 5px;
+        width: 50px;
+    }
 }
