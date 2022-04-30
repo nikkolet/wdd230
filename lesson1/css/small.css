@@ -93,7 +93,7 @@ ul li p {
 }
 
 #date {
-    color: yellow;
+    color: var(--Accent2);
 }
 
 hr {
