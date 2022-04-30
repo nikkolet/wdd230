@@ -23,15 +23,14 @@
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1em;
     }
     main div {
         margin: 0 auto;
         border: 1px solid var(--Secondary_color);
-        padding: 0 1rem;
+        padding: 1rem;
         background-color: var(--Secondary_color);
         font-size: 0.8rem;
         border-radius: 5px;
-        width: 50px;
+        width: 100px;
     }
 }
