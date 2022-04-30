@@ -52,7 +52,6 @@ header img {
 h1,
 h2 {
     display: block;
-    text-shadow: 3px 1px 5px var(--Secondary_color);
     font-size: 2.5rem;
     margin: 0.51rem;
 }
