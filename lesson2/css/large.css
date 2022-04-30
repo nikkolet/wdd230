@@ -26,7 +26,7 @@ p {
 
 body {
     height: auto;
-    width: 50%;
+    width: 75%;
     background-color: var(--Accent1);
     margin: auto;
     padding: 1em;
@@ -78,7 +78,7 @@ h2 {
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
 }
 
@@ -89,12 +89,13 @@ main div {
     background-color: var(--Secondary_color);
     font-size: 0.8rem;
     border-radius: 5px;
+    width: 50px;
 }
 
-main div:nth-child(2) {
-    display: none;
+
+/*main div:nth-child(2) {
     margin: 0.5rem;
-}
+}*/
 
 main div img {
     box-shadow: 0 0 30px var(--Secondary_color)
@@ -110,4 +111,23 @@ hr {
 
 ul li {
     padding: 2em;
+}
+
+.grid {
+    width: 225px;
+    height: auto;
+    text-align: center;
+    padding: 1em;
+}
+
+.grid img {
+    width: 190px;
+    float: left;
+    padding: 1em;
+}
+
+button {
+    float: center;
+    padding: 0.5em;
+    margin-top: 1em;
 }
