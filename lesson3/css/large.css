@@ -26,10 +26,9 @@ p {
 
 body {
     height: auto;
-    width: 50%;
     background-color: var(--Accent1);
     margin: auto;
-    padding: 1em;
+    padding: 2em;
 }
 
 header,
@@ -56,10 +55,6 @@ h2 {
     margin: 0.51rem;
 }
 
-footer p {
-    display: block;
-}
-
 h1 {
     text-align: center;
     width: 50%;
@@ -78,25 +73,17 @@ ul {
 }
 
 ul li {
-    margin-left: 2em;
-    margin: 0.5rem;
-    border: 1px solid var(--Secondary_color);
-    padding: 0 1rem;
-    background-color: var(--Secondary_color);
-    padding: 0.25rem;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    border-radius: 5px;
-}
-
-ul li p {
-    font-weight: bold;
+    list-style-type: none;
 }
 
 #date {
     color: var(--Accent2);
 }
 
-hr {
-    margin: 1em;
+section {
+    display: flex;
+}
+
+nav {
+    background-color: var(--Accent2);
 }

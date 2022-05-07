@@ -12,8 +12,7 @@
         header img {
             width: 200px;
             height: auto;
-            box-shadow: 0 0 30px #444;
             float: center;
-            border-radius: 0 10px 0 0;
+            border-radius: 5px;
         }
     }
