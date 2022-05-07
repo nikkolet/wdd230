@@ -1,0 +1,16 @@
+:root {
+    --Primary_color: #153158;
+    --Secondary_color: #85C6E2;
+    --Accent1: #FFFFFF;
+    --Accent2: #C2C2C2;
+}
+
+header,
+footer {
+    background-color: var(--Primary_color);
+    color: var(--Accent1);
+}
+
+footer a {
+    color: var(--Accent1)
+}
