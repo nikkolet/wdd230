@@ -1,0 +1,90 @@
+:root {
+    --Primary_color: #153158;
+    --Secondary_color: #85C6E2;
+    --Accent1: #FFFFFF;
+    --Accent2: #C2C2C2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--Accent2);
+}
+
+h1,
+h2 {
+    font-family: Sansita, Ubuntu, and sans-serif;
+}
+
+p {
+    font-family: Sansita, Ubuntu, and sans-serif;
+}
+
+body {
+    height: auto;
+    background-color: var(--Accent1);
+    margin: auto;
+    padding: 2em;
+}
+
+header,
+footer {
+    display: flex;
+    background-color: var(--Primary_color);
+    color: var(--Accent1);
+    border-radius: 5px;
+    text-align: center;
+    height: auto;
+    padding: 1em;
+    margin: 1em;
+}
+
+header img,
+img {
+    width: 100px;
+    height: auto;
+}
+
+header ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a {
+    display: block;
+}
+
+ul {
+    display: grid;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+#date {
+    color: var(--Accent2);
+}
+
+section {
+    display: flex;
+}
+
+nav {
+    background-color: var(--Accent2);
+}
+
+div {
+    display: grid;
+    border: 1px solid black;
+}

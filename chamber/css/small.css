@@ -1,0 +1,86 @@
+:root {
+    --Primary_color: #153158;
+    --Secondary_color: #85C6E2;
+    --Accent1: #FFFFFF;
+    --Accent2: #C2C2C2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--Accent2);
+}
+
+h1,
+h2 {
+    font-family: Sansita, Ubuntu, and sans-serif;
+}
+
+p {
+    font-family: Sansita, Ubuntu, and sans-serif;
+}
+
+body {
+    height: auto;
+    background-color: var(--Accent1);
+    margin: auto;
+    padding: 1em;
+}
+
+header,
+footer {
+    display: grid;
+    background-color: var(--Primary_color);
+    color: var(--Accent1);
+    border-radius: 5px;
+    text-align: center;
+    height: auto;
+    padding: 1em;
+    margin: 1em;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+h1,
+h2 {
+    display: block;
+    font-size: 2.5rem;
+    margin: 0.51rem;
+}
+
+footer p {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    width: 50%;
+    float: right;
+    margin: auto;
+    margin-top: 5em;
+    margin-right: 2em;
+}
+
+h2 {
+    text-align: left;
+}
+
+ul {
+    display: grid;
+}
+
+ul li {
+    padding: 0.5em;
+    list-style-type: none;
+}
+
+nav {
+    background-color: var(--Accent2);
+}
