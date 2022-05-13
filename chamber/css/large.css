@@ -193,3 +193,12 @@ div {
     padding: 0px;
     margin: 0px;
 }
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#map {
+    width: 20px;
+}
