@@ -12,7 +12,7 @@
 }
 
 html {
-    background-color: var(--Accent2);
+    background-color: var(--Accent1);
 }
 
 h1,
@@ -26,7 +26,6 @@ p {
 
 body {
     height: auto;
-    background-color: var(--Accent1);
     margin: auto;
     padding: 1em;
 }

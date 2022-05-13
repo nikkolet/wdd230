@@ -15,9 +15,20 @@
     <link href="css/medium.css" rel="stylesheet">
     <!-- enhance-desktop -->
     <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <header>
-    <div><img src="images\education-logo.jpg" alt="logo"></div>
+    <div class="logo"><img src="images\education-logo.jpg" alt="logo">
+        <ul>
+            <li>
+                <h1>Learning</h1>
+                <p>Chamber of Commerce</p>
+            </li>
+        </ul>
+
+    </div>
     <nav>
         <ul>
 
@@ -35,18 +46,19 @@
             </li>
 
         </ul>
-        <ul>
+        <ul class="icons">
             <li>
                 <a href="#">
-                    <img src="#" alt="facebook Icon"></a>
+                    <img id="facebook" src="images\5296499_fb_facebook_facebook logo_icon.png" alt="facebook Icon"></a>
             </li>
             <li>
                 <a href="#">
-                    <img src="#" alt="LinkedIn Icon"></a>
+                    <img id="linkedin" src="images\3225190_app_linkedin_logo_media_popular_icon.png" alt="LinkedIn Icon"></a>
             </li>
         </ul>
 
-        <p>Insert Date Last Modified header</p>
+        <p id="date">Last Updated: <span id="currentdate"></span></p>
+        <script src="js/script.js "></script>
     </nav>
 </header>
 
@@ -84,7 +96,7 @@
 <footer>
     <img src="images\education-logo.jpg" alt="logo">
     <ul>
-        <li>Name of Chamber of Commerce</li>
+        <li>Learning Chamber of Commerce</li>
         <li>Address of Location</li>
     </ul>
     <ul>
