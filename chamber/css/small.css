@@ -81,6 +81,13 @@ ul li {
     list-style-type: none;
 }
 
-nav {
-    background-color: var(--Accent2);
+nav a {
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: 0.5fr;
+    align-items: center;
 }
