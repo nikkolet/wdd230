@@ -16,14 +16,34 @@ html {
 }
 
 .logo {
-    font-size: 12px;
+    height: 100px;
+    width: auto;
+    background-color: transparent;
+    margin-left: -1em;
+    margin-top: -1em;
+    margin-bottom: -1em;
+}
+
+.logo img {
+    float: left;
+}
+
+.logo h1,
+footer h1 {
+    font-size: 15px;
+}
+
+.logo p {
+    font-size: 10px;
+}
+
+.logo ul li {
+    display: block;
+    margin-top: -3em;
 }
 
 h1,
-h2 {
-    font-family: Sansita, Ubuntu, and sans-serif;
-}
-
+h2,
 p {
     font-family: Sansita, Ubuntu, and sans-serif;
 }
@@ -63,6 +83,11 @@ header ul li {
     float: left;
 }
 
+header nav {
+    margin-left: 20em;
+    text-decoration: none;
+}
+
 header ul li a {
     display: block;
 }
@@ -75,16 +100,22 @@ ul li {
     list-style-type: none;
 }
 
-#date {
-    color: var(--Accent2);
+#currentdate {
+    color: var(--Accent1);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.25em;
+    width: 100%;
+    float: left;
+    margin-left: -15em;
 }
 
-section {
-    display: flex;
+nav ul li {
+    align-items: center;
 }
 
 nav a {
     color: nav(--Accent1);
+    padding: 1em;
 }
 
 .icons ul li {
@@ -99,47 +130,49 @@ nav a {
     background-color: var(--Accent1);
     margin: 0;
     padding: 2em;
-    grid-gap: 5px;
+    grid-gap: 10px;
 }
 
 div {
     background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 1em;
 }
 
 .event {
     grid-column: 1;
     grid-row: 1;
-    height: 300px;
+    height: 20em;
 }
 
 .weather {
     grid-column: 1;
     grid-row: 2;
-    height: 300px;
+    height: 20em;
 }
 
 .join {
     grid-column: 1;
     grid-row: 3;
-    height: 300px;
+    height: 20em;
 }
 
 .hero {
     grid-column: 2/3;
     grid-row: 1/2;
-    height: 600px;
+    height: 40em;
 }
 
 .news {
     grid-column: 2/3;
     grid-row: 3;
-    height: 300px;
+    height: 20em;
 }
 
 .spotlight {
     grid-column: 3;
     grid-row: 1;
-    height: 900px;
+    height: 0em;
 }
 
 .spotlight ul li {
@@ -149,8 +182,14 @@ div {
 
 .icons {
     float: right;
+    margin-left: 25em;
 }
 
 .icons li img {
     width: 30px;
+}
+
+.icons li {
+    padding: 0px;
+    margin: 0px;
 }
