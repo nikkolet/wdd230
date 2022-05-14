@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <header>
-    <div class="logo"><img src="images\education-logo.jpg" alt="logo">
+    <div class="logo"><img class="logo-img" src="images\education-logo.jpg" alt="logo">
         <ul>
             <li>
                 <h1>Learning</h1>
@@ -30,19 +30,20 @@
 
     </div>
     <nav>
-        <ul>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav" class="open">
 
             <li>
-                <a href="#">Discover</a>
+                <a class="active" href="#">Discover</a>
             </li>
             <li>
-                <a href="#">Directory</a>
+                <a class="active" href="#">Directory</a>
             </li>
             <li>
-                <a href="#">Join</a>
+                <a class="active" href="#">Join</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a class="active" href="#">Contact</a>
             </li>
 
         </ul>
@@ -94,7 +95,7 @@
 
 </body>
 <footer>
-    <img src="images\education-logo.jpg" alt="logo">
+    <img class="logo-img" src="images\education-logo.jpg" alt="logo">
     <ul>
         <li>
             <h1>Learning Chamber of Commerce</h1>
@@ -108,7 +109,7 @@
     <ul>
         <li>nikkoletashby@gmail.com</li>
         <li>+1(801)231-3935</li>
-        <li>
+        <li class="map">
             <a href="https://www.google.com/maps/place/Salt+Lake+Chamber/@40.7645262,-111.892769,17z/data=!3m2!4b1!5s0x87528a3aa97113a7:0xdb61b5943e1a7aa1!4m5!3m4!1s0x8752f513d6f6ab15:0x4be5eda424cce15a!8m2!3d40.7645222!4d-111.8905803"><img id="map" src="images\pin.png" alt="Location Map"></a>
             <p>Map Location</p>
         </li>

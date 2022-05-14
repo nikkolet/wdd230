@@ -5,6 +5,11 @@
     --Accent2: #C2C2C2;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,12 +21,10 @@ html {
 }
 
 h1,
-h2 {
-    font-family: Sansita, Ubuntu, and sans-serif;
-}
-
+h2,
 p {
     font-family: Sansita, Ubuntu, and sans-serif;
+    text-align: center;
 }
 
 body {
@@ -42,9 +45,9 @@ footer {
     margin: 1em;
 }
 
-header img {
-    width: 200px;
-    height: auto;
+.logo-img {
+    width: 100%;
+    align-items: center;
 }
 
 h1,
@@ -61,10 +64,7 @@ footer p {
 h1 {
     text-align: center;
     width: 50%;
-    float: right;
     margin: auto;
-    margin-top: 5em;
-    margin-right: 2em;
 }
 
 h2 {
@@ -84,9 +84,110 @@ nav a {
     color: white;
 }
 
+nav button {
+    display: block;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: 0.5fr;
-    grid-template-rows: 0.5fr;
+    height: auto;
+    grid-template-columns: auto;
     align-items: center;
+    background-color: var(--Accent1);
+    margin: 0;
+    padding: 2em;
+    grid-gap: 10px;
+}
+
+.grid div {
+    background-color: var(--Accent2);
+    padding: 1em;
+    text-align: center;
+}
+
+.event {
+    height: 20em;
+}
+
+.weather {
+    height: 20em;
+}
+
+.join {
+    height: 20em;
+}
+
+.hero {
+    height: 40em;
+}
+
+.news {
+    height: 20em;
+}
+
+.spotlight {
+    height: 60em;
+}
+
+.spotlight li {
+    border: 1px solid black;
+    height: 17em;
+    margin: 1em;
+}
+
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: block;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: none;
+}
+
+.icons a {
+    width: 5px;
+}
+
+#map {
+    width: 40px;
+    float: left;
+    margin-right: 1em;
+}
+
+.map p {
+    float: left;
+    font-size: 24px;
+}
+
+nav button {
+    margin: .2rem 2vw;
+    font-size: 2rem;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8 rem 2vw;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: .8rem;
+}
+
+nav ul li.active a {
+    background-color: rbga(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul.open {
+    display: block;
 }

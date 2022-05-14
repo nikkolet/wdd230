@@ -14,11 +14,9 @@
         height: auto;
         float: center;
     }
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
-    grid-template-rows: 0.5fr 0.5fr;
-    align-items: center;
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
 }
