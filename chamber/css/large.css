@@ -21,8 +21,9 @@
             margin-top: -1em;
             margin-bottom: -1em;
         }
-        .logo img {
+        .logo-img {
             float: left;
+            width: 200px;
         }
         .logo h1,
         footer h1 {
