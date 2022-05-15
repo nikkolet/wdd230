@@ -9,14 +9,16 @@
     footer {
         border-radius: 10px;
     }
-    header img {
-        width: 200px;
-        height: auto;
+    log-img {
+        width: 100%;
         float: center;
     }
     .grid {
         display: grid;
         grid-template-columns: auto auto;
         align-items: center;
+    }
+    .icons li a {
+        width: 10px;
     }
 }

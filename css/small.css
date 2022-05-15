@@ -1,8 +1,8 @@
 :root {
-    --Primary_color: #284AF6;
-    --Secondary_color: #92DDCC;
-    --Accent1: #FEF9FF;
-    --Accent2: #dddfef;
+    --Primary_color: #153158;
+    --Secondary_color: #85C6E2;
+    --Accent1: #FFFFFF;
+    --Accent2: #C2C2C2;
 }
 
 * {
@@ -86,7 +86,7 @@ ul li {
     margin: 0.5rem;
     border: 1px solid var(--Secondary_color);
     padding: 0 1rem;
-    background-color: var(--Secondary_color);
+    background-color: rgba(133, 198, 226, 0.3);
     padding: 0.25rem;
     border-radius: 5px;
     font-size: 0.8rem;
