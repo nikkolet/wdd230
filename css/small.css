@@ -68,7 +68,7 @@ h2 {
 
 footer {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
 }
 
 h1 {
@@ -101,7 +101,7 @@ ul li p {
 }
 
 #date {
-    color: var(--Accent1);
+    color: var(--Accent2);
 }
 
 hr {

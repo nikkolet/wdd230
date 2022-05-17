@@ -35,14 +35,13 @@ body {
 
 header,
 footer {
+    width: auto;
     display: grid;
     background-color: var(--Primary_color);
     color: var(--Accent1);
     border-radius: 5px;
     text-align: center;
     height: auto;
-    padding: 1em;
-    margin: 1em;
 }
 
 .logo-img {

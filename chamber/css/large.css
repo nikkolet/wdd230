@@ -42,25 +42,30 @@
             font-family: Sansita, Ubuntu, and sans-serif;
         }
         body {
+            width: 80%;
             height: auto;
             margin: auto;
             padding: 1em;
         }
         header,
         footer {
+            width: auto;
             display: flex;
             background-color: var(--Primary_color);
             color: var(--Accent1);
             border-radius: 5px;
             text-align: center;
-            height: auto;
+            height: 10em;
             padding: 1em;
-            margin: 1em;
         }
         header img,
         img {
-            width: 100px;
-            height: auto;
+            width: auto;
+            height: 8em;
+        }
+        header img {
+            margin-top: 1em;
+            margin-left: 1em;
         }
         header ul {
             display: inline;
@@ -102,50 +107,45 @@
         }
         .grid {
             display: grid;
+            width: auto;
+            height: 100%;
             grid-template-columns: auto auto auto;
             grid-template-rows: auto auto auto;
             align-items: center;
             background-color: var(--Accent1);
-            margin: 0;
-            padding: 2em;
+            padding: 0;
             grid-gap: 10px;
         }
         div {
             background-color: rgba(0, 0, 0, 0.2);
             border-radius: 5px;
-            padding: 1em;
+            height: 100%;
         }
         .event {
             grid-column: 1;
             grid-row: 1;
-            height: 20em;
         }
         .weather {
             grid-column: 1;
             grid-row: 2;
-            height: 20em;
         }
         .join {
             grid-column: 1;
             grid-row: 3;
-            height: 20em;
         }
         .hero {
-            grid-column: 2/3;
-            grid-row: 1/2;
-            height: 40em;
+            grid-column: 2;
+            grid-row: 1 span 2;
         }
         .news {
             grid-column: 2/3;
             grid-row: 3;
-            height: 20em;
         }
-        .spotlight {
+        div.spotlight {
             grid-column: 3;
-            grid-row: 1;
-            height: 0em;
+            grid-row: 1 span 3;
         }
-        .spotlight ul li {
+        div.spotlight ul li {
             display: block;
             border: 1px dotted black;
         }
