@@ -32,9 +32,10 @@ body {
     padding: 1em;
 }
 
-p i {
-    color: grey;
-}
+
+/* p i {
+    color: var(--Accent1)
+} */
 
 header,
 footer {
@@ -52,6 +53,7 @@ footer {
 header img {
     width: 200px;
     height: auto;
+    border-radius: 50%;
 }
 
 
@@ -64,8 +66,9 @@ h2 {
     /*  margin: 0.51rem; */
 }
 
-footer p {
-    display: block;
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 h1 {
@@ -98,7 +101,7 @@ ul li p {
 }
 
 #date {
-    color: var(--Accent2);
+    color: var(--Accent1);
 }
 
 hr {
