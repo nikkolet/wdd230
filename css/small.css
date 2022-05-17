@@ -26,7 +26,7 @@ p {
 
 body {
     height: auto;
-    width: 50%;
+    width: 75%;
     background-color: var(--Accent1);
     margin: auto;
     padding: 1em;
@@ -39,6 +39,7 @@ p i {
 header,
 footer {
     display: grid;
+    grid-template-columns: 30% 70%;
     background-color: var(--Primary_color);
     color: var(--Accent1);
     border-radius: 5px;
@@ -53,11 +54,14 @@ header img {
     height: auto;
 }
 
+
+/* header h1 {} */
+
 h1,
 h2 {
     display: block;
     font-size: 2.5rem;
-    margin: 0.51rem;
+    /*  margin: 0.51rem; */
 }
 
 footer p {
@@ -65,12 +69,8 @@ footer p {
 }
 
 h1 {
-    text-align: center;
-    width: 50%;
-    float: right;
+    margin-top: 2.5em;
     margin: auto;
-    margin-top: 5em;
-    margin-right: 2em;
 }
 
 h2 {
