@@ -1,74 +1,154 @@
+:root {
+    --Primary_color: #153158;
+    --Secondary_color: #85C6E2;
+    --Accent1: #FFFFFF;
+    --Accent2: #C2C2C2;
+}
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Sansita, Ubuntu, and sans-serif;
 }
 
 body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-family: Acme, Arial, sans-serif;
+    min-height: 100vh;
+    background-color: var(--Primary_color);
+    color: var(--Accent1);
 }
 
-h1 {
-    font-size: 1.5rem;
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-main {
-    margin: 0.5rem auto;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 0.5rem;
-    background-color: #bed;
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 95%;
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--Accent2);
+    margin-bottom: 1rem;
+}
+
+#new-chapter-form {
+    display: flex;
 }
 
 input,
 button {
-    padding: 0.35rem;
-    margin-left: 1rem;
-    font-size: 1.1rem;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
 }
 
-input {
-    width: 200px;
+#new-chapter-input {
+    flex: 1 1 0%;
+    background-color: var(--Secondary_color);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--Accent1);
+    font-size: 1.25rem;
 }
 
-label {
-    font-size: 0.9rem;
+#new-chapter-input::placeholder {
+    color: var(--Accent1);
 }
 
-.listcontainer {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin: 1rem;
+#new-chapter-submit {
+    color: var(--Accent2);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--Accent1), var(--Secondary_color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#new-chapter-submit:hover {
+    opacity: 0.8;
+}
+
+#new-chapter-submit:active {
+    opacity: 0.6;
+}
+
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.chapterlist {
     padding: 1rem;
 }
 
-.list {
-    margin: 0.2rem;
+.listcontainer h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--Accent2);
+    margin-bottom: 1rem;
 }
 
-ul {
-    margin: 1rem;
-    list-style: none;
-}
-
-li {
+#chapters .chapter {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
+    background-color: var(--Accent1);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 32.5em) {
-    h1 {
-        font-size: 2rem;
-    }
-    main {
-        width: 480px;
-    }
+#chapters .chapter .content .text {
+    color: var(--Primary_color);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#chapters .chapter .content .text:not(:read-only) {
+    color: var(--Secondary_color);
+}
+
+#chapters .chapter .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.chapter .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.chapter .actions button:hover {
+    opacity: 0.8;
+}
+
+.chapter .actions button:active {
+    opacity: 0.6;
+}
+
+.chapter .actions .edit {
+    color: var(--Accent1);
+    background-image: linear-gradient(to right, var(--Secondary_color), var(--Primary_color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.chapter .actions .delete {
+    color: var(--Accent1);
+    background-image: linear-gradient(to right, var(--Secondary_color), var(--Primary_color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
