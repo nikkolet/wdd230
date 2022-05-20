@@ -27,11 +27,13 @@ p {
     text-align: center;
 }
 
+
+/* 
 body {
     height: auto;
     margin: auto;
     padding: 1em;
-}
+} */
 
 header,
 footer {
@@ -148,11 +150,11 @@ nav button {
 }
 
 #hamburgerBtn.open span:nth-child(1) {
-    display: block;
+    display: none;
 }
 
 #hamburgerBtn.open span:nth-child(2) {
-    display: none;
+    display: block;
 }
 
 .icons a {
