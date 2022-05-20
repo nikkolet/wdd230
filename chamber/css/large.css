@@ -1,175 +1,174 @@
-    @media only screen and (min-width: 64em) {
-         :root {
-            --Primary_color: #153158;
-            --Secondary_color: #85C6E2;
-            --Accent1: #FFFFFF;
-            --Accent2: #C2C2C2;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            background-color: var(--Accent1);
-        }
-        .logo {
-            height: 100px;
-            width: auto;
-            background-color: transparent;
-            margin-left: -1em;
-            margin-top: -1em;
-            margin-bottom: -1em;
-        }
-        .logo-img {
-            float: left;
-            width: 200px;
-        }
-        .logo h1,
-        footer h1 {
-            font-size: 15px;
-        }
-        .logo p {
-            font-size: 10px;
-        }
-        .logo ul li {
-            display: block;
-            margin-top: -3em;
-        }
-        h1,
-        h2,
-        p {
-            font-family: Sansita, Ubuntu, and sans-serif;
-        }
-        body {
-            width: 80%;
-            height: auto;
-            margin: auto;
-            padding: 1em;
-        }
-        header,
-        footer {
-            width: auto;
-            display: flex;
-            background-color: var(--Primary_color);
-            color: var(--Accent1);
-            border-radius: 5px;
-            text-align: center;
-            height: 10em;
-            padding: 1em;
-        }
-        header img,
-        img {
-            width: auto;
-            height: 8em;
-        }
-        header img {
-            margin-top: 1em;
-            margin-left: 1em;
-        }
-        header ul {
-            display: inline;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        header ul li {
-            float: left;
-        }
-        header nav {
-            text-decoration: none;
-        }
-        header ul li a {
-            display: block;
-        }
-        ul {
-            display: grid;
-        }
-        ul li {
-            list-style-type: none;
-        }
-        #currentdate {
-            color: var(--Accent1);
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 0.25em;
-            padding-left: 15em;
-            padding-right: 15em;
-        }
-        nav a {
-            color: nav(--Accent1);
-            padding: 1em;
-        }
-        nav button {
-            display: none;
-        }
-        .icons ul li {
-            float: right;
-        }
-        .grid {
-            display: grid;
-            width: auto;
-            height: 900px;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            align-items: center;
-            background-color: var(--Accent1);
-            padding: 0;
-            margin: 0;
-        }
-        div {
-            background-color: rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-            border: 1px solid black;
-        }
-        .event {
-            grid-column: 1/2;
-            grid-row: 1/2;
-            height: 300px;
-        }
-        .weather {
-            grid-column: 1/2;
-            grid-row: 2/3;
-            height: 300px;
-        }
-        .join {
-            grid-column: 1/2;
-            grid-row: 3/4;
-            height: 300px;
-        }
-        .hero {
-            grid-column: 2/4;
-            grid-row: 1/3;
-            height: 600px;
-        }
-        .news {
-            grid-column: 2/4;
-            grid-row: 3/4;
-            height: 300px;
-        }
-        div.spotlight {
-            grid-column: 4;
-            grid-row: 1/3;
-            height: 900px;
-        }
-        div.spotlight ul li {
-            display: block;
-            border: 1px dotted black;
-        }
-        .icons {
-            float: right;
-        }
-        .icons li img {
-            width: 30px;
-        }
-        .icons li {
-            padding: 0px;
-            margin: 0px;
-        }
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-        #map {
-            width: 20px;
-        }
+@media only screen and (min-width: 64em) {
+     :root {
+        --Primary_color: #153158;
+        --Secondary_color: #85C6E2;
+        --Accent1: #FFFFFF;
+        --Accent2: #C2C2C2;
     }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+        background-color: var(--Accent1);
+    }
+    .logo {
+        height: 100px;
+        width: auto;
+        background-color: transparent;
+        margin-left: -1em;
+        margin-top: -1em;
+        margin-bottom: -1em;
+    }
+    .logo-img {
+        float: left;
+        width: 200px;
+    }
+    .logo h1,
+    footer h1 {
+        font-size: 15px;
+    }
+    .logo p {
+        font-size: 10px;
+    }
+    .logo ul li {
+        display: block;
+        margin-top: -3em;
+    }
+    h1,
+    h2,
+    p {
+        font-family: Sansita, Ubuntu, and sans-serif;
+    }
+    body {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding: 1em;
+    }
+    header,
+    footer {
+        width: auto;
+        display: flex;
+        background-color: var(--Primary_color);
+        color: var(--Accent1);
+        border-radius: 5px;
+        text-align: center;
+        height: 10em;
+        padding: 1em;
+    }
+    header img,
+    img {
+        width: auto;
+        height: 8em;
+    }
+    header img {
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+    header ul {
+        display: inline;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    header ul li {
+        float: left;
+    }
+    header nav {
+        text-decoration: none;
+    }
+    header ul li a {
+        display: block;
+    }
+    ul {
+        display: grid;
+    }
+    ul li {
+        list-style-type: none;
+    }
+    #currentdate {
+        color: var(--Accent1);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 0.25em;
+    }
+    nav a {
+        color: nav(--Accent1);
+        padding: 1em;
+    }
+    nav button {
+        display: none;
+    }
+    .icons ul li {
+        float: right;
+    }
+    .grid {
+        display: grid;
+        width: auto;
+        height: 900px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+        background-color: var(--Accent1);
+        padding: 0;
+        margin: 0;
+    }
+    div {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+    .event {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 300px;
+    }
+    .weather {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 300px;
+    }
+    .join {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: 300px;
+    }
+    .hero {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        height: 600px;
+    }
+    .news {
+        grid-column: 2/4;
+        grid-row: 3/4;
+        height: 300px;
+    }
+    div.spotlight {
+        grid-column: 4;
+        grid-row: 1/3;
+        height: 900px;
+    }
+    div.spotlight ul li {
+        display: block;
+        border: 1px dotted black;
+    }
+    .icons {
+        float: right;
+    }
+    .icons li img {
+        width: 30px;
+        height: auto;
+    }
+    .icons li {
+        padding: 0px;
+        margin: 0px;
+    }
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+    #map {
+        width: 20px;
+    }
+}
