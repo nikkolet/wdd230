@@ -13,11 +13,11 @@
         width: 100%;
         float: center;
     }
-    .grid {
+    /* .grid {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
-    }
+    } */
     .icons li a {
         width: 10px;
     }
