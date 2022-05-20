@@ -54,17 +54,19 @@
     }
     
     #hamburgerBtn span:nth-child(1) {
-        display: none;
+        display: block;
     }
     
     #hamburgerBtn span:nth-child(2) {
-        display: block;
+        display: none;
     }
     
     #hamburgerBtn.open span:nth-child(1) {
-        display: block;
+        display: none;
     }
     
     #hamburgerBtn.open span:nth-child(2) {
-        display: none;
+        display: block;
     }
+    
+    #
