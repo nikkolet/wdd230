@@ -32,6 +32,8 @@
     h2,
     p {
         font-family: Sansita, Ubuntu, and sans-serif;
+        text-align: center;
+        padding: 1em;
     }
     body {
         width: 100%;
@@ -101,7 +103,7 @@
     .grid {
         display: grid;
         width: auto;
-        /* height: 900px; */
+        height: 1000px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
         /* align-items: center; */
@@ -144,46 +146,55 @@
         grid-column: 4;
         grid-row: 1/4;
         padding: 1em;
+        display: table;
         /* height: 300px; */
     }
-    div.spotlight ul {
-        display: grid;
-        grid-gap: 1em;
+    table {
+        border-collapse: collapse;
     }
-    div.spotlight ul li {
-        display: block;
-        border: 1px dotted black;
-    }
-    #header-img {
-        grid-column: 1;
-    }
-    .company {
-        grid-column: 2;
-    }
-    .nav {
-        grid-column: 3;
-    }
-    .icons {
-        grid-column: 4;
-    }
-    .icons li img {
-        width: 30px;
-        height: auto;
-    }
-    .icons li {
-        padding: 0px;
-        margin: 0px;
-    }
-    footer a {
-        color: white;
-        text-decoration: none;
-    }
-    #map {
-        width: 20px;
-    }
-    #currentdate {
-        grid-column: 1/4;
-        grid-row: 2;
-        width: 100%;
-    }
+}
+
+#header-img {
+    grid-column: 1;
+}
+
+.company {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.nav {
+    grid-column: 3;
+}
+
+.icons {
+    grid-column: 4;
+}
+
+.icons li img {
+    width: 30px;
+    height: auto;
+}
+
+.icons li {
+    padding: 0px;
+    margin: 0px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#map {
+    width: 20px;
+}
+
+#currentdate {
+    grid-column: 1/4;
+    grid-row: 2;
+    width: 100%;
+}
+
+
 }
