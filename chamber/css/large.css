@@ -14,9 +14,8 @@
         background-color: var(--Accent1);
     }
     .logo-img {
-        float: left;
-        width: 150px;
-        height: auto;
+        width: 55px;
+        border-radius: 50%;
     }
     .logo h1,
     footer h1 {
@@ -35,20 +34,26 @@
         font-family: Sansita, Ubuntu, and sans-serif;
     }
     body {
-        width: 80%;
+        width: 100%;
         height: auto;
         margin: auto;
-        padding: 1em;
+        /* padding: 1em; */
     }
     header,
     footer {
         width: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         background-color: var(--Primary_color);
         color: var(--Accent1);
-        border-radius: 5px;
         text-align: center;
+        height: 5em;
+        padding: 0.90em;
+    }
+    header {
+        grid-template-columns: 10% 20% 50% 20%;
+        grid-template-rows: 70% 30%;
     }
     /* header img {
         margin-top: 1em;
@@ -90,16 +95,21 @@
     .icons ul li {
         float: right;
     }
+    .icons a {
+        width: 35px;
+    }
     .grid {
         display: grid;
         width: auto;
         /* height: 900px; */
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        align-items: center;
+        /* align-items: center; */
         background-color: var(--Accent1);
-        padding: 0;
-        margin: 0;
+        padding: auto;
+        margin: auto;
+        grid-gap: 10px;
+        margin: 1em;
     }
     .grid div {
         background-color: rgba(0, 0, 0, 0.2);
@@ -108,39 +118,53 @@
     .event {
         grid-column: 1/2;
         grid-row: 1/2;
-        height: 100px;
+        /* height: 100px; */
     }
     .weather {
         grid-column: 1/2;
         grid-row: 2/3;
-        height: 100px;
+        /* height: 100px; */
     }
     .join {
         grid-column: 1/2;
-        grid-row: 3/4;
-        height: 100px;
+        grid-row: 3;
+        /* height: 100px; */
     }
     .hero {
         grid-column: 2/4;
         grid-row: 1/3;
-        height: 200px;
+        /* height: 200px; */
     }
     .news {
         grid-column: 2/4;
-        grid-row: 3/4;
-        height: 100px;
+        grid-row: 3;
+        /* height: 100px; */
     }
     div.spotlight {
         grid-column: 4;
-        grid-row: 1/3;
-        height: 300px;
+        grid-row: 1/4;
+        padding: 1em;
+        /* height: 300px; */
+    }
+    div.spotlight ul {
+        display: grid;
+        grid-gap: 1em;
     }
     div.spotlight ul li {
         display: block;
         border: 1px dotted black;
     }
+    #header-img {
+        grid-column: 1;
+    }
+    .company {
+        grid-column: 2;
+    }
+    .nav {
+        grid-column: 3;
+    }
     .icons {
-        float: right;
+        grid-column: 4;
     }
     .icons li img {
         width: 30px;
@@ -156,5 +180,10 @@
     }
     #map {
         width: 20px;
+    }
+    #currentdate {
+        grid-column: 1/4;
+        grid-row: 2;
+        width: 100%;
     }
 }

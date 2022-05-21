@@ -1,14 +1,10 @@
 @media only screen and (min-width: 32.5em) {
-    h1 {
+    /* h1 {
         font-size: 2.5rem;
     }
     h2 {
         font-size: 1.5rem;
-    }
-    header,
-    footer {
-        border-radius: 10px;
-    }
+    } */
     /* log-img {
         width: 100%;
         float: center;
@@ -18,7 +14,4 @@
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     } */
-    .icons li a {
-        width: 10px;
-    }
 }
