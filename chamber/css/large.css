@@ -33,7 +33,6 @@
     p {
         font-family: Sansita, Ubuntu, and sans-serif;
         text-align: center;
-        padding: 1em;
     }
     body {
         width: 100%;
@@ -143,58 +142,53 @@
         /* height: 100px; */
     }
     div.spotlight {
+        display: grid;
+        grid-template-rows: 3;
         grid-column: 4;
         grid-row: 1/4;
         padding: 1em;
-        display: table;
         /* height: 300px; */
     }
-    table {
-        border-collapse: collapse;
+    #header-img {
+        grid-column: 1;
     }
-}
-
-#header-img {
-    grid-column: 1;
-}
-
-.company {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.nav {
-    grid-column: 3;
-}
-
-.icons {
-    grid-column: 4;
-}
-
-.icons li img {
-    width: 30px;
-    height: auto;
-}
-
-.icons li {
-    padding: 0px;
-    margin: 0px;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-#map {
-    width: 20px;
-}
-
-#currentdate {
-    grid-column: 1/4;
-    grid-row: 2;
-    width: 100%;
-}
-
-
+    .company {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .nav {
+        grid-column: 3;
+    }
+    .icons {
+        grid-column: 4;
+    }
+    .icons li img {
+        width: 30px;
+        height: auto;
+    }
+    .icons li {
+        padding: 0px;
+        margin: 0px;
+    }
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+    #map {
+        width: 20px;
+    }
+    #currentdate {
+        grid-column: 1/4;
+        grid-row: 2;
+        width: 100%;
+    }
+    footer .footer-company {
+        float: left;
+    }
+    #spot3 {
+        display: block;
+    }
+    .medium-div {
+        display: none;
+    }
 }
