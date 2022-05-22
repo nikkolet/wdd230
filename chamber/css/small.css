@@ -89,10 +89,9 @@ nav a {
 
 nav button {
     display: block;
+    float: right;
 }
 
-
-/* 
 .grid {
     display: grid;
     height: auto;
@@ -102,7 +101,7 @@ nav button {
     margin: 0;
     padding: 2em;
     grid-gap: 10px;
-} */
+}
 
 
 /* .grid div {
@@ -177,14 +176,19 @@ nav button {
 nav button {
     margin: .2rem 2vw;
     font-size: 2rem;
+    float: right;
 }
 
-nav ul li a {
-    display: block;
-    padding: .8 rem 2vw;
+nav ul li {
+    display: none;
+    padding: .8rem 2vw;
     text-decoration: none;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     font-size: .8rem;
+}
+
+nav ul.open li {
+    display: block;
 }
 
 nav ul li.active a {
@@ -198,4 +202,25 @@ nav ul li a:hover {
 
 nav ul.open {
     display: block;
+}
+
+#spot3 {
+    display: none;
+}
+
+.icons li a img {
+    display: block;
+}
+
+nav .icons li {
+    display: block;
+}
+
+.grid div {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.medium-div {
+    display: none;
 }
