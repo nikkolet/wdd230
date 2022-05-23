@@ -117,11 +117,13 @@
         border-radius: 5px;
     }
     .event {
+        display: block;
         grid-column: 1/2;
         grid-row: 1/2;
         /* height: 100px; */
     }
     .weather {
+        display: block;
         grid-column: 1/2;
         grid-row: 2/3;
         /* height: 100px; */
@@ -166,9 +168,14 @@
         width: 30px;
         height: auto;
     }
-    .icons li {
-        padding: 0px;
-        margin: 0px;
+    #spot1 {
+        grid-column: 1/3;
+    }
+    #spot2 {
+        grid-column: 1/3;
+    }
+    #spot3 {
+        grid-column: 1/3;
     }
     footer a {
         color: white;
@@ -192,3 +199,5 @@
         display: none;
     }
 }
+
+;
