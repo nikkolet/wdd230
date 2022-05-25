@@ -49,7 +49,7 @@
         background-color: var(--Primary_color);
         color: var(--Accent1);
         text-align: center;
-        height: 5em;
+        height: auto;
         padding: 0.90em;
     }
     header {
@@ -113,8 +113,14 @@
         margin: 1em;
     }
     .grid div {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: var(--Secondary_color);
         border-radius: 5px;
+        margin: auto;
+        text-align: center;
+    }
+    div p {
+        padding: 1em;
+        background-color: transparent;
     }
     .event {
         display: block;
@@ -133,9 +139,26 @@
         grid-row: 3;
         /* height: 100px; */
     }
+    button {
+        width: 90%;
+        background-color: var(--Accent1);
+        border-radius: 5px;
+        padding: 15px 32px;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 1em;
+    }
+    button a {
+        color: var(--Primary_color);
+        text-align: center;
+        text-decoration: none;
+    }
     .hero {
         grid-column: 2/4;
         grid-row: 1/3;
+        height: auto;
+        padding: 0px;
         /* height: 200px; */
     }
     .news {
@@ -148,7 +171,6 @@
         grid-template-rows: 3;
         grid-column: 4;
         grid-row: 1/4;
-        padding: 1em;
         /* height: 300px; */
     }
     #header-img {
@@ -162,7 +184,7 @@
         grid-column: 3;
     }
     .icons {
-        grid-column: 4;
+        grid-column: 3/unset;
     }
     .icons li img {
         width: 30px;
@@ -171,11 +193,35 @@
     #spot1 {
         grid-column: 1/3;
     }
+    #spot1 img {
+        width: 200px;
+    }
     #spot2 {
         grid-column: 1/3;
     }
     #spot3 {
         grid-column: 1/3;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .footer-img {
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+    .footer-company {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .contact {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .js {
+        grid-column: 1/4;
+        grid-row: 2;
     }
     footer a {
         color: white;
@@ -189,9 +235,6 @@
         grid-row: 2;
         width: 100%;
     }
-    footer .footer-company {
-        float: left;
-    }
     #spot3 {
         display: block;
     }
@@ -199,5 +242,3 @@
         display: none;
     }
 }
-
-;
