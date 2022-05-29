@@ -179,7 +179,7 @@
     }
     div.spotlight {
         display: grid;
-        grid-template-rows: 3;
+        grid-template-rows: 3em;
         grid-column: 4;
         grid-row: 1/4;
         /* height: 300px; */
