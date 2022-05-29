@@ -82,7 +82,7 @@
         padding: 0.25em;
     }
     nav a {
-        color: nav(--Accent1);
+        color: var(--Accent1);
         padding: 1em;
     }
     nav button {

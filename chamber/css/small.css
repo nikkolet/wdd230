@@ -196,7 +196,7 @@ nav ul.open li {
 }
 
 nav ul li.active a {
-    background-color: rbga(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
 }
 
