@@ -59,9 +59,8 @@
             </li>
         </ul>
 
-        <p id="p-date"><span id="currentdate"></span></p>
-
     </nav>
+    <p id="p-date"><span id="currentdate"></span></p>
 </header>
 
 <body>
@@ -71,7 +70,19 @@
 
         </div>
         <div class="weather large-div">
-            <h2>Item 2: Weather</h2>
+            <h1 id="weather">Weather</h1>
+            <p id="weather-info">
+                <img id="weather-pic" src="../images/weather.jpg" alt="Weather" />
+                <form id="wind">
+                    <label for="Temp">Average Temperature:
+                <input id="Temp" type="number" name="Temp">
+              </label><br>
+                    <label for="windSpeed">Wind Speed:
+                <input id="windSpeed" type="number" name="windSpeed">
+              </label><br>
+                    <input id="button" type="button" value="Submit"></input>
+                </form><br> Wind Chill: <span id="windChill"></span>&deg;f
+            </p>
         </div>
         <div class="join">
 
@@ -81,7 +92,7 @@
         </div>
         <div class="hero">
             <h2>Item 4: Hero with Site Name and Call to Action</h2>
-            <img src="images/istockphoto-898315306-612x612.jpg" alt="Chamber of Commerce Homebase">
+            <img id="rexburg-img" src="images/wdd230-org.jpg" alt="Chamber of Commerce Homebase">
 
         </div>
         <div class="news">
@@ -99,8 +110,10 @@
             </div>
             <div id="spot2">
                 <h2>Spotlight 2</h2>
+
                 <img src="images/4ghv5u3jpu.jpg" alt="howarts classroom">
                 <p>An after school transfiguration program.</p>
+                <hr>
                 <div class="spot2-contact">
                     <p>minerva-mcgonagall@hogwarts-edu.com</p>
                     <p></p>
@@ -147,6 +160,7 @@
     <p class="js">
         &copy;2022 | name of website | Nikkolet Ashby | WDD 230 Project | Last Updated: <span id="curdate"></span></p>
     <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
 </footer>
 
 </html>
