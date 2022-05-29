@@ -1,0 +1,600 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+    <title>Wind Chill Calculator</title>
+    <meta name="DC.title" content="Wind Chill Calculator" />
+    <meta name="DC.description" content="Wind Chill Calculator" />
+    <meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+    <meta name="DC.date.created" scheme="ISO8601" content="July 11th 2019 2:16 AM" />
+    <meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+    <meta name="DC.keywords" content="wxcalc, wind chill, weather, formula, convertor, calculator" />
+    <meta name="DC.publisher" content="NOAA's National Weather Service" />
+    <meta name="DC.contributor" content="National Weather Service" />
+    <meta name="DC.rights" content="http://www.weather.gov/disclaimer.php" />
+    <meta name="rating" content="General" />
+    <meta name="robots" content="index,follow" />
+
+    <link href="/css/weatherstyle.css" rel="stylesheet" type="text/css" />
+    <link href="/css/template.css" rel="stylesheet" type="text/css" />
+    <link href="/css/myfcst.css" rel="stylesheet" type="text/css" />
+    <link href="/css/ForecastSearch.css" rel="stylesheet" type="text/css" />
+    <link href="/css/pointforecast.css" rel="stylesheet" type="text/css" />
+    <link href="/css/jqueryui10_3_1custom/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/widgets.css" rel="stylesheet" type="text/css" />
+    <link href="/css/colorbox/colorbox.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+    <!-- <script type="text/javascript" src="/js/jquery.mobile-1.4.0.min.js"></script> //-->
+    <script type="text/javascript" src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>
+    <script type="text/javascript" src="/js/ForecastSearch.js"></script>
+    <script type="text/javascript" src="/js/federated-analytics.js"></script>
+    <script type="text/javascript" src="/js/topNavMenu.js"></script>
+    <script type="text/javascript" src="/js/NidsESRI.js"></script>
+    <script type="text/javascript" src="/cfisurvey/cfi.js?v2"></script>
+    <script type="text/javascript" src="/js/widgets.js"></script>
+    <script type="text/javascript" src="/js/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="/js/nwsexit.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('img.nocache').each(function() {
+                var $this = $(this);
+                $this.attr('src', noCache($this.attr('src')));
+            });
+        });
+
+        function noCache(url) {
+            return url + (url.indexOf('?') >= 0 ? '&nocache=' : '?') + $.now();
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- CFI SURVEY -->
+    <div id='ZN_9tslIS2mj3KoPgp'>
+        <!--DO NOT REMOVE-CONTENTS PLACED HERE-->
+    </div>
+    <!-- CFI SURVEY END -->
+
+    <div class="header">
+        <div class="header-content">
+            <a href="http://www.weather.gov" class="header-nws"><img src="/css/images/header.png" alt="National Weather Service" /></a>
+            <a href="http://www.commerce.gov" class="header-doc"><img src="/css/images/header_doc.png" alt="United States Department of Commerce" /></a>
+            <a href="http://www.noaa.gov" class="header-noaa" title="National Oceanic and Atmospheric Administration"></a>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+
+    <div class="header-shadow">
+        <div class="header-shadow-content"></div>
+    </div>
+
+
+    <div class="center">
+
+        <div class="content">
+            <div class="topnav">
+                <ul id="topnav">
+                    <li>
+                        <script type="text/javascript">
+                            function goBack() {
+                                if (document.referrer.toLowerCase().indexOf("weather.gov") != -1) {
+                                    history.back();
+                                } else {
+                                    document.location.href = "http://www.weather.gov";
+                                }
+                            }
+                        </script>
+                        <div class="topMenuNavList home">
+                            <a href="#" onclick="goBack();">HOME</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="topMenuNavList section-link">
+                            <a href="http://www.weather.gov/forecastmaps">FORECAST</a> </div>
+                        <div style="opacity: 0;" class="sub">
+                            <ul>
+                                <li> <a href="http://www.weather.gov">Local</a> </li>
+                                <li> <a href="http://digital.weather.gov">Graphical</a> </li>
+                                <li> <a href="http://www.aviationweather.gov/">Aviation</a> </li>
+                                <li> <a href="http://www.weather.gov/marine">Marine</a> </li>
+                                <li> <a href="http://water.weather.gov/ahps/">Rivers and Lakes</a> </li>
+                                <li> <a href="http://www.nhc.noaa.gov/">Hurricanes</a> </li>
+                                <li> <a href="http://www.spc.noaa.gov/">Severe Weather</a> </li>
+                                <li> <a href="http://www.weather.gov/fire/">Fire Weather</a> </li>
+                                <li> <a href="https://www.esrl.noaa.gov/gmd/grad/solcalc/sunrise.html">Sun/Moon</a> </li>
+                                <li> <a href="http://www.cpc.ncep.noaa.gov/">Long Range Forecasts</a> </li>
+                                <li> <a href="http://www.cpc.ncep.noaa.gov">Climate Prediction</a> </li>
+                                <li> <a href="https://www.swpc.noaa.gov/">Space Weather</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="topMenuNavList section-link">
+                            <a href="https://www.weather.gov/wrh/climate/">PAST WEATHER</a> </div>
+                        <div style="opacity: 0;" class="sub">
+                            <ul>
+                                <li> <a href="https://www.weather.gov/wrh/climate/">Past Weather</a> </li>
+                                <li> <a href="https://www.weather.gov/wrh/climate/">Heating/Cooling Days</a> </li>
+                                <li> <a href="https://www.weather.gov/wrh/climate/">Monthly Temperatures</a> </li>
+                                <li> <a href="https://www.weather.gov/wrh/climate/">Records</a> </li>
+                                <li> <a href="http://aa.usno.navy.mil/">Astronomical Data</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="topMenuNavList section-link">
+                            <a href="http://www.weather.gov/safety">SAFETY</a> </div>
+                        <div style="opacity: 0;" class="sub">
+                            <ul>
+                                <li> <a href="https://www.weather.gov/safety/flood">Floods</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/tsunami">Tsunamis</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/beachhazards">Beach Hazards</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/wildfire">Wildfire</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/cold">Cold</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/tornado">Tornadoes</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/airquality">Air Quality</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/fog">Fog</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/heat">Heat</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/hurricane">Hurricanes</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/lightning">Lightning</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/safeboating">Safe Boating</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/ripcurrent">Rip Currents</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/thunderstorm">Thunderstorms</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/space">Space Weather</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/heat-uv">Sun (Ultraviolet Radiation)</a> </li>
+                                <li> <a href="http://www.weather.gov/safetycampaign">Safety Campaigns</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/wind">Wind</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/drought">Drought</a> </li>
+                                <li> <a href="https://www.weather.gov/safety/winter">Winter Weather</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="topMenuNavList section-link">
+                            <a href="http://www.weather.gov/informationcenter">INFORMATION</a> </div>
+                        <div style="opacity: 0;" class="sub">
+                            <ul>
+                                <li> <a href="http://www.weather.gov/wrn/wea">Wireless Emergency Alerts</a> </li>
+                                <li> <a href="https://www.weather.gov/owlie/publication_brochures">Brochures</a> </li>
+                                <li> <a href="http://www.weather.gov/wrn/">Weather-Ready Nation</a> </li>
+                                <li> <a href="https://www.weather.gov/coop/">Cooperative Observers</a> </li>
+                                <li> <a href="http://www.weather.gov/briefing/">Daily Briefing</a> </li>
+                                <li> <a href="http://www.nws.noaa.gov/om/hazstats.shtml">Damage/Fatality/Injury Statistics</a> </li>
+                                <li> <a href="http://mag.ncep.noaa.gov/">Forecast Models</a> </li>
+                                <li> <a href="https://www.weather.gov/gis">GIS Data Portal</a> </li>
+                                <li> <a href="https://www.weather.gov/nwr/">NOAA Weather Radio</a> </li>
+                                <li> <a href="http://weather.gov/publications">Publications</a> </li>
+                                <li> <a href="http://www.weather.gov/SKYWARN">SKYWARN Storm Spotters</a> </li>
+                                <li> <a href="http://www.weather.gov/StormReady">StormReady</a> </li>
+                                <li> <a href="https://www.weather.gov/TsunamiReady/">TsunamiReady</a> </li>
+                                <li> <a href="https://www.weather.gov/notification/">Service Change Notices</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="topMenuNavList section-link">
+                            <a href="http://www.weather.gov/education">EDUCATION</a> </div>
+                        <div style="opacity: 0;" class="sub">
+                            <ul>
+                                <li> <a href="https://www.weather.gov/wrn/force">Be A Force of Nature</a> </li>
+                                <li> <a href="http://www.weather.gov/owlie">NWS Education Home</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="topMenuNavList section-link">
+                            <a href="http://www.weather.gov/news/">NEWS</a> </div>
+                        <div style="opacity: 0;" class="sub">
+                            <ul>
+                                <li> <a href="http://www.weather.gov/news">NWS News</a> </li>
+                                <li> <a href="https://www.weather.gov/wrn/calendar">Events</a> </li>
+                                <li> <a href="http://www.weather.gov/socialmedia">Social Media</a> </li>
+                                <li> <a href="https://www.weather.gov/owlie/publication_brochures">Pubs/Brochures/Booklets </a> </li>
+                                <li> <a href="http://www.noaa.gov/NOAA-Communications">NWS Media Contacts</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="topMenuNavList section-link">
+                            <a href="http://www.weather.gov/search">SEARCH</a> </div>
+
+                        <div style="opacity: 0;" class="sub">
+                            <ul class="no-links">
+                                <li>
+                                    <!-- Begin search code -->
+                                    <div id="site-search">
+                                        <form method="get" action="https://search.usa.gov/search" style="margin-bottom: 0; margin-top: 0;">
+                                            <input type="hidden" name="v:project" value="firstgov" />
+                                            <label for="query">Search For</label>
+                                            <input type="text" name="query" id="query" size="12" />
+                                            <input type="submit" value="Go" />
+                                            <p>
+                                                <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+                                                <label for="nws" class="search-scope">NWS</label>
+                                                <input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+                                                <label for="noaa" class="search-scope">All NOAA</label>
+                                            </p>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="last">
+                        <div class="topMenuNavList section-link">
+                            <a href="http://www.weather.gov/about">ABOUT</a> </div>
+                        <div style="opacity: 0;" class="sub">
+                            <ul>
+                                <li> <a href="http://www.weather.gov/about">About NWS</a> </li>
+                                <li> <a href="http://www.weather.gov/organization">Organization</a> </li>
+                                <li> <a href="https://www.weather.gov/media/wrn/NWS_Weather-Ready-Nation_Strategic_Plan_2019-2022.pdf">Strategic Plan</a> </li>
+                                <li> <a href="https://sites.google.com/a/noaa.gov/nws-insider/">For NWS Employees</a> </li>
+                                <li> <a href="http://www.weather.gov/international/">International</a> </li>
+                                <li> <a href="http://www.weather.gov/organization">National Centers</a> </li>
+                                <li> <a href="http://www.weather.gov/careers/">Careers</a> </li>
+                                <li> <a href="http://www.weather.gov/contact">Contact Us</a> </li>
+                                <li> <a href="https://w1.weather.gov/glossary">Glossary</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="center-content">
+            <div id="zipcity_news">
+                <div class="one-sixth-first">
+                    <div id="forecast-lookup">
+                        <form name="getForecast" id="getForecast" action="https://forecast.weather.gov/zipcity.php" method="get">
+                            <label for="inputstring">Local forecast by <br />"City, St" or ZIP code</label>
+                            <input id="inputstring" name="inputstring" type="text" value="Enter location ..." onclick="this.value=''" />
+                            <input name="btnSearch" id="btnSearch" type="submit" value="Go" />
+                            <div id="txtError">
+                                <div id="errorNoResults" style="display:none;">Sorry, the location you searched for was not found. Please try another search.</div>
+                                <div id="errorMultipleResults" style="display:none">Multiple locations were found. Please select one of the following:</div>
+                                <div id="errorChoices" style="display:none"></div>
+                                <input id="btnCloseError" type="button" value="Close" style="display:none" />
+                            </div>
+                            <div id="txtHelp"><a style="text-decoration: underline;" href="javascript:void(window.open('http://weather.gov/ForecastSearchHelp.html','locsearchhelp','status=0,toolbar=0,location=0,menubar=0,directories=0,resizable=1,scrollbars=1,height=500,width=530').focus());">Location Help</a></div>
+                        </form>
+
+                    </div>
+                    <!-- <div id="forecast-lookup"> -->
+                </div>
+                <!-- <div class="one-sixth-first"> -->
+
+                <style type="text/css">
+                    #topnews.important {
+                        background-color: #d2d2d2;
+                        height: 100%;
+                        margin-bottom: 5px;
+                        position: relative;
+                    }
+                    
+                    #topnews .icon {
+                        display: none;
+                    }
+                    
+                    #topnews.important .icon {
+                        background-color: #135997;
+                        display: table-cell;
+                        height: 100%;
+                        text-align: center;
+                        vertical-align: middle;
+                        width: 80px;
+                    }
+                    
+                    #topnews.important .body {
+                        color: #141414;
+                        display: table-cell;
+                        padding: 10px;
+                    }
+                </style>
+
+
+                <div class="div-full">
+                    <div class="cms-content">
+                        <!-- Global site tag (gtag.js) - Google Analytics -->
+                        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56463405-1"></script>
+                        <script>
+                            window.dataLayer = window.dataLayer || [];
+
+                            function gtag() {
+                                dataLayer.push(arguments);
+                            }
+                            gtag('js', new Date());
+
+                            gtag('config', 'UA-56463405-1');
+                        </script>
+                        <SCRIPT language=JavaScript>
+                            function decideConvert(temp, ws) {
+                                temp = parseFloat(document.Convert.Temp.value);
+                                ws = parseFloat(document.Convert.windspeed.value);
+
+                                if (document.Convert.windunit[1].checked) {
+                                    ws = convertktstomph(ws);
+                                    ws1 = convertktstomps(ws);
+
+                                    if (ws < 3) {
+                                        alert('A Wind Chill value cannot be calculated for wind speeds less than 2.6 Knots');
+                                        document.Convert.windspeed.value = "";
+                                        return 0;
+
+
+                                    }
+                                    if (ws > 110) {
+                                        alert('A Wind Chill value cannot be calculated for wind speeds greater than 95.6 Knots');
+                                        document.Convert.windspeed.value = "";
+                                        return 0;
+
+                                    }
+
+                                }
+
+                                if (document.Convert.windunit[2].checked) {
+                                    ws = convertmpstomph(ws);
+                                    ws1 = document.Convert.windunit[2].value;
+
+                                    if (ws < 3) {
+                                        alert('A Wind Chill value cannot be calculated for wind speeds less than 1.3 meters/second');
+                                        document.Convert.windspeed.value = "";
+                                        return 0;
+
+
+                                    }
+                                    if (ws > 110) {
+                                        alert('A Wind Chill value cannot be calculated for wind speeds greater than 49.2 meters/second');
+                                        document.Convert.windspeed.value = "";
+                                        return 0;
+                                    }
+
+                                }
+
+                                if (document.Convert.windunit[3].checked) {
+                                    ws = convetkphtomph(ws);
+                                    ws1 = convertkphtomps(ws);
+
+                                    if (ws < 3) {
+                                        alert('A Wind Chill value cannot be calculated for wind speeds less than 4.8 kilometers/hour');
+                                        document.Convert.windspeed.value = "";
+                                        return 0;
+
+                                    }
+                                    if (ws > 110) {
+                                        alert('A Wind Chill value cannot be calculated for wind speeds greater than 177 kilometers/hour');
+                                        document.Convert.windspeed.value = "";
+                                        return 0;
+
+                                    }
+
+                                }
+
+                                if (document.Convert.tempunit[0].checked) {
+                                    var ws1 = convertmphtomps(ws);
+                                    var temp1 = convertFtoC(temp);
+
+                                    if (ws < 3) {
+                                        alert('A Wind Chill value cannot be calculated for wind speeds less than 3 miles/hour');
+                                        document.Convert.windspeed.value = "";
+                                        return 0;
+
+                                    }
+                                    if (ws > 110) {
+                                        alert('A Wind Chill value cannot be calculated for wind speeds greater than 110 miles/hour');
+                                        document.Convert.windspeed.value = "";
+                                        return 0;
+
+                                    }
+
+
+                                    if (temp > 50) {
+                                        alert('A Wind Chill value cannot be calculated for temperatures greater than 50 degrees Fahrenheit.');
+                                        document.Convert.Fahr.value = "";
+                                        document.Convert.Cels.value = "";
+                                        document.Convert.Temp.value = "";
+                                    } else {
+                                        document.Convert.Fahr.value = roundOff(windChill(temp, ws));
+                                        var C = parseFloat(document.Convert.Fahr.value);
+                                        document.Convert.Cels.value = roundOff(convertFtoC(C));
+                                        document.Convert.Watts.value = roundOff(WPM2(temp1, ws1));
+                                    }
+                                }
+
+                                if (document.Convert.tempunit[1].checked) {
+                                    var F = convertCtoF(temp);
+                                    var ws1 = convertmphtomps(ws);
+
+                                    if (ws < 3) {
+                                        alert('A Wind Chill value cannot be calculated for wind speeds less than 3 miles/hour');
+                                        document.Convert.windspeed.value = "";
+                                        return 0;
+
+                                    }
+
+                                    if (ws > 110) {
+                                        alert('A Wind Chill value cannot be calculated for wind speeds greater than 110 miles/hour');
+                                        document.Convert.windspeed.value = "";
+                                        return 0;
+
+                                    }
+
+                                    if (F > 50) {
+                                        alert('A Wind Chill value cannot be calculated for temperatures greater than 10.0 degrees Celsius.');
+                                        document.Convert.Fahr.value = "";
+                                        document.Convert.Cels.value = "";
+                                        document.Convert.Temp.value = "";
+                                    } else {
+                                        document.Convert.Fahr.value = roundOff(windChill(F, ws));
+                                        document.Convert.Cels.value = roundOff((convertFtoC(windChill(F, ws))));
+                                        document.Convert.Watts.value = roundOff(WPM2(temp, ws1));
+                                    }
+                                }
+                            }
+
+                            function convertFtoC(Fahr) {
+                                var Celsius;
+                                Celsius = .55556 * (Fahr - 32);
+                                return Celsius;
+                            }
+
+                            function convertCtoF(Cels) {
+                                var Fahr;
+                                Fahr = 1.8 * Cels + 32;
+                                return Fahr;
+                            }
+
+                            function convertktstomph(knots) {
+                                var mph;
+                                mph = 1.1507794 * knots;
+                                return mph;
+                            }
+
+                            function convertmpstomph(mps) {
+                                var mph;
+                                mph = 2.23694 * mps;
+                                return mph;
+                            }
+
+                            function convertmphtomps(mph) {
+                                var ws1;
+                                ws1 = 0.44704 * mph;
+                                return ws1;
+                            }
+
+                            function convertktstomps(knots) {
+                                var ws1;
+                                ws1 = 0.5144444 * knots;
+                                return ws1;
+                            }
+
+                            function convetkphtomph(kph) {
+                                var mph;
+                                mph = 0.621371 * kph;
+                                return mph;
+                            }
+
+                            function convertkphtomps(kph) {
+                                var ws1;
+                                ws1 = 0.277778 * kph;
+                                return ws1;
+                            }
+
+                            function windChill(F, mph) {
+                                var wChill;
+
+                                wChill = 35.74 + .6215 * F - 35.75 * Math.pow(mph, 0.16) + 0.4275 * F * Math.pow(mph, 0.16);
+                                return wChill;
+                            }
+
+                            function WPM2(C, mps) {
+                                var Watts;
+
+                                Watts = (12.1452 + 11.6222 * Math.sqrt(mps) - 1.16222 * mps) * (33 - C);
+                                return Watts;
+
+                            }
+
+                            function getAns(temp) {
+                                return temp;
+                            }
+
+                            function roundOff(value) {
+                                value = Math.round(10 * value) / 10;
+                                return value;
+                            }
+
+                            function setToNull() {
+                                document.Convert.Fahr.value = "";
+                                document.Convert.Cels.value = "";
+                                document.Convert.windspeed.value = "";
+                                document.Convert.Temp.value = "";
+                                document.Convert.Watts.value = "";
+                            }
+                        </SCRIPT>
+                        <table border="0" cellpadding="4" cellspacing="0" width="525">
+                            <tbody>
+                                <tr>
+                                    <td align="center">
+                                        <h2 align="center">Wind Chill</h2>
+
+                                        <h5 align="center">by <a href="mailto:tim.brice@noaa.gov">Tim Brice</a> and <a href="mailto:todd.hall@noaa.gov">Todd Hall</a></h5>
+                                        &nbsp;
+
+                                        <form name="Convert">&nbsp;
+                                            <table align="center" border="1" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <h5>
+                                                                <font color="#ff0000">Enter a temperature and wind speed that you would like calculated:</font>
+                                                            </h5>
+                                                        </td>
+                                                        <td>
+                                                            <h5>
+                                                                <font color="#ff0000">What the temperature feels like to your body:</font>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <font color="#ff0000"><input name="Temp" size="6" type="text" /> <input checked="checked" name="tempunit" type="radio" value="degF" />Fahrenheit <input name="tempunit" type="radio" value="degC" />Celsius</font>
+                                                        </td>
+                                                        <td>
+                                                            <font color="#ff0000"><input name="Fahr" size="6" type="text" />&deg; F</font>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <font color="#ff0000"><input maxlength="5" name="windspeed" size="5" type="text" /> <input checked="checked" name="windunit" type="radio" value="mph" />mph <input name="windunit" type="radio" value="knots" />knots
+                                                                <input name="windunit" type="radio" value="m/s" />m/s <input name="windunit" type="radio" value="k/h" />k/h</font>
+                                                        </td>
+                                                        <td>
+                                                            <font color="#ff0000"><input name="Cels" size="6" type="text" />&deg; C</font>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td>
+                                                            <font color="#ff0000"><input name="Watts" size="6" type="text" />Watts per Meter Squared</font>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input onclick="decideConvert(document.Convert.Temp.value, document.Convert.windspeed.value)" type="button" value="Convert" /></td>
+                                                        <td><input onclick="setToNull()" type="button" value="Clear Values" /></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+
+                                        <p align="left">The wind chill calculator only works for temperatures at or below 50&nbsp;&deg; F and wind speeds above 3 mph.</p>
+
+                                        <h5 align="left"><a href="/media/epz/wxcalc/windChill.pdf">What is the formula for the wind chill script?</a></h5>
+                                        &nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+
+            </div>
+
+        </div>
+        <!-- end of <div class="partial-width-borderbottom"> -->
+
+    </div>
+
+
+    <script type="text/javascript" src="//www.weather.gov/js/govshutdown.js"></script>
+</body>
+
+</html>

@@ -53,13 +53,9 @@
         padding: 0.90em;
     }
     header {
-        grid-template-columns: 10% 20% 50% 20%;
-        grid-template-rows: 70% 30%;
+        grid-template-columns: 10% 20% 60% 10%;
+        grid-template-rows: 60% 40%;
     }
-    /* header img {
-        margin-top: 1em;
-        margin-left: 1em;
-    } */
     header ul {
         display: inline;
         list-style-type: none;
@@ -83,7 +79,6 @@
     }
     #currentdate {
         color: var(--Accent1);
-        background-color: rgba(0, 0, 0, 0.5);
         padding: 0.25em;
     }
     nav a {
@@ -93,51 +88,65 @@
     nav button {
         display: none;
     }
+    nav ul li {
+        display: block;
+        padding: 0%;
+    }
     .icons ul li {
         float: right;
     }
     .icons a {
         width: 35px;
     }
+    #p-date {
+        grid-row: 2;
+        grid-column: 1/5;
+        width: 100%;
+        margin-top: 1em;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
     .grid {
         display: grid;
-        width: auto;
-        height: 1000px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        /* align-items: center; */
-        background-color: var(--Accent1);
-        padding: auto;
-        margin: auto;
-        grid-gap: 10px;
-        margin: 1em;
+        grid-template-columns: repeat( 4, 1fr);
+        grid-template-rows: repeat( 3, auto);
     }
     .grid div {
         background-color: var(--Secondary_color);
-        border-radius: 5px;
         margin: auto;
         text-align: center;
+        display: block;
+        font-size: 1rem;
+        margin: .6em;
+        height: auto;
     }
     div p {
         padding: 1em;
         background-color: transparent;
     }
     .event {
-        display: block;
         grid-column: 1/2;
         grid-row: 1/2;
-        /* height: 100px; */
+        height: auto;
     }
     .weather {
-        display: block;
         grid-column: 1/2;
         grid-row: 2/3;
-        /* height: 100px; */
+    }
+    #weather {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 1px;
+        margin-top: -8px;
+    }
+    #wind {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 10px;
     }
     .join {
         grid-column: 1/2;
-        grid-row: 3;
-        /* height: 100px; */
+        grid-row: 3/4;
     }
     button {
         width: 90%;
@@ -157,14 +166,16 @@
     .hero {
         grid-column: 2/4;
         grid-row: 1/3;
-        height: auto;
-        padding: 0px;
-        /* height: 200px; */
+        padding: 0;
+    }
+    #rexburg-pic {
+        margin: 0 0 0 0;
+        width: 100%;
+        height: 100%;
     }
     .news {
         grid-column: 2/4;
-        grid-row: 3;
-        /* height: 100px; */
+        grid-row: 3/4;
     }
     div.spotlight {
         display: grid;
@@ -180,11 +191,15 @@
         grid-column: 2;
         grid-row: 1;
     }
+    .company h1 {
+        width: 100%;
+    }
     .nav {
         grid-column: 3;
     }
     .icons {
-        grid-column: 3/unset;
+        grid-column: 3/4;
+        float: right;
     }
     .icons li img {
         width: 30px;
@@ -194,18 +209,22 @@
         grid-column: 1/3;
     }
     #spot1 img {
-        width: 200px;
+        width: 150px;
     }
     #spot2 {
         grid-column: 1/3;
+    }
+    #spot2 img {
+        width: 150px;
     }
     #spot3 {
         grid-column: 1/3;
     }
     footer {
+        font-size: .9rem;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat( 6, .7fr);
+        padding: 0;
     }
     .footer-img {
         grid-column: 1;

@@ -103,6 +103,10 @@ nav button {
     grid-gap: 10px;
 }
 
+div {
+    display: block;
+}
+
 
 /* .grid div {
     background-color: var(--Accent2);
@@ -204,6 +208,14 @@ nav ul.open {
     display: block;
 }
 
+#spot1 img {
+    width: 100%;
+}
+
+#spot2 img {
+    width: 100%;
+}
+
 #spot3 {
     display: none;
 }
@@ -219,6 +231,10 @@ nav .icons li {
 .grid div {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+}
+
+.hero img {
+    width: 100%;
 }
 
 .medium-div {
