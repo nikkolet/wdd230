@@ -2,19 +2,13 @@ img[data-src] {
     filter: blur(0.2em);
 }
 
-html {
-    margin: auto;
-}
-
 img {
-    border: 1px solid #333;
-    padding: 2px;
     filter: blur(0em);
     transition: filter 0.5s;
 }
 
-main {
+body {
     display: grid;
-    grid-template-columns: auto;
-    align-items: center;
+    margin: 0 auto;
+    justify-items: center;
 }
