@@ -9,10 +9,19 @@
         footer {
             border-radius: 10px;
         }
-        header img {
+        header {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+        }
+        img {
             width: 200px;
             height: auto;
             float: center;
             border-radius: 50%;
+            grid-row: 1;
+        }
+        h1 {
+            grid-row: 2;
         }
     }

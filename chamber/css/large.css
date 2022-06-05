@@ -260,4 +260,22 @@
     .medium-div {
         display: none;
     }
+    .discover img[data-src] {
+        filter: blur(0.2em);
+    }
+    .discover img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+    .discover-body {
+        display: grid;
+        margin: 0 auto;
+        justify-items: center;
+    }
+    picture {
+        width: 300px;
+    }
+    #discovery-header {
+        width: 100%;
+    }
 }
