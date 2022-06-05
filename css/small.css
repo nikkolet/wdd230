@@ -60,7 +60,6 @@ header {
 img {
     width: 200px;
     height: auto;
-    float: center;
     border-radius: 50%;
     grid-row: 1;
 }
