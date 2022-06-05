@@ -90,7 +90,7 @@ h1 {
 }
 
 h2 {
-    text-align: left;
+    text-align: center;
 }
 
 ul {
@@ -119,4 +119,9 @@ ul li p {
 
 hr {
     margin: 1em;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
 }
