@@ -1,0 +1,17 @@
+table,
+td {
+    border: 1px solid black;
+}
+
+table {
+    padding: 1rem;
+    margin: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: grey;
+}
+
+td {
+    background-color: white;
+    padding: 1rem;
+}
