@@ -7,58 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lesson 8 for Nikkolet Ashby in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <title>Table Build</title>
-    <link href="css/large.css" rel="stylesheet" type="text/css">
-    <link href="css/medium.css" rel="stylesheet" type="text/css">
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/small.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>My spending record</h1>
+    <h1>Table Build</h1>
 
     <table>
-        <caption>How I chose to spend my money</caption>
-        <tr>
-            <th>Purchase</th>
-            <th>Location</th>
-            <th>Date</th>
-            <th>Evaluation</th>
-            <th>Cost (€)</th>
-        </tr>
-        <tr>
-            <td>SUM</td>
-            <td>118</td>
-        </tr>
-        <tr>
-            <td>Haircut</td>
-            <td>Hairdresser</td>
-            <td>12/09</td>
-            <td>Great idea</td>
-            <td>30</td>
-        </tr>
-        <tr>
-            <td>Lasagna</td>
-            <td>Restaurant</td>
-            <td>12/09</td>
-            <td>Regrets</td>
-            <td>18</td>
-        </tr>
-        <tr>
-            <td>Shoes</td>
-            <td>Shoeshop</td>
-            <td>13/09</td>
-            <td>Big regrets</td>
-            <td>65</td>
-        </tr>
-        <tr>
-            <td>Toothpaste</td>
-            <td>Supermarket</td>
-            <td>13/09</td>
-            <td>Good</td>
-            <td>5</td>
-        </tr>
-    </table>
+        <thead>
+            <tr>
+                <th id="header" colspan="3">ACME Wildwest</th>
 
+            </tr>
+            <tr>
+                <th>Period</th>
+                <th>Sales</th>
+                <th>Sales Goal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="data">August</td>
+                <td class="data">$3,590</td>
+                <td class="data">$4,000</td>
+            </tr>
+            <tr>
+                <td class="data">September</td>
+                <td class="data">$4,420</td>
+                <td class="data">$5,000</td>
+            </tr>
+            <tr>
+                <td class="data">October</td>
+                <td class="data">$4,870</td>
+                <td class="data">$5,000</td>
+            </tr>
+            <tr>
+                <td class="data">November</td>
+                <td class="data">$8,610</td>
+                <td class="data" id="currentGoal">7,500</td>
+            </tr>
+            <tr>
+                <td class="data">Black Friday</td>
+                <td class="data" colspan="2">$3,200</td>
+            </tr>
+            <tr>
+                <td class="data">December</td>
+                <td class="data">$6,820</td>
+                <td class="data">$7,500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="footer" colspan="3">Compiled <span id="date"></span> by Nikkolet Ashby</td>
+
+            </tr>
+        </tfoot>
+    </table>
+    <script src="js/tableBuild.js"></script>
 </body>
 <footer></footer>
 
