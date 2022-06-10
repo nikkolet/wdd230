@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chamber Home Page for Nikkolet Ashby in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Home</title>
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/2730327_colour_harry_hogwarts_house_potter_icon.png">
+</head>
+<header>
+    <img class="logo-img" id="header-img" src="images/2730327_colour_harry_hogwarts_house_potter_icon.png" alt="logo">
+    <ul class="company">
+        <li>
+            <h1>Harry Potter</h1>
+            <p>and the Chamber of Commerce</p>
+        </li>
+    </ul>
+
+
+    <nav class="nav">
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+
+            <li>
+                <a class="active" href="#">Discover</a>
+            </li>
+            <li>
+                <a class="active" href="#">Directory</a>
+            </li>
+            <li>
+                <a class="active" href="#">Join</a>
+            </li>
+            <li>
+                <a class="active" href="#">Contact</a>
+            </li>
+
+        </ul>
+        <ul class="icons">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img id="facebook" src="images/facebook-icon.png" alt="facebook Icon"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/nikkolet-ashby-418757161/" target="_blank">
+                    <img id="linkedin" src="images/3225190_app_linkedin_logo_media_popular_icon.png" alt="LinkedIn Icon"></a>
+            </li>
+        </ul>
+
+    </nav>
+    <p id="p-date"><span id="currentdate"></span></p>
+</header>
+
+<body>
+    <div class="grid">
+        <div class="event large-div">
+            <h2>Item 1: Event</h2>
+
+        </div>
+        <div class="weather large-div">
+            <h1 id="weather">Weather</h1>
+            <p id="weather-info">
+                <img id="weather-pic" src="../images/weather.jpg" alt="Weather" />
+                <form id="wind">
+                    <label for="Temp">Average Temperature:
+                <input id="Temp" type="number" name="Temp">
+                </label><br>
+                    <label for="windSpeed">Wind Speed:
+                <input id="windSpeed" type="number" name="windSpeed">
+                </label><br>
+                    <input id="button" type="button" value="Submit">
+                </form><br> Wind Chill: <span id="windChill"></span>&deg;f
+            </p>
+        </div>
+        <div class="join">
+
+            <a href="#"></a><button class="button">Join Us!</button></a>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, dignissimos dicta voluptates omnis nam recusandae doloribus mollitia? Modi hic facere ullam a asperiores, vero nemo numquam praesentium, dolor ratione quisquam?</p>
+        </div>
+        <div class="hero">
+            <h2>Item 4: Hero with Site Name and Call to Action</h2>
+            <img id="rexburg-img" src="images/wdd230-org.jpg" alt="Chamber of Commerce Homebase">
+
+        </div>
+        <div class="news">
+            <h2>Item 5: News Release</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro voluptas maxime, fuga ex sapiente repudiandae fugiat ullam consequuntur corporis repellendus dolor, eos illum non perspiciatis aliquid voluptatem commodi dicta consequatur? Magnam
+                earum voluptate tempore dolor quis perferendis accusantium nobis sequi asperiores, praesentium iure reiciendis fugit, doloribus nesciunt veniam, debitis voluptatum tenetur totam. Ipsum expedita sed saepe nulla libero, eum enim? Animi in
+                aperiam enim rem illo? Ratione rem voluptatibus repellendus quidem doloribus, excepturi quia ab beatae expedita eligendi odit eos quas, qui, officia dolorum suscipit ad nisi nesciunt inventore tempore!
+            </p>
+        </div>
+        <div class="spotlight">
+            <div id="spot1">
+                <h2>Spotlight 1</h2>
+                <img src="images/360_F_487009062_NZdRcz4Zjbqda8lVGEbdysGbGRvWrtge.jpg" alt="hogwarts train">
+                <p>We're here to get you at Platform 9 3/4</p>
+            </div>
+            <div id="spot2">
+                <h2>Spotlight 2</h2>
+
+                <img src="images/4ghv5u3jpu.jpg" alt="howarts classroom">
+                <p>An after school transfiguration program.</p>
+                <hr>
+                <div class="spot2-contact">
+                    <p>minerva-mcgonagall@hogwarts-edu.com</p>
+                    <p></p>
+                </div>
+            </div>
+            <div id="spot3">
+                <h2>Spotlight 3</h2>
+            </div>
+        </div>
+
+        <div class="medium-div">
+            <div class="event">
+                <h2>Item 1: Event</h2>
+
+            </div>
+            <div class="weather">
+                <h2>Item 2: Weather</h2>
+                <img src="">
+
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+<footer>
+    <div class="logo-address">
+        <img class="logo-img footer-img" src="images/2730327_colour_harry_hogwarts_house_potter_icon.png" alt="logo">
+        <ul class="footer-company">
+            <li>
+                <h1>Learning Chamber of Commerce</h1>
+            </li>
+            <li>
+                <p>Salt Lake Chamber, 201 S Main St #2300,<br>Salt Lake City,UT 84111</p>
+            </li>
+        </ul>
+    </div>
+    <ul class="contact">
+        <li>nikkoletashby@gmail.com</li>
+        <li>+1(801)231-3935</li>
+        <li class="map">
+            <a href="https://www.google.com/maps/place/Salt+Lake+Chamber/@40.7645262,-111.892769,17z/data=!3m2!4b1!5s0x87528a3aa97113a7:0xdb61b5943e1a7aa1!4m5!3m4!1s0x8752f513d6f6ab15:0x4be5eda424cce15a!8m2!3d40.7645222!4d-111.8905803"><img id="map" src="images/pin.png" alt="Location Map"></a>
+            <p>Map Location</p>
+        </li>
+    </ul>
+    <p class="js">
+        &copy;2022 | name of website | Nikkolet Ashby | WDD 230 Project | Last Updated: <span id="curdate"></span></p>
+
+</footer>
+
+</html>
