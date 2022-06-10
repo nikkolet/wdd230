@@ -35,10 +35,22 @@ body {
     padding: 1em;
 } */
 
-header,
+header {
+    width: auto;
+    display: grid;
+    grid-template-columns: 15% 20% 50% 15%;
+    grid-template-rows: 60% 40%;
+    background-color: var(--Primary_color);
+    color: var(--Accent1);
+    text-align: center;
+    height: auto;
+}
+
 footer {
     width: auto;
     display: grid;
+    grid-template-columns: 10% 20% 50% 20%;
+    grid-template-rows: 60% 40%;
     background-color: var(--Primary_color);
     color: var(--Accent1);
     text-align: center;
@@ -47,7 +59,14 @@ footer {
 
 .logo-img {
     width: 100%;
-    align-items: center;
+    margin: auto;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+ul li::marker {
+    display: none;
+    color: transparent;
 }
 
 
@@ -148,18 +167,30 @@ div {
 
 #hamburgerBtn span:nth-child(1) {
     display: block;
+    grid-column: 1;
+    grid-row: 1;
+    float: left;
 }
 
 #hamburgerBtn span:nth-child(2) {
     display: none;
+    grid-column: 1;
+    grid-row: 1;
+    float: left;
 }
 
 #hamburgerBtn.open span:nth-child(1) {
     display: none;
+    grid-column: 1;
+    grid-row: 1;
+    float: left;
 }
 
 #hamburgerBtn.open span:nth-child(2) {
     display: block;
+    grid-column: 1;
+    grid-row: 1;
+    float: left;
 }
 
 .icons a {
@@ -185,10 +216,12 @@ nav button {
 
 nav ul li {
     display: none;
-    padding: .8rem 2vw;
     text-decoration: none;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     font-size: .8rem;
+    grid-row: 1;
+    grid-column: 4;
+    float: right;
 }
 
 nav ul.open li {
@@ -222,6 +255,7 @@ nav ul.open {
 
 .icons li a img {
     display: block;
+    width: 25px;
 }
 
 nav .icons li {
@@ -239,4 +273,21 @@ nav .icons li {
 
 .medium-div {
     display: none;
+}
+
+.company {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#p-date {
+    margin: 1em;
+    padding: 0;
+    grid-row: 2;
+    grid-column: 1/5;
+}
+
+.icons {
+    grid-column: 4;
+    grid-row: 1;
 }

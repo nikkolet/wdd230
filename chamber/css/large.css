@@ -13,8 +13,13 @@
     html {
         background-color: var(--Accent1);
     }
-    .logo-img {
-        width: 55px;
+    img {
+        max-width: 100%;
+    }
+    .logo-img,
+    .footer-img {
+        width: 75px;
+        max-width: 100%;
         border-radius: 50%;
     }
     .logo h1,
@@ -44,8 +49,6 @@
     footer {
         width: auto;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         background-color: var(--Primary_color);
         color: var(--Accent1);
         text-align: center;
@@ -90,13 +93,16 @@
     }
     nav ul li {
         display: block;
-        padding: 0%;
     }
     .icons ul li {
         float: right;
+        padding: 0;
+        margin: 0;
     }
     .icons a {
-        width: 35px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
     #p-date {
         grid-row: 2;
@@ -223,24 +229,26 @@
     footer {
         font-size: .9rem;
         display: grid;
-        grid-template-columns: repeat( 6, .7fr);
+        grid-template-columns: 10% 10% 30% 15% 10%;
+        grid-template-rows: 70% 30%;
         padding: 0;
     }
     .footer-img {
-        grid-column: 1;
-        grid-row: 1/3;
+        margin: auto;
+        margin-right: -2em;
     }
     .footer-company {
-        grid-column: 2;
-        grid-row: 1;
+        margin: 1em;
     }
     .contact {
-        grid-column: 2;
+        padding: 1em;
+        grid-column: 4;
         grid-row: 1;
     }
     .js {
-        grid-column: 1/4;
+        grid-column: 1/7;
         grid-row: 2;
+        margin-top: 1em;
     }
     footer a {
         color: white;
@@ -277,5 +285,11 @@
     }
     #discovery-header {
         width: 100%;
+    }
+    .logo-address {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-column: 3;
+        grid-row: 1;
     }
 }
