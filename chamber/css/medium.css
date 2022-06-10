@@ -83,6 +83,12 @@
     }
     .hero img {
         width: 100%;
+        display: block;
+        border-radius: 5px;
+    }
+    .hero hr {
+        background: transparent;
+        z-index: 1;
     }
     .news {
         grid-column: 1/3;
