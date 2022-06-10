@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Chamber Home Page for Nikkolet Ashby in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <title>Join</title>
+    <title>Home</title>
     <!-- STYLE SHEETS -->
     <link href="css/normalize.css" rel="stylesheet">
     <!-- phone-default -->
@@ -66,54 +66,24 @@
 <body>
 
 
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
 
     <!-- CONTENT HERE -->
     <main>
         <h1>Course Proposal Application</h1>
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top">First Name*<input type="text" name="fname" required></label>
-                <label class="top">Last Name*<input type="text" name="lname" required></label>
-                <label class="top">Phone<input type="tel" name="phone" placeholder="1235551234"></label>
-                <label class="top">Email<input type="email" name="email" placeholder="johndoe@gmail.com"></label>
-                <label class="top">Title<input type="text" name="text" placeholder="Business Position"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Course Information</legend>
-                <div>Audience</div>
-                <label class="sbs"><input type="radio" name="audience" value="NP Membership">NP Membership: This is for non-profit organization. Fee: $0</label>
-                <label class="sbs"><input type="radio" name="audience" value="Bronze">Bronze</label>
-                <label class="sbs"><input type="radio" name="audience" value="Silver">Silver</label>
-                <label class="sbs"><input type="radio" name="audience" value="Gold">Gold</label>
-                <div>Software Needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes">FTP Client</label>
-            </fieldset>
-            <fieldset>
-                <legend>Funding</legend>
-                <label class="top">Anticipated Completion Date <input type="date" name="CompleteDate"></label
-                <label class="top">Course Subject
-                    <select name="subject">
-                        <option value="">Please Select&#9662;</option>
-                        <option value="software">Software Development</option>
-                        <option value="creative">Creative Professional</option>
-                        <option value="info">Information Technology</option>
-                        <option value="data">Data Professional</option>
-                        <option value="construction">Construction</option>
-                        <option value="manufacturing">Manufacturing</option>
-                        <option value="Business">Business Professional</option>
-                        <option value="cybersecurity">Cyber Security Professional</option>
-                    </select>
-                </label>
+        <p>Thanks for applying to create a course for our online library. We will get back to you within a week with a response.</p>
 
-                <label class="top">How many Authors?<input type="number" name="authors"></label>
 
-            </fieldset>
-            <input type="submit" value="Propose My Course" class="submitBtn">
-        </form>
+
     </main>
 
     <script src="js/script.js"></script>
