@@ -7,7 +7,7 @@ function calculateWindChill() {
 
 
         windChill = Math.round(windChill);
-        document.getElementById("windChill").innerHTML = windChill;
+        document.getElementById("windChill").innerHTML = windChill + "°f";
     } else {
         document.getElementById("windChill").innerHTML = "N/A";
     }

@@ -60,14 +60,17 @@
         </ul>
 
     </nav>
-    <p id="p-date"><span id="currentdate"></span></p>
+    <div class="date">
+        <p id="message"><span id="message"></span></p>
+        <p id="p-date"><span id="date"></span></p>
+    </div>
 </header>
 
 <body>
     <div class="grid">
         <div class="event large-div">
             <h2>Triwizard Tournament</h2>
-            <img src="images/2730338_colour_dragon_egg_harry_magic_icon.png" alt="Dragon Egg">
+            <img class="div-image" src="images/2730338_colour_dragon_egg_harry_magic_icon.png" alt="Dragon Egg">
             <p>The first task in the Triwizard Tournament is complete!<br> Now our contestants will have to figure out what the next task is. <a href="https://harrypotter.fandom.com/wiki/Golden_egg">more info...</a></p>
 
 
@@ -76,7 +79,7 @@
         <div class="weather large-div">
             <h1 id="weather">Weather</h1>
             <p id="weather-info">
-                <img id="weather-pic" src="images/669958_weather_cloud_forecast_sun_icon.png" alt="Weather" />
+                <img class="div-image" src="images/669958_weather_cloud_forecast_sun_icon.png" alt="Weather" />
                 <form id="wind">
                     <label for="temp">Avg Temp:
                 <input id="temp" type="number" name="Temp">
@@ -84,8 +87,8 @@
                     <label for="windSpeed">Wind Speed:
                 <input id="windSpeed" type="number" name="windSpeed">
                 </label><br>
-                    <input id="button" type="button" value="Submit">
-                </form><br> Wind Chill: <span id="windChill"></span>
+                    <input class="button" type="button" value="Find Wind Chill">
+                </form class="weather-form"><br> Wind Chill: <span id="windChill"></span>
             </p>
         </div>
         <div class="join">
@@ -102,45 +105,45 @@
         <div class="news">
             <h2>The Daily Prophet</h2>
             <h3>He-Who-Must-Not-Be-Named Returns!</h3>
+            <i>Nymphadora
+                Abbott</i>
             <p>"He's back." <br>-Cornelius Fudge</p>
             <p>In a brief statement Friday night, Minister for Magic Cornelius Fudge confirmed that He-Who-Must-Not-Be Named has returned to this country and is active once more. "It is with great regret that I must confirm that the wizard styling himself
                 Lord - well, you know who I mean - is alive and among us again," said Fudge, looking tired and flustered as he addressed reporters. "It is with almost equal regret that we report the mass revolt of the Dementors of Azkaban, who have shown
                 themselves averse to continuing in the Ministry's employ. We believe that the dementors are currently taking direction from Lord - Thingy. We urge the magical population to remain vigilant. The Ministry is currently publishing guides to
                 elementary home and personal defense that will be delivered free to all wizarding homes within the coming month."<br><a href="https://harry-potter-compendium.fandom.com/wiki/Daily_Prophet_articles#HE-WHO-MUST-NOT-BE-NAMED_RETURNS_(June_19,_1996)">read more...</a></p>
         </div>
-        <div class="spotlight">
+        <div class="spotlight" id="spotlight">
             <div id="spot1">
                 <h2>Hogwarts Express</h2>
-                <img src="images/2730340_colour_express_harry_hogwarts_potter_icon.png" alt="hogwarts train">
-                <p>We're here to get you at Platform 9 3/4.</p>
+                <img class="div-image" src="images/2730340_colour_express_harry_hogwarts_potter_icon.png" alt="hogwarts train">
+                <p>We're here to get you at Platform 9 3/4 @ 11am.</p>
                 <hr>
-                <p>hogwarts-express-transportation.com</p>
-                <p>+1(605)475-6961 | <a href="#">Website</a></p>
+                <p>hogwarts-transport.com<br> +1(605)475-6961 | <a href="#">Website</a></p>
             </div>
             <div id="spot2">
                 <h2>Charms Club</h2>
 
-                <img src="images/2730324_colour_feather_harry_potter_quill_icon.png" alt="feather">
-                <p>Professor Flitwick will be diving in deep into lesser known charms and techniques to hone your skills.</p>
-                <p>"Charms differ from Transfiguring Spells in the following manner: a charm adds certain properties to an object or creature, whereas a transfiguring spell will change it into something utterly different." — The Standard Book of Spells,
-                    Grade 1</p>
+                <img class="div-image" src="images/2730324_colour_feather_harry_potter_quill_icon.png" alt="feather">
+                <p>Tuesdays @ 5pm - 6pm in the Charms classroom.</p>
+
+                <p><strong>Keeep Calm</strong><br>and<br>Swish and Flick</p>
                 <hr>
 
-                <p>ffitwick@hogwartsstaff.org</p>
-                <p>+1(395)384-2794 | <a href="#">Website</a></p>
+                <p>ffitwick@hogwartsstaff.org<br> +1(395)384-2794 | <a href="#">Website</a></p>
 
             </div>
             <div id="spot3">
                 <h2>Werewolf Awareness Wednesdays</h2>
-                <img src="images/2730322_colour_harry_potter_sirius_wolf_icon.png" alt="wolf howling at moon">
-                <p>Being a werewolf bites...But you are not alone.</p>
+                <img class="div-image" src="images/2730322_colour_harry_potter_sirius_wolf_icon.png" alt="wolf howling at moon">
+                <br>
+                <i>"Being a werewolf bites...But you are not alone." ~ Professor R. J. Lupin</i>
                 <p>If you or someone you love suffers from lycanthropy, please come and learn more.</p>
-                <p>Everyone deserves understanding, respect, and dignity.</p>
                 <hr>
-                <p>Professor R. J. Lupin will be promoting Werewolf Awareness to get rid of the stigma that surrounds it.</p>
+                <p>Wednesdays @ 7PM - 8PM in the Defense Against the Dark Arts Room<br>Please Note: Times may change abruptly.
+                </p>
                 <hr>
-                <p>rjlupin@hogwarts-staff.org</p>
-                <p>+1(801)239-5627 | <a href="#">Website</a></p>
+                <p>rlupin@hogwarts-staff.org <br>+1(801)239-5627 | <a href="#">Website</a></p>
             </div>
         </div>
 
