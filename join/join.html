@@ -69,7 +69,7 @@
 
     <!-- CONTENT HERE -->
     <main>
-        <h1>Course Proposal Application</h1>
+        <h1>Membership Application</h1>
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Applicant Information</legend>
@@ -80,39 +80,90 @@
                 <label class="top">Title<input type="text" name="text" placeholder="Business Position"></label>
             </fieldset>
             <fieldset>
-                <legend>Course Information</legend>
-                <div>Audience</div>
-                <label class="sbs"><input type="radio" name="audience" value="NP Membership">NP Membership: This is for non-profit organization. Fee: $0</label>
-                <label class="sbs"><input type="radio" name="audience" value="Bronze">Bronze</label>
-                <label class="sbs"><input type="radio" name="audience" value="Silver">Silver</label>
-                <label class="sbs"><input type="radio" name="audience" value="Gold">Gold</label>
-                <div>Software Needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes">FTP Client</label>
+                <legend>Membership Information</legend>
+                <label class="sbs" id="nonmember"><input type="radio" name="audience" value="NP Membership"> NP Membership</label>
+                <h2 class="sbsp">Fee</h2>
+                <p class="sbsp">Muggle: $0</p>
+                <p class="sbsp">Wizard: 0 Galleons, 0 Sickles, 0 Knuts</p>
+                <h2 class="sbsp">Benefits</h2>
+                <ul class="sbsp">
+                    <li>Invited to all events</li>
+                    <li>20% off all Hogsmeade purchases</li>
+                    <li>Invitation to participate in Chamber committees or task forces</li>
+                    <li>Anniversary/Grand Opening/Ribbon Cutting (one request)</li>
+                    <li>Enhanced website listing in Chamber Business Directory (organization and contact name, additional category, logo, two keywords, website and map)</li>
+                    <li>Member spotlight (featured on social media platforms)
+                    </li>
+                    <li>3 ads in The Daily Prophet</li>
+                    <li>2 adds in The Quibbler</li>
+                    <li>Subscription to The Daily Prophet</li>
+                    <li>Subscription to The Quibbler</li>
+                    <li>50% off all owl travel for first year.</li>
+                </ul>
+                <label class="sbs" id="bronze"><input type="radio" name="audience" value="Bronze"> Bronze</label>
+                <h2 class="sbsp">Fee</h2>
+                <p class="sbsp">Muggle: $4,000</p>
+                <p class="sbsp">Wizard: 608 Galleons, 7 Sickles, 2 Knuts</p>
+                <h2 class="sbsp">Benefits</h2>
+                <ul class="sbsp">
+                    <li>Invited to 4 events</li>
+                    <li>10% off all Hogsmeade purchases</li>
+                    <li>Invitation to participate in Chamber committees or task forces</li>
+                    <li>Anniversary/Grand Opening/Ribbon Cutting (one request)</li>
+                    <li>Enhanced website listing in Chamber Business Directory (organization and contact name, additional category, logo, two keywords, website and map)</li>
+                    <li>Member spotlight (featured on social media platforms)
+                    </li>
+                    <li>1 ads in The Daily Prophet</li>
+                    <li>1 adds in The Quibbler</li>
+                    <li>50% off Subscription to The Quibbler</li>
+                    <li>20% off all owl travel for first year.</li>
+                </ul>
+                <label class="sbs" id="silver"><input type="radio" name="audience" value="Silver"> Silver</label>
+                <h2 class="sbsp">Fee</h2>
+                <p class="sbsp">Muggle: $8,000</p>
+                <p class="sbsp">Wizard: 1,216 Galleons, 14 Sickles, 3 Knuts</p>
+                <h2 class="sbsp">Benefits</h2>
+                <ul class="sbsp">
+                    <li>Invited to 4 events</li>
+                    <li>15% off all Hogsmeade purchases</li>
+                    <li>Invitation to participate in 2 Chamber committees or task forces</li>
+                    <li>Anniversary/Grand Opening/Ribbon Cutting (one request)</li>
+                    <li>Enhanced website listing in Chamber Business Directory (organization and contact name, additional category, logo, two keywords, website and map)</li>
+                    <li>Member spotlight (featured on social media platforms)
+                    </li>
+                    <li>2 ads in The Daily Prophet</li>
+                    <li>1 adds in The Quibbler</li>
+                    <li>50% off Subsciption to The Daily Prophet</li>
+                    <li>Subscription to The Quibbler</li>
+                    <li>25% off all owl travel for first year.</li>
+                </ul>
+                <label class="sbs" id="gold"><input type="radio" name="audience" value="Gold"> Gold</label>
+                <h2 class="sbsp">Fee</h2>
+                <p class="sbsp">Muggle: $10,000</p>
+                <p class="sbsp">Wizard: 1,521 Galleons, 0 Sickles, 18 Knuts</p>
+                <h2 class="sbsp">Benefits</h2>
+                <ul class="sbsp">
+                    <li>Invited to all events</li>
+                    <li>20% off all Hogsmeade purchases</li>
+                    <li>Invitation to participate in Chamber committees or task forces</li>
+                    <li>Anniversary/Grand Opening/Ribbon Cutting (one request)</li>
+                    <li>Enhanced website listing in Chamber Business Directory (organization and contact name, additional category, logo, two keywords, website and map)</li>
+                    <li>Member spotlight (featured on social media platforms)
+                    </li>
+                    <li>3 ads in The Daily Prophet</li>
+                    <li>2 adds in The Quibbler</li>
+                    <li>Subscription to The Daily Prophet</li>
+                    <li>Subscription to The Quibbler</li>
+                    <li>50% off all owl travel for first year.</li>
+                </ul>
+                <input type="hidden" id="date" name="date" value="CurrentTime">
+                <input type="hidden" id="time" name="time" value="CurrentDate">
             </fieldset>
             <fieldset>
-                <legend>Funding</legend>
-                <label class="top">Anticipated Completion Date <input type="date" name="CompleteDate"></label
-                <label class="top">Course Subject
-                    <select name="subject">
-                        <option value="">Please Select&#9662;</option>
-                        <option value="software">Software Development</option>
-                        <option value="creative">Creative Professional</option>
-                        <option value="info">Information Technology</option>
-                        <option value="data">Data Professional</option>
-                        <option value="construction">Construction</option>
-                        <option value="manufacturing">Manufacturing</option>
-                        <option value="Business">Business Professional</option>
-                        <option value="cybersecurity">Cyber Security Professional</option>
-                    </select>
-                </label>
-
-                <label class="top">How many Authors?<input type="number" name="authors"></label>
-
+                <legend>Your Business</legend>
+                <textarea name="textarea" rows="4" cols="50" placeholder="Describe your business here"></textarea>
             </fieldset>
-            <input type="submit" value="Propose My Course" class="submitBtn">
+            <input type="submit" value="Get Membership" class="submitBtn">
         </form>
     </main>
 

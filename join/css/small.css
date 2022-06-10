@@ -353,7 +353,7 @@ form fieldset {
 }
 
 form legend {
-    color: rgba(var(--Secondary_color), 0);
+    color: var(--Secondary_color);
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -421,4 +421,44 @@ footer {
     content: "";
     display: table;
     clear: both;
+}
+
+.sbsp {
+    text-align: left;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.3em;
+    padding-bottom: 0.1em;
+}
+
+form label.sbs {
+    text-shadow: 1px 1px var(--Accent2);
+}
+
+#nonmember {
+    color: #6a0dad;
+}
+
+#bronze {
+    color: #CD7F32;
+}
+
+#silver {
+    color: #C0C0C0;
+}
+
+#gold {
+    color: #FFD700;
+}
+
+.sbsp li,
+p.sbsp {
+    font-size: 0.85em;
+}
+
+#textarea {
+    margin-bottom: 1em;
 }
