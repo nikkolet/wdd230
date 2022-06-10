@@ -126,6 +126,12 @@ div {
     display: block;
 }
 
+hr {
+    height: 1px;
+    background-color: var(--Primary_color);
+    border: none;
+}
+
 
 /* .grid div {
     background-color: var(--Accent2);

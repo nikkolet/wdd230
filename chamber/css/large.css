@@ -138,11 +138,16 @@
         grid-column: 1/2;
         grid-row: 2/3;
     }
+    .weather label {
+        width: 90%;
+        margin: auto;
+        margin-left: 2.5em;
+    }
     #weather {
         font-size: 1.3rem;
         text-align: center;
         padding: 1px;
-        margin-top: -8px;
+        margin-top: 8px;
     }
     #wind {
         display: flex;
@@ -183,11 +188,15 @@
         grid-column: 2/4;
         grid-row: 3/4;
     }
-    div.spotlight {
-        display: grid;
-        grid-template-rows: 3em;
+    .spotight {
+        width: 1fr;
         grid-column: 4;
-        grid-row: 1/4;
+        grid-row: 1/5;
+    }
+    .spotlight div {
+        margin: 1em;
+        border: 1px solid var(--Primary_color);
+        box-shadow: 5px var(--Primary_color);
         /* height: 300px; */
     }
     #header-img {
@@ -283,6 +292,7 @@
     }
     picture {
         width: 300px;
+        margin: 1em;
     }
     #discovery-header {
         width: 100%;
@@ -292,5 +302,16 @@
         grid-template-columns: 30% 70%;
         grid-column: 3;
         grid-row: 1;
+    }
+    .discover-body h1 {
+        margin: 1em;
+    }
+    #date {
+        color: white;
+    }
+    hr {
+        height: 1px;
+        background-color: var(--Primary_color);
+        border: none;
     }
 }

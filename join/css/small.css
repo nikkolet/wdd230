@@ -322,7 +322,7 @@ body {
 
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: var(--Primary_color);
 }
 
 header h1 {
@@ -409,7 +409,7 @@ form label.top input:required:valid {
 /*----------- FOOTER --------------*/
 
 footer {
-    background-color: #ddd;
+    background-color: var(--Primary_color);
     padding: .5rem 2%;
     text-align: center;
 }

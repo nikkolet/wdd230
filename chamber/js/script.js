@@ -1,37 +1,12 @@
-// day names array
-const daynames = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-];
-// long month names array
-const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-];
+const d = new Date();
 
-const todaysdate = new Date()
-const dayName = daynames[todaysdate.getDay()];
-const monthName = months[todaysdate.getMonth()];
-const currentdate = dayName + ", " + todaysdate.getDate() + " " + monthName + ", " + todaysdate.getFullYear();
+// const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// let name = month[d.getMonth()];
+const month = d.getMonth() + 1;
+const day = d.getDate();
+const year = d.getFullYear();
 
-document.getElementById("currentdate").textContent = currentdate;
-document.getElementById("curdate").innerHTML = currentdate;
-
+document.querySelector("#date").innerHTML = month + "." + day + "." + year
 
 
 function toggleMenu() {

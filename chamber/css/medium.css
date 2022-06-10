@@ -119,4 +119,9 @@
     .large-div {
         display: none;
     }
+    hr {
+        height: 1px;
+        background-color: var(--Primary_color);
+        border: none;
+    }
 }

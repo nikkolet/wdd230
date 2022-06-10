@@ -306,6 +306,8 @@ button,
 input {
     /* 1 */
     overflow: visible;
+    width: 80%;
+    margin: auto;
 }
 
 

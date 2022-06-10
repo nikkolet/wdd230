@@ -1,5 +1,5 @@
 function calculateWindChill() {
-    var temp = document.getElementById("Temp").value;
+    var temp = document.getElementById("temp").value;
     var wSpeed = document.getElementById("windSpeed").value;
     if ((temp <= 50) && (wSpeed > 3)) {
 
