@@ -15,6 +15,7 @@
     }
     img {
         max-width: 100%;
+        float: left;
     }
     .logo-img,
     .footer-img {
@@ -185,7 +186,11 @@
         display: inline-block;
         font-size: 16px;
         cursor: pointer;
+        text-align: center;
         margin-top: 1em;
+    }
+    input {
+        text-align: center;
     }
     button a {
         color: var(--Primary_color);
@@ -248,6 +253,7 @@
     }
     #spotlight img {
         width: 26%;
+        float: left;
     }
     #spot2 {
         grid-column: 1/3;
