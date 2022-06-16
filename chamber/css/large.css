@@ -164,8 +164,10 @@
         padding: 1px;
         margin-top: 8px;
     }
-    #wind {
+    .weatherGroup {
         display: flex;
+    }
+    #wind {
         flex-direction: column;
         text-align: left;
         padding-left: 10px;
@@ -345,5 +347,8 @@
     }
     .weather-form {
         background: white;
+    }
+    #weatherImg {
+        width: 50%;
     }
 }
