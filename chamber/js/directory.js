@@ -1,4 +1,4 @@
-const requestURL = 'chamber/JSON/directory.json';
+const requestURL = 'https://github.com/nikkolet/wdd230/blob/main/chamber/JSON/directory.json';
 
 const cards = document.querySelector('.cards');
 
