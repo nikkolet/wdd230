@@ -265,7 +265,7 @@ section>p {
 .cards p {
     margin: 0;
     padding-bottom: 0;
-    text-shadow: 0 0 15px #999;
+    text-shadow: 0 0 15px black;
 }
 
 .cards img {
@@ -273,13 +273,13 @@ section>p {
     max-width: 325px;
     box-shadow: 0 0 30px black;
     height: 200px;
-    border: 1px solid #333;
+    border: 1px solid black;
 }
 
 main h1 {
     color: #000;
     border-bottom: 1px solid #eee;
-    text-shadow: 0 0 15px #999;
+    text-shadow: 0 0 15px black;
     width: 60%;
     padding: 1em;
 }
