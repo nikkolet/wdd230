@@ -314,8 +314,9 @@ main {
 section {
     margin: 0.25rem;
     padding: 0.35rem;
-    background-color: #eee;
-    border: 1px solid #bbb;
+    background-color: var(--Primary_color);
+    color: var(--Accent1);
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -330,12 +331,13 @@ section>p {
 .cards p {
     margin: 0;
     padding-bottom: 0;
+    text-shadow: 0 0 15px #999;
 }
 
 .cards img {
     width: auto;
     max-width: 325px;
-    box-shadow: 0 0 30px #777;
+    box-shadow: 0 0 30px black;
     height: 200px;
     border: 1px solid #333;
 }
