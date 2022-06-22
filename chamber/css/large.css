@@ -128,16 +128,6 @@
         margin-left: -1em;
         margin-right: 1em;
     }
-    .grid div {
-        background-color: var(--Secondary_color);
-        margin: auto;
-        text-align: center;
-        display: block;
-        font-size: 1rem;
-        margin: .6em;
-        height: auto;
-        box-shadow: 0px 0px 30px 0px var(--Primary_color);
-    }
     div p {
         padding: 1em;
         background-color: transparent;
@@ -274,6 +264,9 @@
         margin-left: -18em;
         grid-column: 1;
         grid-row: 1;
+    }
+    footer .logo-img {
+        width: 55%;
     }
     .footer-company {
         margin: 1em;

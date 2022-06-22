@@ -17,7 +17,8 @@
     html {
         background-color: var(--Accent1);
     }
-    .logo-img {
+    .logo-img,
+    footer .logo-img {
         width: 55px;
         border-radius: 50%;
     }
@@ -60,16 +61,13 @@
     nav button {
         display: block;
         float: right;
+        width: 35px;
     }
     .icons li a img {
         display: block;
     }
     nav .icons li {
         display: block;
-    }
-    .grid div {
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
     }
     .join {
         grid-column: 1/3;
@@ -104,6 +102,9 @@
     .spotlight div {
         padding: 1em;
         /* height: 300px; */
+    }
+    .spotlight {
+        width: 50%;
     }
     #spot1 {
         grid-column: 1;
