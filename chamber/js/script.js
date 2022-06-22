@@ -12,7 +12,6 @@ let dayofweek = weekday[d.getDay()];
 
 const year = d.getFullYear();
 
-document.querySelector("#date").innerHTML = dayofweek + ", " + day + "  " + newmonth + " " + year
 document.querySelector(".date").innerHTML = dayofweek + ", " + day + "  " + newmonth + " " + year
 
 //Message

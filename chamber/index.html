@@ -62,7 +62,7 @@
     </nav>
     <div class="date">
         <p id="message"><span id="message"></span></p>
-        <p id="p-date"><span id="date"></span></p>
+        <p id="p-date"><span class="date"></span></p>
     </div>
 </header>
 
@@ -155,8 +155,19 @@
             <div class="weather-div">
                 <h2>Item 2: Weather</h2>
                 <div class="weatherGroup">
-                    <img id="weatherImg" src="chamber/images/669958_weather_cloud_forecast_sun_icon.png">
-
+                    <h1 id="weather">Weather</h1>
+                    <p id="weather-info">
+                        <img class="div-image" src="images/669958_weather_cloud_forecast_sun_icon.png" alt="Weather" />
+                        <form id="wind">
+                            <label for="temp">Avg Temp:
+                        <input id="temp" type="number" name="Temp">
+                        </label>
+                            <label for="windSpeed">Wind Speed:
+                        <input id="windSpeed" type="number" name="windSpeed">
+                        </label><br>
+                            <input class="button" type="button" value="Find Wind Chill">
+                        </form class="weather-form"><br> Wind Chill: <span id="windChill"></span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -185,7 +196,7 @@
         </li>
     </ul>
     <p class="js">
-        &copy;2022 | name of website | Nikkolet Ashby | WDD 230 Project | Last Updated: <span id="date"></span></p>
+        &copy;2022 | name of website | Nikkolet Ashby | WDD 230 Project | Last Updated: <span class="date"></span></p>
 
 </footer>
 
