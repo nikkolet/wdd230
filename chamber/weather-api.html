@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chamber Home Page for Nikkolet Ashby in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Weather API</title>
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/2730327_colour_harry_hogwarts_house_potter_icon.png">
+</head>
+<header>
+    <img class="logo-img" id="header-img" src="images/2730327_colour_harry_hogwarts_house_potter_icon.png" alt="logo">
+    <ul class="company">
+        <li>
+            <h1>Harry Potter</h1>
+            <p>and the Chamber of Commerce</p>
+        </li>
+    </ul>
+
+
+    <nav class="nav">
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+
+            <li>
+                <a class="active" href="discover.html">Discover</a>
+            </li>
+            <li>
+                <a class="active" href="directory.html">Directory</a>
+            </li>
+            <li>
+                <a class="active" href="../join/join.html">Join</a>
+            </li>
+            <li>
+                <a class="active" href="#">Contact</a>
+            </li>
+
+        </ul>
+        <ul class="icons">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img id="facebook" src="images/facebook-icon.png" alt="facebook Icon"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/nikkolet-ashby-418757161/" target="_blank">
+                    <img id="linkedin" src="images/3225190_app_linkedin_logo_media_popular_icon.png" alt="LinkedIn Icon"></a>
+            </li>
+        </ul>
+
+    </nav>
+    <div class="date">
+        <p><span id="message"></span></p>
+        <p id="p-date"><span class="date"></span></p>
+    </div>
+</header>
+
+<body>
+    <h1>OpenWeatherMap.org API Test</h1>
+    <p>The current temperature in West Valley City, Utah is <span id="current-temp"></span> &deg;F</p>
+    <h2>Current Condition Icon</h2>
+    <figure>
+        <img src="" alt="" id="weather-icon" />
+        <figcaption></figcaption>
+    </figure>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+<footer>
+    <div class="logo-address">
+        <img class="logo-img footer-img" src="images/2730327_colour_harry_hogwarts_house_potter_icon.png" alt="logo">
+        <ul class="footer-company">
+            <li>
+                <h1>Learning Chamber of Commerce</h1>
+            </li>
+            <li>
+                <p>Salt Lake Chamber, 201 S Main St #2300,<br>Salt Lake City,UT 84111</p>
+            </li>
+        </ul>
+    </div>
+    <ul class="contact">
+        <li>nikkoletashby@gmail.com</li>
+        <li>+1(801)231-3935</li>
+        <li class="map">
+            <a href="https://www.google.com/maps/place/Salt+Lake+Chamber/@40.7645262,-111.892769,17z/data=!3m2!4b1!5s0x87528a3aa97113a7:0xdb61b5943e1a7aa1!4m5!3m4!1s0x8752f513d6f6ab15:0x4be5eda424cce15a!8m2!3d40.7645222!4d-111.8905803"><img id="map" src="images/pin.png" alt="Location Map"></a>
+            <p>Map Location</p>
+        </li>
+    </ul>
+    <p class="js">
+        &copy;2022 | name of website | Nikkolet Ashby | WDD 230 Project | Last Updated: <span class="date"></span></p>
+
+</footer>
+
+</html>
