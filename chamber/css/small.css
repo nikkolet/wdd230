@@ -41,7 +41,7 @@ header {
 footer {
     width: auto;
     display: grid;
-    grid-template-columns: 10% 20% 50% 20%;
+    grid-template-columns: 1fr;
     grid-template-rows: 60% 40%;
     background-color: var(--Primary_color);
     color: var(--Accent1);
@@ -67,6 +67,10 @@ section>p {
 
 footer p {
     display: block;
+}
+
+footer .logo-img {
+    width: 20%;
 }
 
 h1 {
@@ -207,8 +211,14 @@ nav .icons li {
 }
 
 .grid div {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    background-color: var(--Secondary_color);
+    margin: auto;
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    margin: .6em;
+    height: auto;
+    box-shadow: 0px 0px 30px 0px var(--Primary_color);
 }
 
 .hero img {
