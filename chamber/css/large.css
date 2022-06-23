@@ -153,6 +153,7 @@
         text-align: center;
         padding: 1px;
         margin-top: 8px;
+        text-shadow: none;
     }
     .weatherGroup {
         display: flex;
