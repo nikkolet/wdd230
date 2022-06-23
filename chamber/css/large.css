@@ -284,7 +284,10 @@
     #spot3 {
         display: block;
     }
-    .medium-div {
+    .large-div {
+        display: block;
+    }
+    #medium-div {
         display: none;
     }
     .discover img[data-src] {
