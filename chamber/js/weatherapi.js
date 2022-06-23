@@ -3,11 +3,13 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?q={West Valley City}&appid={f9588660b59034f500496199128ef328}';
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=West Valley City&appid=f9588660b59034f500496199128ef328';
+
+apiFetch(url);
 
 async function apiFetch() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(apiFetch);
         if (response.ok) {
             const data = await response.json();
             console.log(data); // this is for testing the call
@@ -20,7 +22,7 @@ async function apiFetch() {
     }
 }
 
-apiFetch();
+
 
 function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
