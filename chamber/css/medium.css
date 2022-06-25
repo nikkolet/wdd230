@@ -132,4 +132,15 @@
     #spotlight {
         display: flex;
     }
+    footer {
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60% 25%;
+        padding: 1em;
+        background-color: var(--Primary_color);
+        color: var(--Accent1);
+        text-align: center;
+        height: auto;
+    }
 }
