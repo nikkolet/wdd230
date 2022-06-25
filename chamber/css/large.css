@@ -198,10 +198,15 @@
         padding: 1em;
     }
     .spotlight div {
+        display: grid;
+        grid-template-columns: 1fr;
         margin: 1em;
         border: 1px solid var(--Primary_color);
         box-shadow: 5px var(--Primary_color);
         /* height: 300px; */
+    }
+    #spotlight {
+        display: grid;
     }
     #header-img {
         grid-column: 1;

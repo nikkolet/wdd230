@@ -46,7 +46,8 @@ footer {
     width: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50% 30% 20%;
+    grid-template-rows: 70% 18%;
+    padding: 1em;
     background-color: var(--Primary_color);
     color: var(--Accent1);
     text-align: center;
@@ -109,6 +110,7 @@ nav button {
 
 div {
     display: block;
+    padding: 1em;
 }
 
 hr {
@@ -296,7 +298,6 @@ section>p {
 main h1 {
     color: #000;
     border-bottom: 1px solid #eee;
-    text-shadow: 0 0 15px black;
     width: 60%;
     padding: 1em;
 }
@@ -329,4 +330,28 @@ button {
     padding-top: 0.25em;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    float: none;
+}
+
+main div {
+    align-items: center;
+}
+
+#weather-div {
+    background-color: var(--Secondary_color);
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    height: auto;
+    box-shadow: 0px 0px 30px 0px var(--Primary_color);
 }
