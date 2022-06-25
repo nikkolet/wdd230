@@ -143,4 +143,8 @@
         text-align: center;
         height: auto;
     }
+    img {
+        max-width: 100%;
+        float: left;
+    }
 }

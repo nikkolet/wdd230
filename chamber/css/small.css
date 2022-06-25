@@ -232,6 +232,7 @@ nav .icons li {
 
 .hero img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .medium-div {
@@ -342,6 +343,7 @@ figure img {
 
 main div {
     align-items: center;
+    border-radius: 5px;
 }
 
 #weather-div {
@@ -483,4 +485,14 @@ p.sbsp {
 
 #textarea {
     margin-bottom: 1em;
+}
+
+.hero-text {
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+div .hero {
+    padding: 0;
 }
