@@ -358,4 +358,8 @@
     #weather-large {
         display: block;
     }
+    .divdate p {
+        margin: 0;
+        padding: 0;
+    }
 }
