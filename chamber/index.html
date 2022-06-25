@@ -70,7 +70,7 @@
     </header>
     <main>
         <div class="grid">
-            <div class="event large-div">
+            <div id="event-large" class="event large-div">
                 <h2>Triwizard Tournament</h2>
                 <img class="div-image" src="images/2730338_colour_dragon_egg_harry_magic_icon.png" alt="Dragon Egg">
                 <p>The first task in the Triwizard Tournament is complete!<br> Now our contestants will have to figure out what the next task is. <a href="https://harrypotter.fandom.com/wiki/Golden_egg">more info...</a></p>
@@ -78,26 +78,22 @@
 
 
             </div>
-            <div class="weather large-div">
-                <h1 id="weather">Weather</h1>
-                <p id="weather-info">
-                    <img class="div-image" src="images/669958_weather_cloud_forecast_sun_icon.png" alt="Weather" />
-                    <form id="wind">
-                        <label for="temp">Avg Temp:
-                <input id="temp" type="number" name="Temp">
-                </label>
-                        <label for="windSpeed">Wind Speed:
-                <input id="windSpeed" type="number" name="windSpeed">
-                </label><br>
-                        <input class="button" type="button" value="Find Wind Chill">
-                    </form class="weather-form"><br> Wind Chill: <span id="windChill"></span>
-                </p>
+
+            <div id="weather-large" class="weather large-div">
+                <div>
+                    <p>The current temperature in West Valley City, Utah is <span id="current-temp"></span> &deg;F</p>
+                    <h2>Current Condition Icon</h2>
+                    <figure>
+                        <img src="" alt="" id="weather-icon" />
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
             </div>
             <div class="join">
 
                 <a href="../join/join.html"></a><button class="button">Join Us!</button></a>
 
-                <p>Discover how to join the magical world of Harry Potter and the Chamber of Commerece and how it will benefit your organization!</p>
+                <p>Discover how to join the magical worldof Harry Potter and the Chamber of Commerece and how it will benefit your organization!</p>
             </div>
             <div class="hero">
                 <h2 class="hero-text">Welcome to Hogwarts</h2>
@@ -156,24 +152,17 @@
                     <p>The first task in the Triwizard Tournament is complete!<br> Now our contestants will have to figure out what the next task is. <a href="https://harrypotter.fandom.com/wiki/Golden_egg">more info...</a></p>
                 </div>
                 <div class="weather-div">
-                    <h2>Item 2: Weather</h2>
-                    <div class="weatherGroup">
-                        <h1 id="weather">Weather</h1>
-                        <p id="weather-info">
-                            <img class="div-image" src="images/669958_weather_cloud_forecast_sun_icon.png" alt="Weather" />
-                            <form id="wind">
-                                <label for="temp">Avg Temp:
-                        <input id="temp" type="number" name="Temp">
-                        </label>
-                                <label for="windSpeed">Wind Speed:
-                        <input id="windSpeed" type="number" name="windSpeed">
-                        </label><br>
-                                <input class="button" type="button" value="Find Wind Chill">
-                            </form class="weather-form"><br> Wind Chill: <span id="windChill"></span>
-                        </p>
+                    <div id="weather-div">
+                        <p>The current temperature in West Valley City, Utah is <span id="current-temp"></span> &deg;F</p>
+                        <h2>Current Condition Icon</h2>
+                        <figure>
+                            <img src="" alt="" id="weather-icon" />
+                            <figcaption></figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 
@@ -204,6 +193,7 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/weatherapi.js"></script>
 </body>
 
 </html>

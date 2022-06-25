@@ -131,6 +131,7 @@
     }
     div p {
         background-color: transparent;
+        padding: 1em;
     }
     .event {
         grid-column: 1/2;
@@ -339,5 +340,22 @@
     }
     #weatherImg {
         width: 50%;
+    }
+    .weather-div {
+        background-color: var(--Secondary_color);
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 1em;
+        height: auto;
+        box-shadow: 0px 0px 30px 0px var(--Primary_color);
+    }
+    #event-large {
+        display: block;
+    }
+    #weather-large {
+        display: block;
     }
 }

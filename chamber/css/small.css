@@ -355,3 +355,11 @@ main div {
     height: auto;
     box-shadow: 0px 0px 30px 0px var(--Primary_color);
 }
+
+#event-large {
+    display: none;
+}
+
+#weather-large {
+    display: none;
+}
