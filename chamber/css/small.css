@@ -256,10 +256,6 @@ nav .icons li {
     grid-row: 1;
 }
 
-main {
-    margin-left: 2rem;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -294,6 +290,10 @@ section>p {
     box-shadow: 0 0 30px black;
     height: 200px;
     border: 1px solid black;
+}
+
+main {
+    width: auto;
 }
 
 main h1 {
@@ -495,4 +495,35 @@ p.sbsp {
 
 div .hero {
     padding: 0;
+}
+
+#contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1fr;
+}
+
+#contact {
+    background-color: var(--Secondary_color);
+    top: 50%;
+    border-radius: 5px;
+    margin: auto;
+    padding: 2em;
+}
+
+#contact label input {
+    background-color: white;
+}
+
+textarea {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 5px;
+}
+
+#contact-form {
+    background-color: #85C6E2;
+    margin-top: 5em;
+    border-radius: 50px;
 }

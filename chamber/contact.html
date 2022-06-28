@@ -36,8 +36,12 @@
         <nav class="nav">
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
 
                 <li>
+
                     <a class="active" href="discover.html">Discover</a>
                 </li>
                 <li>
@@ -68,13 +72,14 @@
             <p id="p-date" class="date"></p>
         </div>
     </header>
-    <main>
+    <main id="contact-grid">
         <div>
             <h1>Contact Info</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, natus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, animi!</p>
             <ul>
                 <li>
                     <h2>London</h2>
+                    <p>Address: </p>
                     <p>Phone: </p>
                     <p>Email: </p>
                 </li>
@@ -82,13 +87,19 @@
             </ul>
             <li>
                 <h2>London</h2>
+                <p>Address: </p>
                 <p>Phone: </p>
                 <p>Email: </p>
             </li>
         </div>
         <div>
-            <form method="get" action="confirm.html">
-
+            <form method="get" action="confirm.html" id="contact-form">
+                <legend id="contact">
+                    <label class="top">Name*<input type="text" name="fname" required></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
+                    <textarea name="textarea" rows="4" cols="50" placeholder="Type message here"></textarea>
+                    <input type="submit" value="Send Message" class="submitBtn">
+                </legend>
             </form>
         </div>
     </main>
