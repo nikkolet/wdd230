@@ -72,6 +72,7 @@ section>p {
 
 footer p {
     display: block;
+    padding: 1em;
 }
 
 footer .logo-img {
@@ -153,13 +154,7 @@ hr {
 
 #map {
     width: 40px;
-    float: left;
-    margin-right: 1em;
-}
-
-.map p {
-    float: left;
-    font-size: 24px;
+    margin-left: 12em;
 }
 
 nav button {
@@ -510,6 +505,7 @@ div .hero {
     border-radius: 5px;
     margin: auto;
     padding: 2em;
+    text-align: center;
 }
 
 #contact label input {
@@ -534,4 +530,8 @@ textarea {
     border-radius: 50px;
     width: 50%;
     margin: auto;
+}
+
+#confirm-p {
+    padding: 1em;
 }

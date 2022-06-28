@@ -362,4 +362,8 @@
         margin: 0;
         padding: 0;
     }
+    #map {
+        width: 25px;
+        margin-left: 5em;
+    }
 }

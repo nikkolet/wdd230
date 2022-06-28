@@ -147,4 +147,9 @@
         max-width: 100%;
         float: left;
     }
+    #map {
+        width: 40px;
+        margin-left: 20em;
+        margin-right: -22em;
+    }
 }
