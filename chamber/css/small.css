@@ -527,3 +527,11 @@ textarea {
     margin-top: 5em;
     border-radius: 50px;
 }
+
+#contact-form {
+    background-color: #85C6E2;
+    margin-top: 5em;
+    border-radius: 50px;
+    width: 50%;
+    margin: auto;
+}
