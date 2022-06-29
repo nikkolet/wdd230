@@ -3,6 +3,10 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
+const humidity = document.querySelector('#humidity');
+const windspeed = document.querySelector('#windspeed');
+const windchill = document.querySelector('windchill');
+
 const currentTemp1 = document.querySelector('#current-temp1');
 const weatherIcon1 = document.querySelector('#weather-icon1');
 const captionDesc1 = document.querySelector('#figcaption1');
@@ -27,10 +31,30 @@ async function apiFetch(apiURL) {
     }
 }
 
+function calculateWindChill() {
+    var temp = weatherData.main.temp.toFixed(1);
+    var wSpeed = weatherData.wind[0];
+    if ((temp <= 50) && (wSpeed > 3)) {
 
+        var windChill = (35.74 + (0.6215 * temp)) - (35.75 * Math.pow(wSpeed, 0.16)) + (0.4275 * temp * Math.pow(wSpeed, 0.16));
+
+
+        windChill = Math.round(windChill);
+        document.getElementById("windChill").innerHTML = windChill + "°f";
+    } else {
+        document.getElementById("windChill").innerHTML = "N/A";
+    }
+}
+
+// document.querySelector('#button').onclick = calculateWindChill;
 
 function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`;
+    humidity.innerHTML = `<strong>${weatherData.main.humidity.toFixed(1)}</strong>`;
+    windspeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(1)}</strong>`;
+    windchill.innerHTML = `<strong>${calculateWindChill.toFixed(1)}</strong>`;
+
+
     currentTemp1.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`;
 
 
