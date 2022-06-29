@@ -1,16 +1,14 @@
 function calculateWindChill() {
-    var temp = document.getElementById("temp").value;
-    var wSpeed = document.getElementById("windSpeed").value;
+    var temp = document.getElementById("current-temp").value;
+    var wSpeed = document.getElementById("windspeed").value;
     if ((temp <= 50) && (wSpeed > 3)) {
 
         var windChill = (35.74 + (0.6215 * temp)) - (35.75 * Math.pow(wSpeed, 0.16)) + (0.4275 * temp * Math.pow(wSpeed, 0.16));
 
 
         windChill = Math.round(windChill);
-        document.getElementById("windChill").innerHTML = windChill + "°f";
+        document.getElementById("windchill").innerHTML = windChill + "°f";
     } else {
-        document.getElementById("windChill").innerHTML = "N/A";
+        document.getElementById("windchill").innerHTML = "N/A";
     }
 }
-
-document.querySelector('#button').onclick = calculateWindChill;

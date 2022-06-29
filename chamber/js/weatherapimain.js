@@ -31,20 +31,6 @@ async function apiFetch(apiURL) {
     }
 }
 
-function calculateWindChill() {
-    var temp = weatherData.main.temp.toFixed(1);
-    var wSpeed = weatherData.wind[0];
-    if ((temp <= 50) && (wSpeed > 3)) {
-
-        var windChill = (35.74 + (0.6215 * temp)) - (35.75 * Math.pow(wSpeed, 0.16)) + (0.4275 * temp * Math.pow(wSpeed, 0.16));
-
-
-        windChill = Math.round(windChill);
-        document.getElementById("windChill").innerHTML = windChill + "°f";
-    } else {
-        document.getElementById("windChill").innerHTML = "N/A";
-    }
-}
 
 // document.querySelector('#button').onclick = calculateWindChill;
 
@@ -52,9 +38,6 @@ function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`;
     humidity.innerHTML = `<strong>${weatherData.main.humidity.toFixed(1)}</strong>`;
     windspeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(1)}</strong>`;
-    windchill.innerHTML = `<strong>${calculateWindChill.toFixed(1)}</strong>`;
-
-
     currentTemp1.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`;
 
 
@@ -68,4 +51,15 @@ function displayResults(weatherData) {
     weatherIcon1.setAttribute('src', iconsrc);
     weatherIcon1.setAttribute('alt', desc);
     captionDesc1.innerHTML = desc;
+
+    if ((temp <= 50) && (wSpeed > 3)) {
+
+        var windChill = (35.74 + (0.6215 * temp)) - (35.75 * Math.pow(wSpeed, 0.16)) + (0.4275 * temp * Math.pow(wSpeed, 0.16));
+
+
+        windChill = Math.round(windChill);
+        document.getElementById("windchill").innerHTML = windChill + "°f";
+    } else {
+        document.getElementById("windchill").innerHTML = "N/A";
+    }
 }
