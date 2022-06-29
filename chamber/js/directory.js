@@ -1,4 +1,4 @@
-const requestURL = 'https://github.com/nikkolet/wdd230/blob/main/chamber/json/directory.json';
+const requestURL = '../chamber/json/directory.json';
 const cards = document.querySelector('.cards');
 
 fetch(requestURL)
@@ -8,34 +8,37 @@ fetch(requestURL)
     .then(function(jsonObject) {
         console.table(jsonObject); // temporary checking for valid response and data parsing
 
-        const prophets = jsonObject['prophets'];
+        const companies = jsonObject['companies'];
 
-        prophets.forEach(displayProphets);
+        companies.forEach(displayCompanies);
 
-        function displayProphets(prophet) {
+        function displayCompanies(company) {
             // Create elements to add to the document
             let card = document.createElement('section');
             let h2 = document.createElement('h2');
-            let birthdate = document.createElement("p")
-            let birthplace = document.createElement("p")
+            let start = document.createElement("p")
+            let phone = document.createElement("p")
+            let hours = document.createElement("p")
 
             let portrait = document.createElement('img');
 
             // Change the textContent property of the h2 element to contain the prophet's full name
-            h2.textContent = prophet.name + ' ' + prophet.lastname;
-            birthdate.textContent = prophet.birthdate;
-            birthplace.textContent = prophet.birthplace;
+            h2.textContent = company.companyname;
+            phone.textContent = company.phone;
+            start.textContent = company.startdate;
+            hours.textContent = company.hours;
 
             // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-            portrait.setAttribute('src', prophet.imageurl);
-            portrait.setAttribute('alt', 'Portait of ' + prophet.name + ' ' + prophet.lastname);
+            portrait.setAttribute('src', company.imageurl);
+            portrait.setAttribute('alt', 'Portait of ' + company.CEO);
             portrait.setAttribute('loading', 'lazy');
 
             // Add/append the section(card) with the h2 element
             card.appendChild(h2);
             card.appendChild(portrait);
-            card.appendChild(birthdate);
-            card.appendChild(birthplace);
+            card.appendChild(start);
+            card.appendChild(phone);
+            card.appendChild(hours);
 
             // Add/append the existing HTML div with the cards class with the section(card)
             document.querySelector('div.cards').appendChild(card);
