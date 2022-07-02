@@ -154,13 +154,17 @@ hr {
 
 #map {
     width: 40px;
-    margin-left: 12em;
+    margin-left: -12em;
 }
 
 nav button {
     margin: .2rem 2vw;
     font-size: 2rem;
     float: right;
+}
+
+#map-p {
+    margin-bottom: 1em;
 }
 
 nav ul li {
