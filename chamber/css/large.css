@@ -289,7 +289,8 @@
         text-decoration: none;
     }
     #map {
-        width: 20px;
+        width: 30px;
+        margin-left: 0em;
     }
     #currentdate {
         grid-column: 1/4;
@@ -370,9 +371,5 @@
     .divdate p {
         margin: 0;
         padding: 0;
-    }
-    #map {
-        width: 25px;
-        margin-left: 5em;
     }
 }
