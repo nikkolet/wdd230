@@ -2,9 +2,9 @@ const requestURL = '../chamber/json/directory.json';
 const cards = document.querySelector('.cards');
 
 
-const spot1 = document.querySelector("#spot1").append(company[0]);
-const spot2 = document.querySelector("#spot2").append(company[1]);
-const spot3 = document.querySelector("#spot3").append(company[2]);
+const spot1 = document.querySelector("#spot1");
+const spot2 = document.querySelector("#spot2");
+const spot3 = document.querySelector("#spot3");
 
 fetch(requestURL)
     .then(function(response) {
@@ -50,7 +50,7 @@ fetch(requestURL)
 
             // Add/append the existing HTML div with the cards class with the section(card)
             document.querySelector('div.cards').appendChild(card);
-
+            console.log(company[0]);
 
             document.querySelector("div#spot1").append(company[0]);
             document.querySelector("div#spot2").append(company[1]);
