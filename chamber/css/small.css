@@ -428,6 +428,10 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
+#contact-grid form input.submitBtn {
+    margin: auto;
+}
+
 form label.top input:required {
     border-left: red solid 6px;
 }
@@ -532,6 +536,12 @@ textarea {
     margin-bottom: 2em;
     border-radius: 5px;
     margin-left: 36%;
+}
+
+#contact-grid textarea {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #contact-form {
