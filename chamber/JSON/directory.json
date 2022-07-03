@@ -90,7 +90,7 @@
             "startdate": "Jun 5, 1996",
             "hours": "Mon-Fri: 10am - 5pm",
             "numofemployees": 56,
-            "membership": "Gold",
+            "membership": "Nonprofit",
             "imageurl": "images/directory/Ginny_Weasley_poster.jpg"
         },
         {
@@ -103,7 +103,7 @@
             "startdate": "Jun 5, 1996",
             "hours": "Mon-Fri: 10am - 5pm",
             "numofemployees": 56,
-            "membership": "Gold",
+            "membership": "Nonpfrofit",
             "imageurl": "images/directory/Neville_Longbottom.jpeg"
         },
         {
@@ -168,7 +168,7 @@
             "startdate": "Jun 5, 1996",
             "hours": "Mon-Fri: 10am - 5pm",
             "numofemployees": 56,
-            "membership": "Gold",
+            "membership": "Nonprofit",
             "imageurl": "images/directory/Remus_Lupin.jpeg"
         },
         {

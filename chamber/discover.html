@@ -8,110 +8,134 @@
     <meta name="description" content="Lazy Loading Assignment for Zach Robker in WDD 230: Web Frontend 
     Development at Brigham Young University - Idaho">
     <title>WDD 230 Lazy Loading Assignment|Zach Robker</title>
-    <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="icon" href="images/2730327_colour_harry_hogwarts_house_potter_icon.png">
-    <script src="js/lazyloading.js" defer></script>
-    <script src="js/script.js"></script>
+
 </head>
-<header id="discovery-header">
-    <img class="logo-img" id="header-img" src="images/2730327_colour_harry_hogwarts_house_potter_icon.png" alt="logo">
-    <ul class="company">
-        <li>
-            <h1>Harry Potter</h1>
-            <p>and the Chamber of Commerce</p>
-        </li>
-    </ul>
-    <nav class="nav">
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-        <ul id="primaryNav">
-
-            <li>
-                <a class="active" href="index.html">Home</a>
-            </li>
-            <li>
-                <a class="active" href="directory.html">Directory</a>
-            </li>
-            <li>
-                <a class="active" href="join.html">Join</a>
-            </li>
-            <li>
-                <a class="active" href="contact.html">Contact</a>
-            </li>
-
-        </ul>
-        <ul class="icons">
-            <li>
-                <a href="images/facebookIcon.png" target="_blank">
-                    <img id="facebook" src="images/facebookIcon.png" alt="facebook Icon"></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/nikkolet-ashby-418757161/" target="_blank">
-                    <img id="linkedin" src="images/linkedinIcon.png" alt="LinkedIn Icon"></a>
-            </li>
-        </ul>
-
-    </nav>
-    <p id="p-date"><span id="currentdate"></span></p>
-</header>
 
 <body>
-    <div class="discover-body">
-        <h1>Discover our locations!</h1>
-        <picture>
-            <h2>Owlery</h2>
-            <p>Our choice of owls cannot be beat and are perfect for emailing teachers, parents, and classmates.</p>
-            <img class="discover" src="https://via.placeholder.com/300x400" data-src="images/owlery.jpg" alt="Owlery">
-        </picture>
-        <picture>
-            <h2>Hogsmeade</h2>
-            <p>Variety of stores to gather supplies and goods. Must have permission from parents/guardian if under 18.</p>
-            <img class="discover" src="https://via.placeholder.com/300x400" data-src="images/hogsmeade.jpg" alt="Hogsmeade">
-        </picture>
-        <picture>
-            <h2>Chamber of Secrets</h2>
-            <p>Python languages classes held Wednesday nights at 7 pm.</p>
-            <img class="discover" src="https://via.placeholder.com/300x400" data-src="images/chamber-of-secrets.jpg" alt="Chamber of Secrets">
-        </picture>
-        <picture>
-            <h2>Room of Requirement</h2>
-            <p>This room can become anything you need. Dueling lessons will be given at 9 pm - 11 pm Tuesday evenings.</p>
-            <img class="discover" src="https://via.placeholder.com/300x400" data-src="images/room-of-requirement.jpg" alt="img">
-        </picture>
-        <picture>
-            <h2>Kitchens</h2>
-            <p>Learn to bake Dancing Flan and Scream Cheese Cake with Pitts the house helf. Classes will be on Fridays at 5:30 pm.</p>
-            <img class="discover" src="https://via.placeholder.com/300x400" data-src="images/hogwarts-kitchens.jpg" alt="img">
-        </picture>
-    </div>
+    <header>
+        <img class="logo-img" id="header-img" src="images/2730327_colour_harry_hogwarts_house_potter_icon.png" alt="logo">
+        <ul class="company">
+            <li>
+                <h1>Harry Potter</h1>
+                <p>and the Chamber of Commerce</p>
+            </li>
+        </ul>
 
+
+        <nav class="nav">
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+
+                <li>
+                    <a class="active" href="discover.html">Discover</a>
+                </li>
+                <li>
+                    <a class="active" href="directory.html">Directory</a>
+                </li>
+                <li>
+                    <a class="active" href="join.html">Join</a>
+                </li>
+                <li>
+                    <a class="active" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+            <ul class="icons">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img id="facebook" src="images/facebook-icon.png" alt="facebook Icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nikkolet-ashby-418757161/" target="_blank">
+                        <img id="linkedin" src="images/3225190_app_linkedin_logo_media_popular_icon.png" alt="LinkedIn Icon"></a>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="divdate">
+            <p><span id="message"></span></p>
+            <p id="p-date" class="date"></p>
+        </div>
+    </header>
+    <main>
+        <p id="lastvisited"></p>
+
+        <div class="discover-body">
+            <h1>Discover our locations!</h1>
+            <picture>
+                <h2>Owlery</h2>
+                <p>Our choice of owls cannot be beat and are perfect for emailing teachers, parents, and classmates.</p>
+                <img class="discover" src="https://via.placeholder.com/300x400" data-src="images/owlery.jpg" alt="Owlery">
+            </picture>
+            <picture>
+                <h2>Hogsmeade</h2>
+                <p>Variety of stores to gather supplies and goods. Must have permission from parents/guardian if under 18.</p>
+                <img class="discover" src="https://via.placeholder.com/300x400" data-src="images/hogsmeade.jpg" alt="Hogsmeade">
+            </picture>
+            <picture>
+                <h2>Chamber of Secrets</h2>
+                <p>Python languages classes held Wednesday nights at 7 pm.</p>
+                <img class="discover" src="https://via.placeholder.com/300x400" data-src="images/chamber-of-secrets.jpg" alt="Chamber of Secrets">
+            </picture>
+            <picture>
+                <h2>Room of Requirement</h2>
+                <p>This room can become anything you need. Dueling lessons will be given at 9 pm - 11 pm Tuesday evenings.</p>
+                <img class="discover" src="https://via.placeholder.com/300x400" data-src="images/room-of-requirement.jpg" alt="img">
+            </picture>
+            <picture>
+                <h2>Kitchens</h2>
+                <p>Learn to bake Dancing Flan and Scream Cheese Cake with Pitts the house helf. Classes will be on Fridays at 5:30 pm.</p>
+                <img class="discover" src="https://via.placeholder.com/300x400" data-src="images/hogwarts-kitchens.jpg" alt="img">
+            </picture>
+        </div>
+
+        <div id="demographics">
+            <h2>Hogwarts Demographics</h2>
+            <p>Founded: 1000 a.d.</p>
+            <p>Founders: </p>
+            <p>Population: </p>
+        </div>
+    </main>
+    <footer>
+        <div class="logo-address">
+            <img class="logo-img footer-img" src="images/2730327_colour_harry_hogwarts_house_potter_icon.png" alt="logo">
+            <ul class="footer-company">
+                <li>
+                    <h1>Harry Potter and the Chamber of Commerce</h1>
+                </li>
+                <li>
+                    <p>Salt Lake Chamber, 201 S Main St #2300,<br>Salt Lake City,UT 84111</p>
+                </li>
+            </ul>
+        </div>
+        <ul class="contact">
+            <li>nikkoletashby@gmail.com</li>
+            <li>+1(801)231-3935</li>
+            <li class="map">
+
+                <p id="map-p">
+                    <a href="https://www.google.com/maps/place/Salt+Lake+Chamber/@40.7645262,-111.892769,17z/data=!3m2!4b1!5s0x87528a3aa97113a7:0xdb61b5943e1a7aa1!4m5!3m4!1s0x8752f513d6f6ab15:0x4be5eda424cce15a!8m2!3d40.7645222!4d-111.8905803"><img id="map" src="images/pin.png" alt="Location Map"></a>Map Location</p>
+            </li>
+        </ul>
+        <p class="js" id="js-p">
+            &copy;2022 | Harry Potter and the Chamber of Commerce | Nikkolet Ashby | WDD 230 Project | Last Updated: <span id="lastmodified"></span></p>
+
+    </footer>
+    <script src="js/lazyloading.js" defer></script>
+    <script src="js/script.js"></script>
+
+    <script src="js/lastvisited.js"></script>
 </body>
-<footer>
-    <img class="logo-img footer-img" src="images/2730327_colour_harry_hogwarts_house_potter_icon.png" alt="logo">
-    <ul class="footer-company">
-        <li>
-            <h1>Learning Chamber of Commerce</h1>
-        </li>
-        <li>
-            <p>Salt Lake Chamber,<br> 201 S Main St #2300,
-                <br>Salt Lake City,<br>UT 84111</p>
-        </li>
-    </ul>
-    <ul class="contact">
-        <li>nikkoletashby@gmail.com</li>
-        <li>+1(801)231-3935</li>
-        <li class="map">
-            <a href="https://www.google.com/maps/place/Salt+Lake+Chamber/@40.7645262,-111.892769,17z/data=!3m2!4b1!5s0x87528a3aa97113a7:0xdb61b5943e1a7aa1!4m5!3m4!1s0x8752f513d6f6ab15:0x4be5eda424cce15a!8m2!3d40.7645222!4d-111.8905803"><img id="map" src="images/pin.png" alt="Location Map"></a>
-            <p>Map Location</p>
-        </li>
-    </ul>
-    <p class="js">
-        &copy;2022 | Harry Potter and the Chamber of Commerce | Nikkolet Ashby | WDD 230 Project | Last Updated: <span id="lastmodified"></span></p>
-</footer>
 
 </html>
