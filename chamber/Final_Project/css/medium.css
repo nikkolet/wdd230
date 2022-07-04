@@ -1,0 +1,27 @@
+    @media only screen and (min-width: 32.5em) {
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        header,
+        footer {
+            border-radius: 10px;
+        }
+        header {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            float: center;
+            border-radius: 50%;
+            grid-row: 1;
+        }
+        h1 {
+            grid-row: 2;
+        }
+    }
