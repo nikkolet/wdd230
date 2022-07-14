@@ -24,7 +24,7 @@
 
 <body>
     <header>
-        <div id="logo">
+        <div class="logo">
             <img class="logo-img" id="header-img" src="images/temple_icon.jpg" alt="logo">
             <h1>Temple Inn<br> & <br>Suites</h1>
         </div>
@@ -57,7 +57,8 @@
     </header>
 
     <main>
-        <div>
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             <h1>Weather Alert!</h1>
         </div>
         <div class="grid">
@@ -66,11 +67,14 @@
             </div>
             <div>
                 <h1>Make a Reservation with button</h1>
+                <img src="" alt="Reservation Image"><br>
+                <a href="#"><button class="button">Make a Reservation!</button></a>
             </div>
             <div>
                 <h1>Activities Carousel with arrows</h1>
             </div>
-            <div id="weather-large" class="weather large-div">
+            <div>
+                <h1>Weather</h1>
                 <div>
                     <p>The current temperature in West Valley City, Utah is <span id="current-temp"></span> &deg;F</p>
                     <p>The current Humidity in West Valley City, Utah is <span id="humidity"></span></p>
@@ -83,107 +87,16 @@
                     </figure>
                 </div>
             </div>
-            <div class="join">
-
-                <a href="join.html"><button class="button">Join Us!</button></a>
-
-                <p>Discover how to join the magical worldof Harry Potter and the Chamber of Commerece and how it will benefit your organization!</p>
-            </div>
-            <div class="hero">
-                <h2 class="hero-text">Welcome to Hogwarts</h2>
-                <img id="rexburg-img" src="images/wdd230-org.jpg" alt="Chamber of Commerce Homebase">
-
-            </div>
-            <div class="news">
-                <h2>The Daily Prophet</h2>
-                <h3>He-Who-Must-Not-Be-Named Returns!</h3>
-                <i>Nymphadora
-                Abbott</i>
-                <p>"He's back." <br>-Cornelius Fudge</p>
-                <p>In a brief statement Friday night, Minister for Magic Cornelius Fudge confirmed that He-Who-Must-Not-Be Named has returned to this country and is active once more. "It is with great regret that I must confirm that the wizard styling himself
-                    Lord - well, you know who I mean - is alive and among us again," said Fudge, looking tired and flustered as he addressed reporters. "It is with almost equal regret that we report the mass revolt of the Dementors of Azkaban, who have
-                    shown themselves averse to continuing in the Ministry's employ. We believe that the dementors are currently taking direction from Lord - Thingy. We urge the magical population to remain vigilant. The Ministry is currently publishing
-                    guides to elementary home and personal defense that will be delivered free to all wizarding homes within the coming month."<br><a href="https://harry-potter-compendium.fandom.com/wiki/Daily_Prophet_articles#HE-WHO-MUST-NOT-BE-NAMED_RETURNS_(June_19,_1996)">read more...</a></p>
-            </div>
-            <div class="spotlight" id="spotlight">
-                <div id="spot1">
-                    <h2>Hogwarts Express</h2>
-                    <img class="div-image" id="train" src="images/2730340_colour_express_harry_hogwarts_potter_icon.png" alt="hogwarts train">
-                    <p>We're here to get you at Platform 9 3/4 @ 11am.</p>
-                    <hr>
-                    <p>hogwarts-transport.com<br> +1(605)475-6961 | <a href="#">Website</a></p>
-                </div>
-                <div id="spot2">
-                    <h2>Charms Club</h2>
-
-                    <img class="div-image" src="images/2730324_colour_feather_harry_potter_quill_icon.png" alt="feather">
-                    <p>Tuesdays @ 5pm - 6pm in the Charms classroom.</p>
-
-                    <p><strong>Keeep Calm</strong><br>and<br>Swish and Flick</p>
-                    <hr>
-
-                    <p>ffitwick@hogwartsstaff.org<br> +1(395)384-2794 | <a href="#">Website</a></p>
-
-                </div>
-                <div id="spot3">
-                    <h2>Werewolf Awareness Wednesdays</h2>
-                    <img class="div-image" src="images/2730322_colour_harry_potter_sirius_wolf_icon.png" alt="wolf howling at moon">
-                    <br>
-                    <i>"Being a werewolf bites...But you are not alone." ~ Professor R. J. Lupin</i>
-                    <p>If you or someone you love suffers from lycanthropy, please come and learn more.</p>
-                    <hr>
-                    <p>Wednesdays @ 7PM - 8PM in the Defense Against the Dark Arts Room<br>Please Note: Times may change abruptly.
-                    </p>
-                    <hr>
-                    <p>rlupin@hogwarts-staff.org <br>+1(801)239-5627 | <a href="#">Website</a></p>
-                </div>
-            </div>
-
-            <div id="medium-div">
-                <div class="event">
-                    <h2>Triwizard Tournament</h2>
-                    <img class="div-image" src="images/2730338_colour_dragon_egg_harry_magic_icon.png" alt="Dragon Egg">
-                    <p>The first task in the Triwizard Tournament is complete!<br> Now our contestants will have to figure out what the next task is. <a href="https://harrypotter.fandom.com/wiki/Golden_egg">more info...</a></p>
-                </div>
-                <div class="weather-div">
-                    <div id="weather-div">
-                        <p>The current temperature in West Valley City, Utah is <span id="current-temp1"></span> &deg;F</p>
-                        <h2>Current Condition Icon</h2>
-                        <figure>
-                            <img src="" alt="" id="weather-icon1" />
-                            <figcaption id="figcaption1"></figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </main>
 
-
     <footer>
-        <div class="logo-address">
-            <img class="logo-img footer-img" src="images/2730327_colour_harry_hogwarts_house_potter_icon.png" alt="logo">
-            <ul class="footer-company">
-                <li>
-                    <h1>Harry Potter and the Chamber of Commerce</h1>
-                </li>
-                <li>
-                    <p>Salt Lake Chamber, 201 S Main St #2300,<br>Salt Lake City,UT 84111</p>
-                </li>
-            </ul>
+        <div class="logo">
+            <img class="logo-img" id="header-img" src="images/temple_icon.jpg" alt="logo">
+            <h1>Temple Inn<br> & <br>Suites</h1>
         </div>
-        <ul class="contact">
-            <li>nikkoletashby@gmail.com</li>
-            <li>+1(801)231-3935</li>
-            <li class="map">
-
-                <p id="map-p">
-                    <a href="https://www.google.com/maps/place/Salt+Lake+Chamber/@40.7645262,-111.892769,17z/data=!3m2!4b1!5s0x87528a3aa97113a7:0xdb61b5943e1a7aa1!4m5!3m4!1s0x8752f513d6f6ab15:0x4be5eda424cce15a!8m2!3d40.7645222!4d-111.8905803"><img id="map" src="images/pin.png" alt="Location Map"></a>Map Location</p>
-            </li>
-        </ul>
         <p class="js" id="js-p">
-            &copy;2022 | Harry Potter and the Chamber of Commerce | Nikkolet Ashby | WDD 230 Project | Last Updated: <span id="lastmodified"></span></p>
+            &copy;2022 | Temple Inn & Suites | CEO: Nikkolet Ashby | WDD 230 Final Project | Last Updated: <span id="lastmodified"></span></p>
 
     </footer>
     <script src="js/script.js"></script>
