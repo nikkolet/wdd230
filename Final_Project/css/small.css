@@ -37,14 +37,14 @@ p {
 
 /*---Logo---*/
 
-#logo {
+.logo {
     background-color: var(--Primary_Color);
     display: block;
     position: relative;
     text-align: center;
 }
 
-#logo img {
+.logo img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -53,7 +53,7 @@ p {
     width: 20%;
 }
 
-#logo h1 {
+.logo h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -70,11 +70,32 @@ p {
 
 nav {
     background-color: var(--Secondary_Color);
+    padding: 1em;
+}
+
+nav ul li {
+    display: inline;
+    padding: 1em;
+    margin: auto;
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--Primary_Color);
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
+    display: inline;
+    padding: 1em;
+}
+
+nav ul li a:hover {
+    color: var(--Secondary_Color);
+    background-color: var(--Primary_Color);
+}
+
+nav ul li a:active {
+    color: var(--Secondary_Color);
+    background-color: var(--Primary_Color);
 }
 
 #hamburgerBtn span:nth-child(1) {
@@ -107,6 +128,35 @@ nav ul li a {
 
 
 /*Main*/
+
+
+/*Alert Warning*/
+
+.alert {
+    padding: 2em;
+    background-color: red;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.closebtn {
+    line-height: 0.5em;
+    float: right;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+.closebtn:hover {
+    background-color: black;
+}
+
+
+/*Elements*/
 
 
 /*Footer*/
