@@ -1,4 +1,5 @@
 @media only screen and (min-width: 64em) {
+    /*Default*/
      :root {
         --Primary_Color: #512A3D;
         --Secondary_Color: #FE9A9C;
@@ -10,8 +11,33 @@
         padding: 0;
         box-sizing: border-box;
     }
-}
-
-#hamburgerBtn {
-    display: none;
+    /*Header*/
+    #logo {
+        background-color: var(--Primary_Color);
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    #logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        width: 20%;
+    }
+    #logo h1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        text-shadow: 0 0 5px var(--Accent2);
+    }
+    #hamburgerBtn {
+        display: none;
+    }
 }
