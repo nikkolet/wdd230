@@ -127,19 +127,19 @@ nav ul li a:active {
 }
 
 
-/*Main*/
-
-
 /*Alert Warning*/
 
 .alert {
-    padding: 2em;
-    background-color: red;
+    padding: 1em;
+    background-color: rgba(225, 0, 0, 0.7);
     color: white;
     font-size: 1.5em;
     cursor: pointer;
     transition: 0.4s;
     text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
 }
 
 .closebtn {
@@ -152,7 +152,27 @@ nav ul li a:active {
 }
 
 .closebtn:hover {
-    background-color: black;
+    background-color: rgba(225, 0, 0, 1);
+}
+
+
+/*Main*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat( 4, 25%);
+    grid-template-rows: repeat( 3, auto);
+    margin-left: -1em;
+    margin-right: 1em;
+}
+
+main div {
+    background-color: var(--Secondary_Color);
+    border-radius: 5px;
+}
+
+#reservation img {
+    width: 100px;
 }
 
 
@@ -160,3 +180,27 @@ nav ul li a:active {
 
 
 /*Footer*/
+
+footer,
+footer h1,
+footer h2,
+footer h3,
+footer p {
+    background-color: var(--Primary_Color);
+    color: var(--Accent1);
+    text-align: center;
+}
+
+footer .logo h1 {
+    color: var(--Primary_Color);
+    background-color: transparent;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--Accent1);
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
+    display: inline;
+    padding: 1em;
+}

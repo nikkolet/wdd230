@@ -12,13 +12,13 @@
         box-sizing: border-box;
     }
     /*Header*/
-    #logo {
+    .logo {
         background-color: var(--Primary_Color);
         display: block;
         position: relative;
         text-align: center;
     }
-    #logo img {
+    .logo img {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -26,7 +26,7 @@
         padding-top: 1em;
         width: 20%;
     }
-    #logo h1 {
+    .logo h1 {
         display: block;
         margin-left: auto;
         margin-right: auto;
