@@ -164,6 +164,7 @@ nav ul li a:active {
     grid-template-rows: repeat( 3, auto);
     margin-left: -1em;
     margin-right: 1em;
+    grid-gap: 1em;
 }
 
 main div {
@@ -172,7 +173,7 @@ main div {
 }
 
 #reservation img {
-    width: 100px;
+    width: 400px;
 }
 
 
