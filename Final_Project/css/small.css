@@ -160,11 +160,13 @@ nav ul li a:active {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat( 4, 25%);
+    grid-template-columns: 1fr;
     grid-template-rows: repeat( 3, auto);
     margin-left: -1em;
     margin-right: 1em;
     grid-gap: 1em;
+    width: 80%;
+    margin: auto;
 }
 
 main div {
@@ -203,5 +205,25 @@ footer ul li a {
     font-family: 'Playfair Display SC', serif;
     font-size: 20px;
     display: inline;
+    padding: 1em;
+}
+
+#contact ul li {
+    padding: 1em;
+}
+
+.contact {
+    filter: invert(1);
+}
+
+#icons ul li {
+    display: inline;
+}
+
+#icons {
+    padding: 1em;
+}
+
+#js-p {
     padding: 1em;
 }
