@@ -15,6 +15,7 @@
     <link href="css/medium.css" rel="stylesheet">
     <!-- enhance-desktop -->
     <link href="css/large.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -62,50 +63,65 @@
             <h1>Weather Alert!</h1>
         </div>
         <div class="grid">
-            <div id="temples">
-                <h1>Nearby Temples Carousel with arrows</h1>
+            <div id="temples" id="myCarousel" class="carousel slide" data-ride="carousel">
+                <h1>Nearby Temples</h1>
                 <div class="images">
-                    <ul>
-                        <li>
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+
+                        <div class="item active">
                             <img src="images/1599px-Provo_Utah_Temple_4.jpg" alt="Provo Temple">
-                        </li>
-
-                        <li>
+                        </div>
+                        <div class="item">
                             <img src="images/ogden-utah-temple-13966-main.jpg" alt="Ogden Temple">
-                        </li>
-                        <li>
+                        </div>
+                        <div class="item">
                             <img src="images/oquirrh-mountain-utah-temple-10509-main.jpg" alt="Oquirrh Mountain Temple">
-                        </li>
-                        <li>
+                        </div>
+                        <div class="item">
                             <img src="images/salt-lake-temple-15669-main.jpg" alt="Salt Lake Temple">
-                        </li>
-                    </ul>
-
-
+                        </div>
+                    </div>
                 </div>
+
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div id="reservation">
-                <h1>Make a Reservation with button</h1>
-                <img src="images/temple-hotel.jpg" alt="Reservation Image"><br>
-                <a href="#"><button id="reservebtn">Make a Reservation!</button></a>
-            </div>
+        </div>
+        <div id="reservation">
+            <h1>Make a Reservation with button</h1>
+            <img src="images/temple-hotel.jpg" alt="Reservation Image"><br>
+            <a href="#"><button id="reservebtn">Make a Reservation!</button></a>
+        </div>
+        <div>
+            <h1>Activities Carousel with arrows</h1>
+        </div>
+        <div>
+            <h1>Weather</h1>
             <div>
-                <h1>Activities Carousel with arrows</h1>
+                <p>The current temperature in West Valley City, Utah is <span id="current-temp"></span> &deg;F</p>
+                <p>The current Humidity in West Valley City, Utah is <span id="humidity"></span></p>
+                <p>The current Windspeed in West Valley City, Utah is <span id="windspeed"></span></p>
+                <p>The current windchill in West Valley City, Utah is <span id="windchill"></span></p>
+                <h2>Current Weather Condition</h2>
+                <figure>
+                    <img src="" alt="" id="weather-icon" />
+                    <figcaption></figcaption>
+                </figure>
             </div>
-            <div>
-                <h1>Weather</h1>
-                <div>
-                    <p>The current temperature in West Valley City, Utah is <span id="current-temp"></span> &deg;F</p>
-                    <p>The current Humidity in West Valley City, Utah is <span id="humidity"></span></p>
-                    <p>The current Windspeed in West Valley City, Utah is <span id="windspeed"></span></p>
-                    <p>The current windchill in West Valley City, Utah is <span id="windchill"></span></p>
-                    <h2>Current Weather Condition</h2>
-                    <figure>
-                        <img src="" alt="" id="weather-icon" />
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
-            </div>
+        </div>
         </div>
     </main>
 
@@ -164,6 +180,8 @@
     <!-- <script src="js/windchill.js"></script>
     <script src="js/spotlight.js"></script>
     <script src="js/weatherapimain.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
