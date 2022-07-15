@@ -172,6 +172,7 @@ nav ul li a:active {
 main div {
     background-color: var(--Secondary_Color);
     border-radius: 5px;
+    align-items: center;
 }
 
 #reservation img {
@@ -180,6 +181,23 @@ main div {
 
 
 /*Elements*/
+
+#temples {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+#temples img {
+    width: 400px;
+    height: 300px;
+}
+
+#reservebtn {
+    width: 80%;
+    padding: 1em;
+}
 
 
 /*Footer*/
