@@ -168,16 +168,14 @@ nav ul li a:active {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: transparent;
 }
 
 main div {
-    background-color: var(--Secondary_Color);
+    background-color: var(--Accent2);
     border-radius: 5px;
-    align-items: center;
-}
-
-#reservation img {
-    width: 400px;
+    text-align: center;
+    margin: 1em;
 }
 
 
@@ -189,6 +187,35 @@ main div {
     overflow: hidden;
     margin: auto;
     position: relative;
+    margin-bottom: 1.5em;
+    grid-row: 1;
+}
+
+#reservation {
+    grid-row: 2;
+    background-color: transparent;
+}
+
+#reservation img {
+    width: 400px;
+}
+
+.carousel-caption {
+    background-color: var(--Primary_Color);
+    color: var(--Secondary_Color);
+    right: 20%;
+    bottom: -5%;
+    padding-bottom: 0px;
+}
+
+#activities {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    margin-bottom: 1.5em;
+    grid-row: 3;
 }
 
 #temples img {
