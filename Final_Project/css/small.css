@@ -161,12 +161,13 @@ nav ul li a:active {
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat( 3, auto);
     margin-left: -1em;
     margin-right: 1em;
     grid-gap: 1em;
-    width: 80%;
     margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 main div {
@@ -190,13 +191,17 @@ main div {
 }
 
 #temples img {
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 #reservebtn {
-    width: 80%;
+    width: 200px;
     padding: 1em;
+    margin: auto;
+    border-radius: 5px;
+    background-color: var(--Primary_Color);
+    color: var(--Accent1);
 }
 
 
