@@ -194,11 +194,22 @@ main div {
 #reservation {
     grid-row: 2;
     background-color: transparent;
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: auto;
 }
 
 #reservation img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    position: relative;
+}
+
+#reservation a {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .carousel-caption {
@@ -262,7 +273,7 @@ footer ul li a {
 
 #contact ul li {
     padding: 1em;
-    text-decoration: none;
+    list-style-type: none;
 }
 
 .contact {

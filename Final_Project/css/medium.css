@@ -44,11 +44,11 @@
     /* main */
     #reservation {
         overflow: hidden;
+        position: relative;
     }
     #reservation img {
-        width: 60%;
+        width: 100%;
         height: auto;
         margin: auto;
-        position: relative;
     }
 }
