@@ -15,7 +15,7 @@
     <link href="css/medium.css" rel="stylesheet">
     <!-- enhance-desktop -->
     <link href="css/large.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -63,8 +63,9 @@
             <h1>Weather Alert!</h1>
         </div>
         <div class="grid">
-            <div id="temples med-temples large-temples">
-                <div id="myTempleCarousel" class="carousel slide" data-ride="carousel">
+            <div id="temples">
+                <div class="cards grid"></div>
+                <!-- <div id="myTempleCarousel" class="carousel slide" data-ride="carousel">
                     <h1>Nearby Temples</h1>
                     <div class="images">
                         <ol class="carousel-indicators">
@@ -109,12 +110,12 @@
                             <span class="glyphicon glyphicon-chevron-right"></span>
                             <span class="sr-only">Next</span>
                         </a>
-                    </div>
-                </div>
-
+                    </div> -->
             </div>
+
         </div>
-        <div id="reservation med-reservation large-reservation">
+        </div>
+        <div id="reservation">
             <div>
                 <img src="images/temple-hotel.jpg" alt="Reservation Image"><br>
                 <a href="#"><button id="reservebtn">Make a Reservation!</button></a>
@@ -185,7 +186,7 @@
                 </div>
             </div>
         </div>
-        <div id="weather-grid med-weather-grid large-weather-grid">
+        <div id="weather-grid">
             <div>
                 <h1>Weather</h1>
                 <div id="weather-box">
