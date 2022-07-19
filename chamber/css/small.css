@@ -28,7 +28,7 @@ p {
 }
 
 header {
-    width: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: 20% 15% 40% 25%;
     grid-template-rows: 60% 40%;
@@ -43,7 +43,7 @@ header .logo-img {
 }
 
 footer {
-    width: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 70% 18%;
@@ -278,7 +278,7 @@ section {
     border-radius: 5px;
 }
 
-section>p {
+section p {
     min-height: 60px;
     margin: 0;
 }

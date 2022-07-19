@@ -63,7 +63,7 @@
             <h1>Weather Alert!</h1>
         </div>
         <div class="grid">
-            <div id="temples">
+            <div id="temples med-temples large-temples">
                 <div id="myTempleCarousel" class="carousel slide" data-ride="carousel">
                     <h1>Nearby Temples</h1>
                     <div class="images">
@@ -75,25 +75,25 @@
                         </ol>
 
                         <div class="carousel-inner">
-                            <div class="item active">
+                            <div class="item active cards">
                                 <img src="images/1599px-Provo_Utah_Temple_4.jpg" alt="Provo Temple">
                                 <div class="carousel-caption">
                                     <h3>Provo Temple</h3>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item cards">
                                 <img src="images/ogden-utah-temple-13966-main.jpg" alt="Ogden Temple">
                                 <div class="carousel-caption">
                                     <h3>Ogden Temple</h3>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item cards">
                                 <img src="images/oquirrh-mountain-utah-temple-10509-main.jpg" alt="Oquirrh Mountain Temple">
                                 <div class="carousel-caption">
                                     <h3>Oquirrh Mountain Temple</h3>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item cards">
                                 <img src="images/salt-lake-temple-15669-main.jpg" alt="Salt Lake Temple">
                                 <div class="carousel-caption">
                                     <h3>Salt Lake Temple</h3>
@@ -114,7 +114,7 @@
 
             </div>
         </div>
-        <div id="reservation">
+        <div id="reservation med-reservation large-reservation">
             <div>
                 <img src="images/temple-hotel.jpg" alt="Reservation Image"><br>
                 <a href="#"><button id="reservebtn">Make a Reservation!</button></a>
@@ -122,7 +122,7 @@
 
         </div>
 
-        <div id="activities">
+        <div id="activities med-activities large-activities">
             <div id="myActivitiesCarousel" class="carousel slide" data-ride="carousel">
                 <h1>Perks</h1>
                 <div class="images">
@@ -185,10 +185,10 @@
                 </div>
             </div>
         </div>
-        <div id="weather-grid">
+        <div id="weather-grid med-weather-grid large-weather-grid">
             <div>
                 <h1>Weather</h1>
-                <div>
+                <div id="weather-box">
                     <p>The current temperature in West Valley City, Utah is <span id="current-temp"></span> &deg;F</p>
                     <p>The current Humidity in West Valley City, Utah is <span id="humidity"></span></p>
                     <p>The current Windspeed in West Valley City, Utah is <span id="windspeed"></span></p>
@@ -257,9 +257,8 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <!-- <script src="js/windchill.js"></script>
-    <script src="js/spotlight.js"></script>
-    <script src="js/weatherapimain.js"></script> -->
+    <script src="js/temples.js"></script>
+    <script src="js/weatherapimain.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
