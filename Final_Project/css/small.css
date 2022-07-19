@@ -197,13 +197,15 @@ main div {
     grid-row: 2;
     background-color: transparent;
     position: relative;
-    width: auto;
+    height: auto;
+    overflow: auto;
     margin: auto;
 }
 
 #reservation img {
-    width: 100%;
+    float: left;
     height: auto;
+    max-width: 100%;
     position: relative;
     overflow: hidden;
 }
