@@ -1,50 +1,52 @@
 {
     "activities": [{
             "name": "Family History Center",
-            "location": "Provo, Utah, United States",
-            "description": "",
+            "description": "Find family members who need their work done. Find out your family history.",
             "phone": "(1) 801-375-5775",
-            "hours": "Mon: 5:30am - 10am, Tue: 5:30am - 8pm, Wed-Sat: 7am-8pm, Sun: Closed",
-            "address": "2200 Temple Hill Dr, Provo UT 84604-1775, United States",
-            "status": "operating",
+            "hours": "Mon-Sat: 5am - 8pm Sun: Closed",
             "order": 0,
-            "imageurl": "images/1599px-Provo_Utah_Temple_4.jpg"
+            "imageurl": "images/activities/family_history.jpg"
 
         },
         {
-            "name": "Ogden Utah Temple",
-            "location": "Ogden, Utah, United States",
-            "decicated": "18 January 1972",
-            "phone": "(1) 801-621-6880",
-            "hours": "Mon - Wed: 7am - 8pm, Thur: 6am - 8pm, Fri-Sat: 7am - 8pm, Sun: Closed",
-            "address": "350 22nd St, Ogden UT 84401-14, United States",
-            "status": "operating",
-            "order": 1,
-            "imageurl": "images/ogden-utah-temple-13966-main.jpg"
-
-        },
-        {
-            "name": "Oquirrh Mountain Utah Temple",
-            "location": "South Jordon, Utah, United States",
-            "decicated": "21 August 2009",
-            "phone": "(1) 801-878-3800",
-            "hours": "Mon - Tue: 7am - 8pm, Wed: 5:30am - 8pm, Thu-Sat: 7am - 8pm, Sun: Closed",
-            "address": "11022 S 4000 W, South Jordan UT 84009-5797, United States",
-            "status": "operating",
-            "order": 2,
-            "imageurl": "images/oquirrh-mountain-utah-temple-10509-main.jpg"
-
-        },
-        {
-            "name": "Salt Lake Temple",
-            "location": "Provo, Utah",
-            "decicated": "April 6-24, 1893",
+            "name": "Spa",
+            "description": "Find family members who need their work done. Find out your family history.",
             "phone": "(1) 801-375-5775",
-            "hours": "Mon-Sun: Closed",
-            "address": "50 W North Temple St, Salt Lake City UT 84150-9709, United States",
-            "status": "Closed under Renovation",
+            "hours": "Mon-Sat: 7am - 11pm Sun: Closed",
+            "order": 1,
+            "imageurl": "images/activities/family_history.jpg"
+        },
+        {
+            "name": "Breakfast",
+            "description": "Find family members who need their work done. Find out your family history.",
+            "phone": "(1) 801-375-5775",
+            "hours": "Mon-Sun: 5am - 9am",
+            "order": 2,
+            "imageurl": "images/activities/family_history.jpg"
+        },
+        {
+            "name": "Pool",
+            "description": "Find family members who need their work done. Find out your family history.",
+            "phone": "(1) 801-375-5775",
+            "hours": "Mon-Sat: 5am - 8pm Sun: Closed",
             "order": 3,
-            "imageurl": "images/salt-lake-temple-15669-main.jpg"
+            "imageurl": "images/activities/family_history.jpg"
+        },
+        {
+            "name": "Gym",
+            "description": "Find family members who need their work done. Find out your family history.",
+            "phone": "(1) 801-375-5775",
+            "hours": "Mon-Sat: 5am - 8pm Sun: Closed",
+            "order": 4,
+            "imageurl": "images/activities/family_history.jpg"
+        },
+        {
+            "name": "Free Hotel Parking",
+            "description": "Find family members who need their work done. Find out your family history.",
+            "phone": "(1) 801-375-5775",
+            "hours": "Mon-Sat: 5am - 8pm Sun: Closed",
+            "order": 5,
+            "imageurl": "images/activities/family_history.jpg"
         }
 
     ]
