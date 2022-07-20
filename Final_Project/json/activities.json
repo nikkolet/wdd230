@@ -10,27 +10,27 @@
         },
         {
             "name": "Spa",
-            "description": "Find family members who need their work done. Find out your family history.",
+            "description": "Come relax and experience soothing massages, face masks, and others to optimize your self care.",
             "phone": "(1) 801-375-5775",
             "hours": "Mon-Sat: 7am - 11pm Sun: Closed",
             "order": 1,
-            "imageurl": "images/activities/family_history.jpg"
+            "imageurl": "images/activities/spa1.webp"
         },
         {
-            "name": "Breakfast",
-            "description": "Find family members who need their work done. Find out your family history.",
+            "name": "Free Breakfast",
+            "description": "Enjoy a delicious breakfast with your loved ones. We have allergy alternatives. We also have vegetarian and vegan options.",
             "phone": "(1) 801-375-5775",
             "hours": "Mon-Sun: 5am - 9am",
             "order": 2,
-            "imageurl": "images/activities/family_history.jpg"
+            "imageurl": "images/activities/breakfast.jpg"
         },
         {
-            "name": "Pool",
+            "name": "Pool & Hot tub",
             "description": "Find family members who need their work done. Find out your family history.",
             "phone": "(1) 801-375-5775",
             "hours": "Mon-Sat: 5am - 8pm Sun: Closed",
             "order": 3,
-            "imageurl": "images/activities/family_history.jpg"
+            "imageurl": "images/activities/pool.webp"
         },
         {
             "name": "Gym",
@@ -38,7 +38,7 @@
             "phone": "(1) 801-375-5775",
             "hours": "Mon-Sat: 5am - 8pm Sun: Closed",
             "order": 4,
-            "imageurl": "images/activities/family_history.jpg"
+            "imageurl": "images/activities/gym.jpg"
         },
         {
             "name": "Free Hotel Parking",
@@ -46,7 +46,7 @@
             "phone": "(1) 801-375-5775",
             "hours": "Mon-Sat: 5am - 8pm Sun: Closed",
             "order": 5,
-            "imageurl": "images/activities/family_history.jpg"
+            "imageurl": "images/activities/Hotel-Parking.jpg"
         }
 
     ]

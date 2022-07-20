@@ -9,6 +9,17 @@
 
 /*Default*/
 
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 h1 {
     font-family: 'Playfair Display SC', serif;
     font-size: 30px;
@@ -49,6 +60,10 @@ header {
     display: block;
     position: relative;
     text-align: center;
+}
+
+header .logo img {
+    width: 20%;
 }
 
 .logo img {
@@ -180,6 +195,7 @@ nav ul li a:active {
     width: 80%;
     margin: auto;
     margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .closebtn {
@@ -197,6 +213,11 @@ nav ul li a:active {
 
 
 /*Main*/
+
+main {
+    height: 100%;
+    margin: 1em;
+}
 
 .grid {
     display: grid;
@@ -238,10 +259,10 @@ main div {
     height: auto;
     overflow: auto;
     margin: auto;
+    grid-row: 2
 }
 
 #reservation img {
-    float: left;
     height: auto;
     max-width: 100%;
     position: relative;
@@ -250,28 +271,21 @@ main div {
 
 #reservation a {
     position: absolute;
-    top: 50%;
+    top: 80%;
+    left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.carousel-caption {
-    background-color: var(--Primary_Color);
-    color: var(--Secondary_Color);
-    right: 20%;
-    bottom: -5%;
-    padding-bottom: 0px;
 }
 
 #weather-grid {
     width: 100%;
     height: auto;
     margin: auto;
+    grid-row: 4;
 }
 
 #activities {
     width: 100%;
     height: auto;
-    ;
     overflow: hidden;
     margin: auto;
     position: relative;
@@ -293,7 +307,9 @@ main div {
     color: var(--Accent1);
 }
 
-#weather-box {
+#weather-box1,
+#weather-box2,
+#weather-box3 {
     background-color: var(--Accent1);
 }
 
@@ -302,6 +318,8 @@ main div {
 
 footer {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 footer,

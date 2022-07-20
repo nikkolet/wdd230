@@ -15,4 +15,68 @@
     #hamburgerBtn {
         display: none;
     }
+    .logo {
+        background-color: var(--Primary_Color);
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    .logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        width: 20%;
+    }
+    .logo h1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        text-shadow: 0 0 5px var(--Accent2);
+    }
+    /*Main*/
+    main div {
+        background-color: var(--Accent2);
+        border-radius: 5px;
+        text-align: center;
+        margin: 1em;
+    }
+    .grid {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-left: -1em;
+        margin-right: 1em;
+        grid-gap: 1em;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: transparent;
+    }
+    #temples {
+        grid-template-columns: 1fr;
+        grid-column: 1;
+        grid-row: 1/4;
+    }
+    #reservation {
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    #activities {
+        grid-column: 4;
+        grid-row: 1/4;
+    }
+    #weather-grid {
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+    /*Footer*/
 }

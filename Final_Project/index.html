@@ -61,139 +61,64 @@
         <div class="alert">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             <h1>Weather Alert!</h1>
+            <p><span id="message"></span></p>
         </div>
         <div class="grid">
             <div id="temples">
-                <div class="cards grid"></div>
-                <!-- <div id="myTempleCarousel" class="carousel slide" data-ride="carousel">
-                    <h1>Nearby Temples</h1>
-                    <div class="images">
-                        <ol class="carousel-indicators">
-                            <li data-target="#myTempleCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myTempleCarousel" data-slide-to="1"></li>
-                            <li data-target="#myTempleCarousel" data-slide-to="2"></li>
-                            <li data-target="#myTempleCarousel" data-slide-to="3"></li>
-                        </ol>
-
-                        <div class="carousel-inner">
-                            <div class="item active cards">
-                                <img src="images/1599px-Provo_Utah_Temple_4.jpg" alt="Provo Temple">
-                                <div class="carousel-caption">
-                                    <h3>Provo Temple</h3>
-                                </div>
-                            </div>
-                            <div class="item cards">
-                                <img src="images/ogden-utah-temple-13966-main.jpg" alt="Ogden Temple">
-                                <div class="carousel-caption">
-                                    <h3>Ogden Temple</h3>
-                                </div>
-                            </div>
-                            <div class="item cards">
-                                <img src="images/oquirrh-mountain-utah-temple-10509-main.jpg" alt="Oquirrh Mountain Temple">
-                                <div class="carousel-caption">
-                                    <h3>Oquirrh Mountain Temple</h3>
-                                </div>
-                            </div>
-                            <div class="item cards">
-                                <img src="images/salt-lake-temple-15669-main.jpg" alt="Salt Lake Temple">
-                                <div class="carousel-caption">
-                                    <h3>Salt Lake Temple</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a class="left carousel-control" href="#myTempleCarousel" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myTempleCarousel" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div> -->
+                <h2>Nearby Temples</h2>
+                <div class="cards temple-grid"></div>
             </div>
 
-        </div>
-        </div>
-        <div id="reservation">
-            <div>
-                <img src="images/temple-hotel.jpg" alt="Reservation Image"><br>
-                <a href="#"><button id="reservebtn">Make a Reservation!</button></a>
+
+            <div id="activities">
+                <h2>Activites</h2>
+                <div class="cards1 grid"></div>
             </div>
 
-        </div>
 
-        <div id="activities med-activities large-activities">
-            <div id="myActivitiesCarousel" class="carousel slide" data-ride="carousel">
-                <h1>Perks</h1>
-                <div class="images">
-
-                    <ol class="carousel-indicators">
-                        <li data-target="#myActivitiesCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myActivitiesCarousel" data-slide-to="1"></li>
-                        <li data-target="#myActivitiesCarousel" data-slide-to="2"></li>
-                        <li data-target="#myActivitiesCarousel" data-slide-to="3"></li>
-                        <li data-target="#myActivitiesCarousel" data-slide-to="4"></li>
-                        <li data-target="#myActivitiesCarousel" data-slide-to="5"></li>
-                    </ol>
-
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="images/amenities_family_history.jpg" alt="Family History Center">
-                            <div class="carousel-caption">
-                                <h3>Famiy History Center</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="images/spa1.webp" alt="Spa">
-                            <div class="carousel-caption">
-                                <h3>Spa</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="images/breakfast.jpg" alt="Full Breakfast">
-                            <div class="carousel-caption">
-                                <h3>All Inclusive Breakfast</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="images/pool.webp" alt="Pool">
-                            <div class="carousel-caption">
-                                <h3>Pool</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="images/gym.jpg" alt="Gym">
-                            <div class="carousel-caption">
-                                <h3>Gym</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="images/Hotel-Parking.jpg" alt="Free Parking">
-                            <div class="carousel-caption">
-                                <h3>Free Parking</h3>
-                            </div>
-                        </div>
-                        <a class="left carousel-control" href="#myActivitiesCarousel" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myActivitiesCarousel" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
+            <div id="reservation">
+                <div>
+                    <img src="images/temple-hotel.jpg" alt="Reservation Image"><br>
+                    <a href="#"><button id="reservebtn">Make a Reservation!</button></a>
                 </div>
+
             </div>
+
+
         </div>
         <div id="weather-grid">
             <div>
                 <h1>Weather</h1>
-                <div id="weather-box">
-                    <p>The current temperature in West Valley City, Utah is <span id="current-temp"></span> &deg;F</p>
-                    <p>The current Humidity in West Valley City, Utah is <span id="humidity"></span></p>
-                    <p>The current Windspeed in West Valley City, Utah is <span id="windspeed"></span></p>
-                    <p>The current windchill in West Valley City, Utah is <span id="windchill"></span></p>
+                <div id="weather-box1">
+                    <h3>Today</h3>
+                    <p>The current temperature in West Valley City, Utah is: <br><span id="current-temp"></span> &deg;F</p>
+                    <p>The current Humidity in West Valley City, Utah is: <br><span id="humidity"></span></p>
+                    <p>The current Windspeed in West Valley City, Utah is: <br><span id="windspeed"></span></p>
+                    <p>The current windchill in West Valley City, Utah is: <br><span id="windchill"></span></p>
+                    <h2>Current Weather Condition</h2>
+                    <figure>
+                        <img src="" alt="" id="weather-icon" />
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div id="weather-box2">
+                    <h3>Tomorrow</h3>
+                    <p>The current temperature in West Valley City, Utah is: <br><span id="current-temp"></span> &deg;F</p>
+                    <p>The current Humidity in West Valley City, Utah is: <br><span id="humidity"></span></p>
+                    <p>The current Windspeed in West Valley City, Utah is: <br><span id="windspeed"></span></p>
+                    <p>The current windchill in West Valley City, Utah is: <br><span id="windchill"></span></p>
+                    <h2>Current Weather Condition</h2>
+                    <figure>
+                        <img src="" alt="" id="weather-icon" />
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div id="weather-box3">
+                    <h3>The Day After</h3>
+                    <p>The current temperature in West Valley City, Utah is: <br><span id="current-temp"></span> &deg;F</p>
+                    <p>The current Humidity in West Valley City, Utah is: <br><span id="humidity"></span></p>
+                    <p>The current Windspeed in West Valley City, Utah is: <br><span id="windspeed"></span></p>
+                    <p>The current windchill in West Valley City, Utah is: <br><span id="windchill"></span></p>
                     <h2>Current Weather Condition</h2>
                     <figure>
                         <img src="" alt="" id="weather-icon" />
@@ -201,7 +126,8 @@
                     </figure>
                 </div>
             </div>
-
+        </div>
+        </div>
         </div>
         </div>
     </main>
@@ -239,13 +165,13 @@
             <h1>Find Us on Social Media</h1>
             <ul>
                 <li>
-                    <a href="#" target="_blank" rel="noreferrer noopener"><img src="images/facebook.png" alt="facebook icon"></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"><img src="images/facebook.png" alt="facebook icon"></a>
                 </li>
                 <li>
-                    <a href="#" target="_blank" rel="noreferrer noopener"><img src="images/twitter.png" alt="twitter icon"></a>
+                    <a href="https://twitter.com/home" target="_blank" rel="noreferrer noopener"><img src="images/twitter.png" alt="twitter icon"></a>
                 </li>
                 <li>
-                    <a href="#" target="_blank" rel="noreferrer noopener"><img src="images/linkedin.png" alt="linkedIn icon"></a>
+                    <a href="https://www.linkedin.com/in/nikkolet-ashby-418757161/" target="_blank" rel="noreferrer noopener"><img src="images/linkedin.png" alt="linkedIn icon"></a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"><img src="images/instagram.png" alt="instagram icon"></a>
@@ -259,9 +185,8 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/temples.js"></script>
+    <script src="js/activities.js"></script>
     <script src="js/weatherapimain.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

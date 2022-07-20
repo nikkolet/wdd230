@@ -18,7 +18,7 @@ fetch(requestURL)
         function displayTemples(temple) {
             // Create elements to add to the document
             let card = document.createElement('section');
-            let h2 = document.createElement('h2');
+            let h3 = document.createElement('h3');
             let dedicated = document.createElement("p")
             let phone = document.createElement("p")
             let hours = document.createElement("p")
@@ -26,7 +26,7 @@ fetch(requestURL)
             let portrait = document.createElement('img');
 
             // Change the textContent property of the h2 element to contain the prophet's full name
-            h2.textContent = temple.name;
+            h3.textContent = temple.name;
             phone.textContent = "Phone: " + temple.phone;
             dedicated.textContent = "Dedicated: " + temple.dedicated;
             hours.textContent = "Hours: " + temple.hours;
@@ -38,7 +38,7 @@ fetch(requestURL)
             portrait.setAttribute('loading', 'lazy');
 
             // Add/append the section(card) with the h2 elemen.t
-            card.appendChild(h2);
+            card.appendChild(h3);
             card.appendChild(portrait);
             card.appendChild(dedicated);
             card.appendChild(phone);
