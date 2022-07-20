@@ -5,6 +5,7 @@
         h2 {
             font-size: 1.5rem;
         }
+        /*Header*/
         header,
         footer {
             border-radius: 10px;
@@ -24,4 +25,10 @@
         h1 {
             grid-row: 2;
         }
+        /*Main*/
+        #weather-grid {
+            display: grid;
+            grid-template-columns: 3;
+        }
+        /*Footer*/
     }

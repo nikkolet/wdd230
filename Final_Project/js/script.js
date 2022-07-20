@@ -12,9 +12,9 @@ let dayofweek = weekday[d.getDay()];
 
 const year = d.getFullYear();
 
-document.querySelector(".date").innerHTML = dayofweek + ", " + day + "  " + newmonth + " " + year;
+// document.querySelector(".date").textContent = dayofweek + ", " + day + "  " + newmonth + " " + year;
 document.querySelector("#lastmodified").textContent = document.lastModified;
-
+document.querySelector("#year").textContent = Date.year;
 
 //Message
 if (dayofweek == "Monday") {

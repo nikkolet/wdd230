@@ -71,62 +71,62 @@
 
 
             <div id="activities">
-                <h2>Activites</h2>
-                <div class="cards1 grid"></div>
+                <h2>Activities</h2>
+                <div class="cards1 activity-grid"></div>
             </div>
 
 
             <div id="reservation">
-                <div>
-                    <img src="images/temple-hotel.jpg" alt="Reservation Image"><br>
-                    <a href="#"><button id="reservebtn">Make a Reservation!</button></a>
+
+                <img src="images/temple-hotel.jpg" alt="Reservation Image"><br>
+                <a href="#"><button id="reservebtn">Make a Reservation!</button></a>
+                <div id="weather-grid">
+
+                    <h1>Weather</h1>
+                    <div id="weather-box1">
+                        <h3>Today</h3>
+                        <p>The current temperature in West Valley City, Utah is: <br><span id="current-temp"></span> &deg;F</p>
+                        <p>The current Humidity in West Valley City, Utah is: <br><span id="humidity"></span></p>
+                        <p>The current Windspeed in West Valley City, Utah is: <br><span id="windspeed"></span></p>
+                        <p>The current windchill in West Valley City, Utah is: <br><span id="windchill"></span></p>
+                        <h2>Current Weather Condition</h2>
+                        <figure>
+                            <img src="" alt="" id="weather-icon" />
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="weather-box2">
+                        <h3>Tomorrow</h3>
+                        <p>The current temperature in West Valley City, Utah is: <br><span id="current-temp"></span> &deg;F</p>
+                        <p>The current Humidity in West Valley City, Utah is: <br><span id="humidity"></span></p>
+                        <p>The current Windspeed in West Valley City, Utah is: <br><span id="windspeed"></span></p>
+                        <p>The current windchill in West Valley City, Utah is: <br><span id="windchill"></span></p>
+                        <h2>Current Weather Condition</h2>
+                        <figure>
+                            <img src="" alt="" id="weather-icon" />
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="weather-box3">
+                        <h3>The Day After</h3>
+                        <p>The current temperature in West Valley City, Utah is: <br><span id="current-temp"></span> &deg;F</p>
+                        <p>The current Humidity in West Valley City, Utah is: <br><span id="humidity"></span></p>
+                        <p>The current Windspeed in West Valley City, Utah is: <br><span id="windspeed"></span></p>
+                        <p>The current windchill in West Valley City, Utah is: <br><span id="windchill"></span></p>
+                        <h2>Current Weather Condition</h2>
+                        <figure>
+                            <img src="" alt="" id="weather-icon" />
+                            <figcaption></figcaption>
+                        </figure>
+
+                    </div>
                 </div>
 
             </div>
 
 
         </div>
-        <div id="weather-grid">
-            <div>
-                <h1>Weather</h1>
-                <div id="weather-box1">
-                    <h3>Today</h3>
-                    <p>The current temperature in West Valley City, Utah is: <br><span id="current-temp"></span> &deg;F</p>
-                    <p>The current Humidity in West Valley City, Utah is: <br><span id="humidity"></span></p>
-                    <p>The current Windspeed in West Valley City, Utah is: <br><span id="windspeed"></span></p>
-                    <p>The current windchill in West Valley City, Utah is: <br><span id="windchill"></span></p>
-                    <h2>Current Weather Condition</h2>
-                    <figure>
-                        <img src="" alt="" id="weather-icon" />
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
-                <div id="weather-box2">
-                    <h3>Tomorrow</h3>
-                    <p>The current temperature in West Valley City, Utah is: <br><span id="current-temp"></span> &deg;F</p>
-                    <p>The current Humidity in West Valley City, Utah is: <br><span id="humidity"></span></p>
-                    <p>The current Windspeed in West Valley City, Utah is: <br><span id="windspeed"></span></p>
-                    <p>The current windchill in West Valley City, Utah is: <br><span id="windchill"></span></p>
-                    <h2>Current Weather Condition</h2>
-                    <figure>
-                        <img src="" alt="" id="weather-icon" />
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
-                <div id="weather-box3">
-                    <h3>The Day After</h3>
-                    <p>The current temperature in West Valley City, Utah is: <br><span id="current-temp"></span> &deg;F</p>
-                    <p>The current Humidity in West Valley City, Utah is: <br><span id="humidity"></span></p>
-                    <p>The current Windspeed in West Valley City, Utah is: <br><span id="windspeed"></span></p>
-                    <p>The current windchill in West Valley City, Utah is: <br><span id="windchill"></span></p>
-                    <h2>Current Weather Condition</h2>
-                    <figure>
-                        <img src="" alt="" id="weather-icon" />
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
+
         </div>
         </div>
         </div>
@@ -180,7 +180,7 @@
         </div>
         <div>
             <p class="js" id="js-p">
-                &copy;2022 | Temple Inn & Suites | CEO: Nikkolet Ashby | WDD 230 Final Project | Last Updated: <span id="lastmodified"></span></p>
+                &copy;<span id="year"></span> | Temple Inn & Suites | CEO: Nikkolet Ashby | WDD 230 Final Project | Last Updated: <span id="lastmodified"></span></p>
         </div>
     </footer>
     <script src="js/script.js"></script>

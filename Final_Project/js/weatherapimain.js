@@ -52,6 +52,7 @@ function displayResults(weatherData) {
     weatherIcon1.setAttribute('alt', desc);
     captionDesc1.innerHTML = desc;
 
+
     if ((temp <= 50) && (wSpeed > 3)) {
 
         var windChill = (35.74 + (0.6215 * temp)) - (35.75 * Math.pow(wSpeed, 0.16)) + (0.4275 * temp * Math.pow(wSpeed, 0.16));
@@ -62,4 +63,7 @@ function displayResults(weatherData) {
     } else {
         document.getElementById("windchill").innerHTML = "N/A";
     }
+}
+if (currentTemp > 100) {
+    querySelector("#message").innerHTML = "It is over 100°f outside. Please keep cool by: drinking water, staying in the shade, and have air conditioner on wherever available. Stay safe."
 }

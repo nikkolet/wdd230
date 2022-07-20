@@ -24,6 +24,7 @@ h1 {
     font-family: 'Playfair Display SC', serif;
     font-size: 30px;
     color: var(--Primary_Color);
+    text-align: center;
 }
 
 h2 {
@@ -60,10 +61,6 @@ header {
     display: block;
     position: relative;
     text-align: center;
-}
-
-header .logo img {
-    width: 20%;
 }
 
 .logo img {
@@ -141,6 +138,11 @@ nav ul li a {
     padding: 1em;
 }
 
+ul li::marker {
+    display: none;
+    color: transparent;
+}
+
 nav ul li a:hover {
     color: var(--Secondary_Color);
     background-color: var(--Primary_Color);
@@ -152,8 +154,6 @@ nav ul li a:active {
 }
 
 #hamburgerBtn span:nth-child(1) {
-    color: var(--Secondary_Color);
-    background-color: var(--Primary_Color);
     display: block;
     grid-column: 1;
     grid-row: 1;
@@ -237,6 +237,29 @@ main div {
     border-radius: 5px;
     text-align: center;
     margin: 1em;
+}
+
+.activity_img {
+    width: 100%;
+}
+
+.activity_grid {
+    grid-template-columns: 1fr;
+}
+
+.cards1 section,
+.cards section {
+    margin: 1em;
+    background-color: var(--Accent1);
+    border-radius: 5px;
+}
+
+.temple-grid section:not(:first-of-type) {
+    display: none;
+}
+
+.activity-grid section:not(:first-of-type) {
+    display: none;
 }
 
 
