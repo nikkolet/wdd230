@@ -9,8 +9,10 @@ let day = d.getDate();
 
 const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let dayofweek = weekday[d.getDay()];
-
+let today = Date.now;
 const year = d.getFullYear();
+
+document.querySelector("#today").textContent = today;
 
 // document.querySelector(".date").textContent = dayofweek + ", " + day + "  " + newmonth + " " + year;
 document.querySelector("#lastmodified").textContent = document.lastModified;
