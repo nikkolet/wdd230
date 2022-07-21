@@ -120,12 +120,20 @@ header {
 
 nav {
     background-color: var(--Secondary_Color);
-    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+nav button {
+    display: block;
+    float: right;
+    margin: 0.2rem 2vw;
+    font-size: 2rem;
+    float: right;
 }
 
 nav ul li {
     display: inline;
-    padding: 1em;
     margin: auto;
 }
 
@@ -168,6 +176,9 @@ nav ul li a:active {
 }
 
 #hamburgerBtn.open span:nth-child(1) {
+    background-color: var(--Secondary_Color);
+    color: var(--Primary_Color);
+    border: none;
     display: none;
     grid-column: 1;
     grid-row: 1;
@@ -175,10 +186,47 @@ nav ul li a:active {
 }
 
 #hamburgerBtn.open span:nth-child(2) {
+    background-color: var(--Primary_Color);
+    color: var(--Secondary_Color);
+    border: none;
     display: block;
     grid-column: 1;
     grid-row: 1;
     float: left;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+}
+
+nav ul li {
+    display: none;
+    text-decoration: none;
+    font-size: .8rem;
+    grid-row: 1;
+    grid-column: 4;
+    float: right;
+}
+
+nav ul.open li {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+    padding: 0.5em;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul.open {
+    display: block;
 }
 
 
@@ -304,6 +352,10 @@ main div {
     height: auto;
     margin: auto;
     grid-row: 4;
+}
+
+#weather-grid h1 {
+    grid-column: 1/4;
 }
 
 #activities {

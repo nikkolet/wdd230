@@ -11,16 +11,29 @@
         padding: 0;
         box-sizing: border-box;
     }
-    /*Header*/
-    #hamburgerBtn {
+    nav button {
         display: none;
     }
+    nav ul li {
+        display: inline;
+        padding: 1em;
+        float: left;
+    }
+    /*Header*/
     nav ul li a {
         text-decoration: none;
         color: var(--Primary_Color);
         font-family: 'Playfair Display SC', serif;
         font-size: 20px;
         display: inline;
+    }
+    nav ul li a:hover {
+        background-color: var(--Primary_Color);
+        color: var(--Secondary_Color);
+    }
+    nav ul li a:active {
+        background-color: var(--Primary_Color);
+        color: var(--Secondary_Color);
     }
     .logo {
         background-color: var(--Primary_Color);
