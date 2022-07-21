@@ -6,7 +6,7 @@
             "phone": "(1) 801-375-5775",
             "hours": "Mon: 5:30am - 10am, Tue: 5:30am - 8pm, Wed-Sat: 7am-8pm, Sun: Closed",
             "address": "2200 Temple Hill Dr, Provo UT 84604-1775, United States",
-            "status": "operating",
+            "status": "Operating",
             "order": 0,
             "imageurl": "images/temples/1599px-Provo_Utah_Temple_4.jpg"
 
@@ -18,7 +18,7 @@
             "phone": "(1) 801-621-6880",
             "hours": "Mon - Wed: 7am - 8pm, Thur: 6am - 8pm, Fri-Sat: 7am - 8pm, Sun: Closed",
             "address": "350 22nd St, Ogden UT 84401-14, United States",
-            "status": "operating",
+            "status": "Operating",
             "order": 1,
             "imageurl": "images/temples/ogden-utah-temple-13966-main.jpg"
 
@@ -30,7 +30,7 @@
             "phone": "(1) 801-878-3800",
             "hours": "Mon - Tue: 7am - 8pm, Wed: 5:30am - 8pm, Thu-Sat: 7am - 8pm, Sun: Closed",
             "address": "11022 S 4000 W, South Jordan UT 84009-5797, United States",
-            "status": "operating",
+            "status": "Operating",
             "order": 2,
             "imageurl": "images/temples/oquirrh-mountain-utah-temple-10509-main.jpg"
 

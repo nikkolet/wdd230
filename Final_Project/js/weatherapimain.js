@@ -31,9 +31,6 @@ async function apiFetch(apiURL) {
     }
 }
 
-
-// document.querySelector('#button').onclick = calculateWindChill;
-
 function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`;
     humidity.innerHTML = `<strong>${weatherData.main.humidity.toFixed(1)}</strong>`;
@@ -44,13 +41,13 @@ function displayResults(weatherData) {
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
 
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.innerHTML = desc;
-
     weatherIcon1.setAttribute('src', iconsrc);
     weatherIcon1.setAttribute('alt', desc);
     captionDesc1.innerHTML = desc;
+
+    weatherIcon2.setAttribute('src', iconsrc);
+    weatherIcon2.setAttribute('alt', desc);
+    captionDesc2.innerHTML = desc;
 }
 
 if (currentTemp > 100) {
