@@ -206,7 +206,7 @@ nav ul li {
     font-size: .8rem;
     grid-row: 1;
     grid-column: 4;
-    float: right;
+    float: left;
 }
 
 nav ul.open li {
@@ -214,15 +214,6 @@ nav ul.open li {
     flex-direction: column;
     margin-left: 5em;
     padding: 0.5em;
-}
-
-nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #fff;
-}
-
-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
 }
 
 nav ul.open {
