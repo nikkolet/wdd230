@@ -14,16 +14,7 @@ const year = d.getFullYear();
 
 // document.querySelector(".date").textContent = dayofweek + ", " + day + "  " + newmonth + " " + year;
 document.querySelector("#lastmodified").textContent = document.lastModified;
-document.querySelector("#year").textContent = Date.year;
-
-//Message
-if (dayofweek == "Monday") {
-    document.querySelector("#message").innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
-} else if (dayofweek == "Tuesday") {
-    document.querySelector("#message").innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
-} else {
-    document.querySelector("#message").innerHTML = "No Messages today."
-}
+document.querySelector("#year").textContent = year;
 
 
 //Hamburger Menu
