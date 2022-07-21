@@ -39,7 +39,7 @@ function displayResults(weatherData) {
     humidity.innerHTML = `<strong>${weatherData.main.humidity.toFixed(1)}</strong>`;
     windspeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(1)}</strong>`;
     currentTemp1.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`;
-
+    windchill.innerHTML = `<strong>${weatherData.main.feels_like.toFixed(1)}</strong>`;
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
